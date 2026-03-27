@@ -1,0 +1,244 @@
+[
+  {
+    "id": "techcrunch-2017-collibra",
+    "type": "webpage",
+    "title": "Collibra nabs $50M led by ICONIQ to fix companies' data governance",
+    "container-title": "TechCrunch",
+    "URL": "https://techcrunch.com/2017/01/18/collibra/",
+    "issued": {"date-parts": [[2017, 1, 18]]},
+    "accessed": {"date-parts": [[2026, 3, 27]]}
+  },
+  {
+    "id": "techcrunch-2018-collibra-series-d",
+    "type": "webpage",
+    "title": "Collibra snags $58M Series D led by Iconiq and Battery Ventures to simplify data governance",
+    "container-title": "TechCrunch",
+    "URL": "https://techcrunch.com/2018/01/08/collibra-snags-58-m-series-d-led-by-iconiq-and-battery-ventures-to-simplify-data-governance/",
+    "issued": {"date-parts": [[2018, 1, 8]]},
+    "accessed": {"date-parts": [[2026, 3, 27]]}
+  },
+  {
+    "id": "techcrunch-2019-collibra-unicorn",
+    "type": "webpage",
+    "title": "Regulatory demands for better data governance push Collibra's valuation above $1 billion",
+    "container-title": "TechCrunch",
+    "URL": "https://techcrunch.com/2019/01/29/regulatory-demands-for-better-data-governance-push-collibras-valuation-above-1-billion/",
+    "issued": {"date-parts": [[2019, 1, 29]]},
+    "accessed": {"date-parts": [[2026, 3, 27]]}
+  },
+  {
+    "id": "techcrunch-2020-collibra-valuation",
+    "type": "webpage",
+    "title": "Collibra nabs another $112.5M at a $2.3B valuation for its big data management platform",
+    "container-title": "TechCrunch",
+    "URL": "https://techcrunch.com/2020/04/02/collibra-nabs-another-112-5m-at-a-2-3b-valuation-for-its-big-data-management-platform/",
+    "issued": {"date-parts": [[2020, 4, 2]]},
+    "accessed": {"date-parts": [[2026, 3, 27]]}
+  },
+  {
+    "id": "techtarget-2021-owldq",
+    "type": "webpage",
+    "title": "Collibra acquires predictive data quality vendor OwlDQ",
+    "container-title": "TechTarget",
+    "URL": "https://www.techtarget.com/searchdatamanagement/news/252495815/Collibra-acquires-predictive-data-quality-vendor-OwlDQ",
+    "issued": {"date-parts": [[2021, 2, 3]]},
+    "accessed": {"date-parts": [[2026, 3, 27]]}
+  },
+  {
+    "id": "siliconangle-2021-owldq",
+    "type": "webpage",
+    "title": "Collibra acquires OwlDQ to make enterprises' data more reliable for AI",
+    "container-title": "SiliconANGLE",
+    "URL": "https://siliconangle.com/2021/02/03/collibra-acquires-owldq-make-enterprises-data-reliable-ai/",
+    "issued": {"date-parts": [[2021, 2, 3]]},
+    "accessed": {"date-parts": [[2026, 3, 27]]}
+  },
+  {
+    "id": "techcrunch-2021-collibra-250m",
+    "type": "webpage",
+    "title": "Data intelligence company Collibra brings in another $250M to more than double its valuation",
+    "container-title": "TechCrunch",
+    "URL": "https://techcrunch.com/2021/11/09/data-intelligence-company-collibra-brings-in-another-250m-to-more-than-double-its-valuation/",
+    "issued": {"date-parts": [[2021, 11, 9]]},
+    "accessed": {"date-parts": [[2026, 3, 27]]}
+  },
+  {
+    "id": "cnbc-2021-collibra-cloud-winner",
+    "type": "webpage",
+    "title": "Collibra doubles valuation as investors chase next cloud winner",
+    "container-title": "CNBC",
+    "URL": "https://www.cnbc.com/2021/11/09/collibra-doubles-valuation-as-investors-chase-next-cloud-winner.html",
+    "issued": {"date-parts": [[2021, 11, 9]]},
+    "accessed": {"date-parts": [[2026, 3, 27]]}
+  },
+  {
+    "id": "collibra-who-we-are",
+    "type": "webpage",
+    "title": "Discover unified governance for data and AI",
+    "container-title": "Collibra",
+    "URL": "https://www.collibra.com/company/who-we-are",
+    "accessed": {"date-parts": [[2026, 3, 27]]},
+    "note": "Primary source for basic company facts such as headquarters and website."
+  },
+  {
+    "id": "collibra-leadership",
+    "type": "webpage",
+    "title": "Meet the Collibra leadership team",
+    "container-title": "Collibra",
+    "URL": "https://www.collibra.com/company/leadership",
+    "accessed": {"date-parts": [[2026, 3, 27]]},
+    "note": "Primary source for current leadership titles and founder listings."
+  },
+  {
+    "id": "vub-techtransfer-collibra",
+    "type": "webpage",
+    "title": "COLLIBRA",
+    "container-title": "VUB TechTransfer",
+    "URL": "https://techtransfer.research.vub.be/collibra",
+    "accessed": {"date-parts": [[2026, 3, 27]]}
+  },
+  {
+    "id": "vub-student-to-spin-off",
+    "type": "webpage",
+    "title": "From student to spin-off: how does that happen",
+    "container-title": "Vrije Universiteit Brussel",
+    "URL": "https://www.vub.be/en/news/from-student-spin-how-does-that-happen",
+    "accessed": {"date-parts": [[2026, 3, 27]]}
+  },
+  {
+    "id": "datanews-2017-collibra",
+    "type": "webpage",
+    "title": "Belgische Collibra haalt 50 miljoen dollar op bij Zuckerberg en co",
+    "container-title": "Data News",
+    "URL": "https://datanews.knack.be/nieuws/bedrijven/start-ups/belgische-collibra-haalt-50-miljoen-dollar-op-bij-zuckerberg-en-co/",
+    "issued": {"date-parts": [[2017, 1, 18]]},
+    "accessed": {"date-parts": [[2026, 3, 27]]}
+  },
+  {
+    "id": "hln-2019-collibra-unicorn",
+    "type": "webpage",
+    "title": "Dataspecialist Collibra is eerste Belgische 'unicorn'",
+    "container-title": "HLN",
+    "URL": "https://www.hln.be/de-krant/dataspecialist-collibra-is-eerste-belgische-unicorn~a14ddb3c/",
+    "issued": {"date-parts": [[2019, 1, 30]]},
+    "accessed": {"date-parts": [[2026, 3, 27]]}
+  },
+  {
+    "id": "trends-2018-ten-years-collibra",
+    "type": "webpage",
+    "title": "De mijlpalen van tien jaar Collibra: 'Durfkapitaal is geen gratis geld'",
+    "container-title": "Trends",
+    "URL": "https://trends.knack.be/ondernemen/de-mijlpalen-van-tien-jaar-collibra-durfkapitaal-is-geen-gratis-geld/",
+    "issued": {"date-parts": [[2018, 11, 22]]},
+    "accessed": {"date-parts": [[2026, 3, 27]]}
+  },
+  {
+    "id": "techtarget-2023-data-notebook",
+    "type": "webpage",
+    "title": "Collibra acquires data notebook vendor for analytics tools",
+    "container-title": "TechTarget",
+    "URL": "https://www.techtarget.com/searchbusinessanalytics/news/366551315/Collibra-acquires-data-notebook-vendor-for-analytics-tools",
+    "issued": {"date-parts": [[2023, 9, 7]]},
+    "accessed": {"date-parts": [[2026, 3, 27]]}
+  },
+  {
+    "id": "techtarget-2024-ai-governance-adds",
+    "type": "webpage",
+    "title": "Collibra adds AI governance to data management platform",
+    "container-title": "TechTarget",
+    "URL": "https://www.techtarget.com/searchDataManagement/news/366571614/Collibra-adds-AI-governance-to-data-management-platform",
+    "issued": {"date-parts": [[2024, 2, 29]]},
+    "accessed": {"date-parts": [[2026, 3, 27]]}
+  },
+  {
+    "id": "techtarget-2024-ai-governance-launch",
+    "type": "webpage",
+    "title": "Collibra launches AI Governance, unveils GenAI capabilities",
+    "container-title": "TechTarget",
+    "URL": "https://www.techtarget.com/searchdatamanagement/news/366580432/Collibra-launches-AI-Governance-unveils-GenAI-capabilities",
+    "issued": {"date-parts": [[2024, 4, 10]]},
+    "accessed": {"date-parts": [[2026, 3, 27]]}
+  },
+  {
+    "id": "venturebeat-2024-shadow-ai",
+    "type": "webpage",
+    "title": "Collibra tackles the shadow AI problem with new governance application",
+    "container-title": "VentureBeat",
+    "URL": "https://venturebeat.com/ai/collibra-tackles-the-shadow-ai-problem-with-new-governance-application/",
+    "issued": {"date-parts": [[2024, 4, 10]]},
+    "accessed": {"date-parts": [[2026, 3, 27]]}
+  },
+  {
+    "id": "bis-bcbs239",
+    "type": "report",
+    "title": "Principles for effective risk data aggregation and risk reporting",
+    "container-title": "Bank for International Settlements",
+    "URL": "https://www.bis.org/publ/bcbs239.htm",
+    "issued": {"date-parts": [[2013, 1, 1]]},
+    "accessed": {"date-parts": [[2026, 3, 27]]}
+  },
+  {
+    "id": "eurlex-gdpr",
+    "type": "legislation",
+    "title": "Regulation (EU) 2016/679",
+    "container-title": "EUR-Lex",
+    "URL": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32016R0679",
+    "issued": {"date-parts": [[2016, 4, 27]]},
+    "accessed": {"date-parts": [[2026, 3, 27]]}
+  },
+  {
+    "id": "eurlex-ai-act",
+    "type": "legislation",
+    "title": "Regulation (EU) 2024/1689",
+    "container-title": "EUR-Lex",
+    "URL": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+    "issued": {"date-parts": [[2024, 7, 12]]},
+    "accessed": {"date-parts": [[2026, 3, 27]]}
+  },
+  {
+    "id": "techcrunch-2025-raito",
+    "type": "webpage",
+    "title": "Collibra acquires data access startup Raito",
+    "container-title": "TechCrunch",
+    "URL": "https://techcrunch.com/2025/06/05/collibra-acquires-data-access-startup-raito/",
+    "issued": {"date-parts": [[2025, 6, 5]]},
+    "accessed": {"date-parts": [[2026, 3, 27]]}
+  },
+  {
+    "id": "techtarget-2025-deasy",
+    "type": "webpage",
+    "title": "Collibra's acquisition of Deasy targets unstructured data",
+    "container-title": "TechTarget",
+    "URL": "https://www.techtarget.com/searchdatamanagement/news/366627998/Collibras-acquisition-of-Deasy-targets-unstructured-data",
+    "issued": {"date-parts": [[2025, 7, 24]]},
+    "accessed": {"date-parts": [[2026, 3, 27]]}
+  },
+  {
+    "id": "forbes-2025-collibra-profile",
+    "type": "webpage",
+    "title": "Collibra | Company Overview & News",
+    "container-title": "Forbes",
+    "URL": "https://www.forbes.com/companies/collibra/",
+    "issued": {"date-parts": [[2025, 9, 3]]},
+    "accessed": {"date-parts": [[2026, 3, 27]]}
+  },
+  {
+    "id": "businessinsider-2025-ai-first",
+    "type": "webpage",
+    "title": "Collibra CEO describes what he looks for in AI-first employees",
+    "container-title": "Business Insider",
+    "URL": "https://www.businessinsider.com/collibra-ai-first-employees-felix-van-de-maele-enterprise-2025-12",
+    "issued": {"date-parts": [[2025, 12, 21]]},
+    "accessed": {"date-parts": [[2026, 3, 27]]}
+  },
+  {
+    "id": "linkedin-2026-colin-jarvis-long-game",
+    "type": "post-weblog",
+    "title": "Collibra LinkedIn post surfacing Altimeter interview snippet",
+    "container-title": "LinkedIn",
+    "URL": "https://www.linkedin.com/posts/collibra_colin-jarvis-head-of-forward-deployed-engineering-activity-7402808694436196352-xYMs",
+    "issued": {"date-parts": [[2026, 3, 27]]},
+    "accessed": {"date-parts": [[2026, 3, 27]]},
+    "note": "Self-published promotional context; not an independent source for notability."
+  }
+]

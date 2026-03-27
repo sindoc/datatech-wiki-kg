@@ -1,0 +1,25 @@
+{
+  "topic": "collibra",
+  "assets": [
+    {
+      "id": "collibra-logo",
+      "label": "Collibra logo",
+      "kind": "logo",
+      "publication_status": "pending-upload-review",
+      "preferred_target": "English Wikipedia non-free logo upload unless a clearly free license is documented",
+      "intended_article": "Collibra",
+      "wikipedia_use": "infobox primary identification",
+      "notes": "Track source URL, upload target, and non-free rationale before article use."
+    },
+    {
+      "id": "collibra-product-screenshot",
+      "label": "Collibra product screenshot",
+      "kind": "screenshot",
+      "publication_status": "reference-only-pending-rationale",
+      "preferred_target": "English Wikipedia non-free upload only if article-specific contextual significance is clear",
+      "intended_article": "Collibra",
+      "wikipedia_use": "possible product illustration, not automatic",
+      "notes": "User-created screenshot; keep local until a specific non-free rationale and intended use are documented."
+    }
+  ]
+}

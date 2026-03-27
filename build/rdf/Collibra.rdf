@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="urn:datatech-wiki-kg:collibra:wikipedia-draft">
+    <dc:title>Collibra</dc:title>
+    <dc:type>WikipediaDraft</dc:type>
+    <dc:source>content/markdown/Collibra.md</dc:source>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:datatech-wiki-kg:collibra:section:1">
+    <dc:title>Lead</dc:title>
+    <dc:description>Collibra is a software company founded in Belgium in 2008 that develops software for data governance, data cataloging, data quality, and related enterprise data-management functions. The company originated as a spin-off from the Vrije Universiteit Brussel's STARLab research group. Coverage of the company has described it variously as a data governance, data management, or data intelligence vendor, reflecting product expansion and changing market vocabulary. By 2021, Collibra had reached a valuation of $5.25 billion and coverage increasingly placed it in the broader enterprise market for trusted data access, compliance, analytics enablement, and AI governance.</dc:description>
+    <dc:source rdf:resource="https://techcrunch.com/2017/01/18/collibra/"/>
+    <dc:source rdf:resource="https://techcrunch.com/2019/01/29/regulatory-demands-for-better-data-governance-push-collibras-valuation-above-1-billion/"/>
+    <dc:source rdf:resource="https://techcrunch.com/2021/11/09/data-intelligence-company-collibra-brings-in-another-250m-to-more-than-double-its-valuation/"/>
+    <dc:source rdf:resource="https://www.cnbc.com/2021/11/09/collibra-doubles-valuation-as-investors-chase-next-cloud-winner.html"/>
+    <dc:source rdf:resource="https://techtransfer.research.vub.be/collibra"/>
+    <dc:source rdf:resource="https://www.vub.be/en/news/from-student-spin-how-does-that-happen"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:datatech-wiki-kg:collibra:section:2">
+    <dc:title>History</dc:title>
+    <dc:description>Collibra was founded in 2008 as a Belgian software company focused on helping organizations govern and use enterprise data more effectively. VUB sources describe it as a spin-off from the university's STARLab, and identify Felix Van de Maele, Stijn Christiaens, Pieter De Leenheer, and Damien Trog as founders. Early coverage framed the company around data-governance problems inside large organizations, particularly the difficulty of finding, understanding, and controlling data spread across multiple systems. As regulatory scrutiny and enterprise data volumes grew, Collibra raised a succession of funding rounds that tracked its rise from a venture-backed governance vendor to a company valued above $1 billion in January 2019, $2.3 billion in April 2020, and $5.25 billion in November 2021. Coverage of the 2020 and 2021 rounds connected that growth to governance, cataloging, data protection, and the increasing operational importance of enterprise data.</dc:description>
+    <dc:source rdf:resource="https://techcrunch.com/2018/01/08/collibra-snags-58-m-series-d-led-by-iconiq-and-battery-ventures-to-simplify-data-governance/"/>
+    <dc:source rdf:resource="https://techcrunch.com/2019/01/29/regulatory-demands-for-better-data-governance-push-collibras-valuation-above-1-billion/"/>
+    <dc:source rdf:resource="https://techcrunch.com/2020/04/02/collibra-nabs-another-112-5m-at-a-2-3b-valuation-for-its-big-data-management-platform/"/>
+    <dc:source rdf:resource="https://techcrunch.com/2021/11/09/data-intelligence-company-collibra-brings-in-another-250m-to-more-than-double-its-valuation/"/>
+    <dc:source rdf:resource="https://www.cnbc.com/2021/11/09/collibra-doubles-valuation-as-investors-chase-next-cloud-winner.html"/>
+    <dc:source rdf:resource="https://techtransfer.research.vub.be/collibra"/>
+    <dc:source rdf:resource="https://www.vub.be/en/news/from-student-spin-how-does-that-happen"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:datatech-wiki-kg:collibra:section:3">
+    <dc:title>Products</dc:title>
+    <dc:description>Independent coverage has generally described Collibra's products as a set of enterprise tools for finding, understanding, governing, and controlling data across distributed environments. While the company's early identity was closely tied to governance and catalog functions, later coverage emphasized a broader product set that combined governance with data quality, analytics-adjacent tooling, policy controls, and AI-governance capabilities. At a high level, Collibra's product coverage in independent reporting spans data catalog and governance, data quality, analytics-oriented notebook tooling, data lineage and metadata management through acquired capabilities, and AI governance.</dc:description>
+    <dc:source rdf:resource="https://www.techtarget.com/searchdatamanagement/news/252495815/Collibra-acquires-predictive-data-quality-vendor-OwlDQ"/>
+    <dc:source rdf:resource="https://siliconangle.com/2021/02/03/collibra-acquires-owldq-make-enterprises-data-reliable-ai/"/>
+    <dc:source rdf:resource="https://www.techtarget.com/searchbusinessanalytics/news/366551315/Collibra-acquires-data-notebook-vendor-for-analytics-tools"/>
+    <dc:source rdf:resource="https://www.techtarget.com/searchDataManagement/news/366571614/Collibra-adds-AI-governance-to-data-management-platform"/>
+    <dc:source rdf:resource="https://www.techtarget.com/searchdatamanagement/news/366580432/Collibra-launches-AI-Governance-unveils-GenAI-capabilities"/>
+    <dc:source rdf:resource="https://venturebeat.com/ai/collibra-tackles-the-shadow-ai-problem-with-new-governance-application/"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:datatech-wiki-kg:collibra:section:4">
+    <dc:title>Acquisitions</dc:title>
+    <dc:description>Collibra has used acquisitions to broaden its platform beyond catalog and governance workflows. Reported acquisitions have centered on data lineage, data quality, analytics workflows, data access, and unstructured data governance.</dc:description>
+    <dc:source rdf:resource="https://www.techtarget.com/searchdatamanagement/news/252495815/Collibra-acquires-predictive-data-quality-vendor-OwlDQ"/>
+    <dc:source rdf:resource="https://www.techtarget.com/searchbusinessanalytics/news/366551315/Collibra-acquires-data-notebook-vendor-for-analytics-tools"/>
+    <dc:source rdf:resource="https://techcrunch.com/2025/06/05/collibra-acquires-data-access-startup-raito/"/>
+    <dc:source rdf:resource="https://www.techtarget.com/searchdatamanagement/news/366627998/Collibras-acquisition-of-Deasy-targets-unstructured-data"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="urn:datatech-wiki-kg:collibra:section:5">
+    <dc:title>Market position and reception</dc:title>
+    <dc:description>Coverage of Collibra has often treated the company as part of a wider enterprise shift toward making data more discoverable, reliable, and governable across large organizations. Publications have described the company in varying terms, including data governance, data management, and data intelligence, while consistently placing it in the market for enterprise software used to control and operationalize data. Later coverage connected that position to AI governance and data-access controls as those topics became more prominent in enterprise software.</dc:description>
+    <dc:source rdf:resource="https://techcrunch.com/2020/04/02/collibra-nabs-another-112-5m-at-a-2-3b-valuation-for-its-big-data-management-platform/"/>
+    <dc:source rdf:resource="https://techcrunch.com/2021/11/09/data-intelligence-company-collibra-brings-in-another-250m-to-more-than-double-its-valuation/"/>
+    <dc:source rdf:resource="https://www.techtarget.com/searchdatamanagement/news/366580432/Collibra-launches-AI-Governance-unveils-GenAI-capabilities"/>
+  </rdf:Description>
+</rdf:RDF>

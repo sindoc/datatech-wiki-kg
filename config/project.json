@@ -12,5 +12,34 @@
     "canonical_markdown": "content/markdown/Collibra.md",
     "org_export": "content/org/Collibra.org",
     "logseq_export": "content/logseq/pages/Collibra.md"
+  },
+  "topic_model": {
+    "collibra": "data/topics/collibra-topic.json"
+  },
+  "topic_timeline": {
+    "collibra": "data/topics/collibra-timeline.json"
+  },
+  "media_model": {
+    "collibra": "data/media/collibra-media.json"
+  },
+  "publication": {
+    "wikipedia_draft": "build/wikipedia/Collibra.wikitext",
+    "wikipedia_modular_xml": "xml/wikipedia/collibra/article.xml",
+    "docbook_xml": "build/docbook/Collibra.xml",
+    "rdf_xml": "build/rdf/Collibra.rdf"
+  },
+  "references": {
+    "zotero_collection": "My Library/Collibra",
+    "tracked_exports_dir": "references/zotero",
+    "csl_json_export": "references/zotero/Collibra.json",
+    "bibtex_export": "references/zotero/Collibra.bib",
+    "rdf_export": "references/zotero/Collibra.rdf",
+    "wikipedia_citations_export": "references/zotero/Collibra.wikipedia.txt"
+  },
+  "governance": {
+    "adr_dir": "adrs",
+    "rfc_dir": "rfcs",
+    "quality_rules": "config/wikipedia_quality_rules.json",
+    "rfc_template": "rfcs/RFC-0000-template.md"
   }
 }

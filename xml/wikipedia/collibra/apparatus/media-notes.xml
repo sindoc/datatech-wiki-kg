@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appendix xmlns="http://docbook.org/ns/docbook" version="5.2" xml:id="media-notes">
+  <title>Media Notes</title>
+  <para>This appendix tracks local media references and their publication status.</para>
+  <itemizedlist>
+    <listitem><para>Collibra logo: Track source URL, upload target, and non-free rationale before article use. (pending-upload-review)</para></listitem>
+    <listitem><para>Collibra product screenshot: User-created screenshot; keep local until a specific non-free rationale and intended use are documented. (reference-only-pending-rationale)</para></listitem>
+  </itemizedlist>
+</appendix>

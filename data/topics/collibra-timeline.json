@@ -1,0 +1,102 @@
+{
+  "topic": "collibra",
+  "events": [
+    {
+      "date": "2008",
+      "label": "Company founded",
+      "summary": "Collibra is founded in Belgium as a data-governance software company and VUB spin-off.",
+      "confidence": "high",
+      "article_relevance": "high",
+      "sources": [
+        "https://techtransfer.research.vub.be/collibra",
+        "https://www.vub.be/en/news/from-student-spin-how-does-that-happen",
+        "https://techcrunch.com/2017/01/18/collibra/"
+      ]
+    },
+    {
+      "date": "2008-2010",
+      "label": "Early founding team evolution",
+      "summary": "Damien Trog contributed major initial engineering work during the early years; Benny Verhaeghe joined after the first years and established an early enterprise revenue base. This nuance is tracked as topic lineage metadata rather than asserted in the outward article.",
+      "confidence": "medium",
+      "article_relevance": "low",
+      "sources": []
+    },
+    {
+      "date": "2013",
+      "label": "BCBS 239 published",
+      "summary": "The Basel Committee publishes BCBS 239, a landmark framework for effective risk data aggregation and reporting that helps explain demand for trustworthy enterprise data controls.",
+      "confidence": "high",
+      "article_relevance": "context",
+      "sources": [
+        "https://www.bis.org/publ/bcbs239.htm",
+        "https://www.bis.org/publ/bcbs239.pdf"
+      ]
+    },
+    {
+      "date": "2016",
+      "label": "GDPR adopted",
+      "summary": "The European Union adopts the General Data Protection Regulation, strengthening the compliance context for enterprise data governance.",
+      "confidence": "high",
+      "article_relevance": "context",
+      "sources": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32016R0679"
+      ]
+    },
+    {
+      "date": "2019",
+      "label": "Unicorn milestone",
+      "summary": "Collibra passes a $1 billion valuation amid broader coverage of regulatory pressure for data governance.",
+      "confidence": "high",
+      "article_relevance": "high",
+      "sources": [
+        "https://techcrunch.com/2019/01/29/regulatory-demands-for-better-data-governance-push-collibras-valuation-above-1-billion/",
+        "https://venturebeat.com/entrepreneur/belgian-data-governance-startup-collibra-raises-100-million-and-joins-unicorn-club/"
+      ]
+    },
+    {
+      "date": "2021",
+      "label": "OwlDQ acquisition",
+      "summary": "Collibra acquires OwlDQ to expand into data quality.",
+      "confidence": "high",
+      "article_relevance": "high",
+      "sources": [
+        "https://www.techtarget.com/searchdatamanagement/news/252495815/Collibra-acquires-predictive-data-quality-vendor-OwlDQ",
+        "https://siliconangle.com/2021/02/03/collibra-acquires-owldq-make-enterprises-data-reliable-ai/"
+      ]
+    },
+    {
+      "date": "2023",
+      "label": "Husprey acquisition",
+      "summary": "Collibra acquires Husprey to add notebook-oriented analytics tooling.",
+      "confidence": "high",
+      "article_relevance": "high",
+      "sources": [
+        "https://www.techtarget.com/searchbusinessanalytics/news/366551315/Collibra-acquires-data-notebook-vendor-for-analytics-tools"
+      ]
+    },
+    {
+      "date": "2024",
+      "label": "AI governance expansion",
+      "summary": "Collibra launches AI-governance capabilities as regulatory and operational attention shifts toward trustworthy AI.",
+      "confidence": "high",
+      "article_relevance": "high",
+      "sources": [
+        "https://www.techtarget.com/searchdatamanagement/news/366580432/Collibra-launches-AI-Governance-unveils-GenAI-capabilities",
+        "https://venturebeat.com/ai/collibra-tackles-the-shadow-ai-problem-with-new-governance-application/",
+        "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng"
+      ]
+    },
+    {
+      "date": "2025",
+      "label": "Raito and Deasy Labs acquisitions",
+      "summary": "Collibra adds data-access governance through Raito and unstructured-data governance through Deasy Labs.",
+      "confidence": "high",
+      "article_relevance": "high",
+      "sources": [
+        "https://techcrunch.com/2025/06/05/collibra-acquires-data-access-startup-raito/",
+        "https://www.techtarget.com/searchdatamanagement/news/366627998/Collibras-acquisition-of-Deasy-targets-unstructured-data",
+        "https://www.collibra.com/company/newsroom/press-releases/collibra-acquires-deasy-labs"
+      ]
+    }
+  ]
+}

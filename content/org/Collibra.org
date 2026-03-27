@@ -7,14 +7,381 @@
 
 ** Purpose
 
-This repository maintains neutral, source-driven support material for Wikipedia-facing work about Collibra as a company and as a platform.
+This page is the canonical, neutral support brief for Wikipedia-facing work on Collibra as a company and on the Collibra Platform as a software product surface.
+
+It is not a draft encyclopedia article and it is not a marketing page. Its role is to help contributors identify article scope, adjacent topics, due-weight risks, and classes of sources that can support a durable public article.
 
 ** Editorial constraints
 
 - Wikipedia text must be based on reliable published sources.
-- Personal memory can guide research but does not count as a citation.
-- Competing employers, former colleagues, and current employees can all contribute if neutrality is preserved.
+- Product messaging, investor language, conference decks, and employee recollection can suggest research directions but do not by themselves justify article claims.
+- The page should distinguish clearly between the company, the product platform, the market category, and broader governance practices.
+- The article should avoid trend-chasing language unless independent sources show sustained significance.
 - Private communications stay out of the public article and out of the public repository.
+
+** Article framing
+
+Collibra is best framed as a software company associated with data intelligence and data governance software, especially in relation to enterprise data cataloging, data stewardship, governance workflows, and adjacent control and trust functions around data use.
+
+For Wikipedia purposes, the article should separate:
+
+- Collibra as a corporate entity with a history, funding path, acquisitions, leadership, and market positioning.
+- Collibra Platform as a product family associated with governance, catalog, lineage, policy, quality, and related enterprise data-management functions.
+- Collibra's place in broader industry narratives around data governance, analytics operations, artificial intelligence readiness, and enterprise control frameworks.
+
+** Scope boundaries
+
+The article should cover topics that are central to independent coverage of Collibra and avoid turning into a generic survey of enterprise data management.
+
+In scope:
+
+- company history and corporate development
+- platform capabilities described in independent sources
+- acquisitions, partnerships, funding, and leadership changes that received significant coverage
+- industry relevance in data governance, data intelligence, and enterprise data management
+- verifiable discussion of how the platform is positioned relative to analytics, compliance, and AI-readiness programs
+
+Out of scope unless reliably sourced as material to Collibra itself:
+
+- generic explanations of data governance terminology
+- implementation advice
+- undocumented feature lists
+- promotional claims about business outcomes
+- speculative claims about artificial intelligence or agentic AI
+
+** Context in Data Governance and Data Intelligence
+
+Collibra is most naturally situated within the enterprise market for data governance and data intelligence. Independent coverage often places that market next to or overlapping with data catalog, metadata management, stewardship, governance operating models, policy management, data quality, and lineage.
+
+For article purposes, "data intelligence" should be treated carefully. It may be a market label, a product-positioning label, or an analyst shorthand, depending on the source. The article should attribute the term where needed rather than presenting one vendor's vocabulary as settled industry fact.
+
+** Relationship to Artificial Intelligence and Agentic AI
+
+Artificial intelligence is relevant to the Collibra topic mainly where reliable sources connect governance and metadata practices to AI adoption, model governance, trustworthy data supply, or enterprise control requirements.
+
+Agentic AI should be handled with even more caution. It belongs in the article only if independent sources show that Collibra has notable relevance to agent-based enterprise automation, AI governance, or AI-control workflows beyond routine marketing language. If that threshold is not met, agentic AI is better treated as surrounding industry context than as a core section of the article.
+
+** Relationship to Technology Governance
+
+Technology governance is a useful umbrella context when sources connect Collibra to enterprise operating controls, policy execution, compliance, risk management, and organizational accountability for data use. That framing can help position the company within a wider control landscape without overstating its role.
+
+The article should avoid implying that Collibra defines technology governance as a field. Instead, it should state only what independent sources show about the company's relevance within that field.
+
+** Adjacent subject areas to evaluate for due weight
+
+The following subjects are relevant as context checks when evaluating whether a claim belongs in the article:
+
+- data catalog
+- data lineage
+- data quality
+- analytics and business intelligence
+- chief data officer responsibilities
+- chief digital officer responsibilities
+- chief information officer responsibilities
+- data ownership
+- data stewardship
+- data protection
+- master data management
+- reference data management
+- code tables, crosswalks, hierarchies, and controlled lists
+
+These topics should usually appear in the article only where secondary or high-quality independent trade coverage explicitly ties them to Collibra's significance.
+
+** Topics that need disciplined treatment
+
+*** Data Catalog
+
+Collibra is frequently associated with data catalog and metadata discovery. The article should treat catalog as one major product and market context, not as the whole story unless sources make that the dominant lens.
+
+*** Data Lineage
+
+Lineage is relevant where sources discuss traceability, impact analysis, governance visibility, or metadata graph capabilities. The article should not imply technical depth beyond what sources support.
+
+*** Data Quality
+
+Data quality should be included when independent coverage ties quality capabilities or acquisitions to the platform's evolution or market position.
+
+*** Analytics
+
+Analytics matters as a downstream consumer of governed data. The article should avoid broad claims that Collibra is an analytics platform unless sources specifically characterize it that way.
+
+*** Chief Data Officer, Chief Digital Officer, Chief Information Officer
+
+Executive-role context is useful when sources describe Collibra as supporting enterprise governance programs sponsored by CDO, CDO-digital, or CIO functions. The article should avoid role inflation and should not imply ownership of all governance work by any single title.
+
+*** Data Hegemony
+
+This is a conceptual and potentially political term rather than a routine product category. It should not appear in article prose unless strong independent sources explicitly connect it to Collibra or to the governance debates surrounding enterprise control of data.
+
+*** Data Ownership, Data Protection, and Data Stewardship
+
+These are central governance concepts and often appear in discussions of operating models, accountability, policy, and compliance. The article should connect them to Collibra only where sources treat those links as notable.
+
+*** Master Data Management and Reference Data Management
+
+MDM and RDM are adjacent but distinct domains. The article should be careful not to collapse Collibra into those categories unless reliable sources present the company as materially active there. If sources discuss reference data, code tables, crosswalks, hierarchical lists, or controlled dropdown structures, the article should frame them as governance-related data-management contexts rather than as assumed core product definitions.
+
+** Company versus platform
+
+A solid Wikipedia page will keep the company and platform narratives separate but related.
+
+Company-oriented material may include:
+
+- founding and early development
+- funding rounds
+- acquisitions
+- executive leadership
+- geographic footprint
+- analyst and media characterization of market role
+
+Platform-oriented material may include:
+
+- governance and catalog functions
+- workflow and stewardship features
+- lineage, quality, and policy-related modules where independently covered
+- integration and ecosystem positioning where notable in sources
+
+** Candidate article structure
+
+The eventual article can likely support a structure along these lines:
+
+*** Lead
+
+Concise summary of Collibra as a software company in the data governance and data intelligence space, with any especially well-sourced distinguishing context.
+
+*** History
+
+Founding, funding, major growth milestones, acquisitions, and leadership developments.
+
+*** Products and platform
+
+Neutral summary of the platform and its principal areas of coverage, using attributed and independently sourced terminology where appropriate.
+
+*** Market position and reception
+
+Analyst coverage, notable independent commentary, market framing, and criticism or limitations if reliably sourced.
+
+*** Role in enterprise data governance
+
+Well-sourced discussion of how coverage places Collibra in relation to catalog, stewardship, lineage, quality, compliance, analytics enablement, and AI-readiness.
+
+** Source strategy
+
+Priority source classes:
+
+- major business press
+- established technology trade publications
+- analyst reports that are acceptable for attributed market framing
+- acquisition and funding coverage from reliable outlets
+- independent interviews only where editorially controlled and not purely promotional
+
+Use with caution:
+
+- vendor blogs
+- product pages
+- conference talks
+- webinar transcripts
+- customer case studies
+
+Avoid for claims of significance:
+
+- personal recollection
+- unpublished internal material
+- unreviewed marketing copy
+
+** Source candidates as of 2026-03-27
+
+The following independent sources are good starting points for article development. They are grouped by the kinds of claims they can support, not by article order.
+
+*** Company history, growth, and funding
+
+- TechCrunch, 2017-01-18, "Collibra nabs $50M led by ICONIQ to fix companies' data governance": https://techcrunch.com/2017/01/18/collibra/
+- TechCrunch, 2018-01-08, "Collibra snags $58M Series D led by Iconiq and Battery Ventures to simplify data governance": https://techcrunch.com/2018/01/08/collibra-snags-58-m-series-d-led-by-iconiq-and-battery-ventures-to-simplify-data-governance/
+- TechCrunch, 2019-01-29, "Regulatory demands for better data governance push Collibra's valuation above $1 billion": https://techcrunch.com/2019/01/29/regulatory-demands-for-better-data-governance-push-collibras-valuation-above-1-billion/
+- TechCrunch, 2020-04-02, "Collibra nabs another $112.5M at a $2.3B valuation for its big data management platform": https://techcrunch.com/2020/04/02/collibra-nabs-another-112-5m-at-a-2-3b-valuation-for-its-big-data-management-platform/
+- TechCrunch, 2021-11-09, "Data intelligence company Collibra brings in another $250M to more than double its valuation": https://techcrunch.com/2021/11/09/data-intelligence-company-collibra-brings-in-another-250m-to-more-than-double-its-valuation/
+- Forbes company profile, last updated 2025-09-03, "Collibra | Company Overview & News": https://www.forbes.com/companies/collibra/
+
+Use these mainly for founding-era context, growth, funding chronology, geography, valuation milestones, and broad market framing. Terminology varies across the pieces, so "data governance," "data management," and "data intelligence" should be attributed carefully.
+
+*** Platform expansion: lineage, quality, analytics, and AI
+
+- TechTarget, 2021-02-03, "Collibra acquires predictive data quality vendor OwlDQ": https://www.techtarget.com/searchdatamanagement/news/252495815/Collibra-acquires-predictive-data-quality-vendor-OwlDQ
+- SiliconANGLE, 2021-02-03, "Collibra acquires OwlDQ to make enterprises' data more reliable for AI": https://siliconangle.com/2021/02/03/collibra-acquires-owldq-make-enterprises-data-reliable-ai/
+- TechTarget, 2023-09-07, "Collibra acquires data notebook vendor for analytics tools": https://www.techtarget.com/searchbusinessanalytics/news/366551315/Collibra-acquires-data-notebook-vendor-for-analytics-tools
+- TechTarget, 2024-02-29, "Collibra adds AI governance to data management platform": https://www.techtarget.com/searchDataManagement/news/366571614/Collibra-adds-AI-governance-to-data-management-platform
+- TechTarget, 2024-04-10, "Collibra launches AI Governance, unveils GenAI capabilities": https://www.techtarget.com/searchdatamanagement/news/366580432/Collibra-launches-AI-Governance-unveils-GenAI-capabilities
+- VentureBeat, 2024-04-10, "Collibra tackles the shadow AI problem with new governance application": https://venturebeat.com/ai/collibra-tackles-the-shadow-ai-problem-with-new-governance-application/
+- TechTarget, 2025-07-24, "Collibra's acquisition of Deasy targets unstructured data": https://www.techtarget.com/searchdatamanagement/news/366627998/Collibras-acquisition-of-Deasy-targets-unstructured-data
+- TechCrunch, 2025-06-05, "Collibra acquires data access startup Raito": https://techcrunch.com/2025/06/05/collibra-acquires-data-access-startup-raito/
+
+Use these for sourced discussion of platform broadening into data quality, lineage-related visibility, analytics-adjacent notebooking, AI governance, data access governance, and unstructured-data governance. These sources are stronger for product evolution than for long-form corporate history.
+
+*** Primary sources for basic company facts
+
+- Collibra, "Discover unified governance for data and AI": https://www.collibra.com/company/who-we-are
+- Collibra, "Meet the Collibra leadership team": https://www.collibra.com/company/leadership
+
+Use these only for basic factual fields such as headquarters, website, and current leadership titles. They should not be used to establish notability or market evaluation.
+
+*** Belgian and university-origin coverage
+
+- VUB TechTransfer, "COLLIBRA": https://techtransfer.research.vub.be/collibra
+- VUB, "From student to spin-off: how does that happen?": https://www.vub.be/en/news/from-student-spin-how-does-that-happen
+- Data News, "Belgische Collibra haalt 50 miljoen dollar op bij Zuckerberg en co": https://datanews.knack.be/nieuws/bedrijven/start-ups/belgische-collibra-haalt-50-miljoen-dollar-op-bij-zuckerberg-en-co/
+- HLN, "Dataspecialist Collibra is eerste Belgische 'unicorn'": https://www.hln.be/de-krant/dataspecialist-collibra-is-eerste-belgische-unicorn~a14ddb3c/
+- Trends, "De mijlpalen van tien jaar Collibra: 'Durfkapitaal is geen gratis geld'": https://trends.knack.be/ondernemen/de-mijlpalen-van-tien-jaar-collibra-durfkapitaal-is-geen-gratis-geld/
+
+Use these for Collibra's origin as a Vrije Universiteit Brussel spin-off, Belgian context, and carefully attributed statements about the founding team and board chair. Founder lists vary across sources and should be presented cautiously.
+
+*** Regulation and trust context
+
+- Basel Committee on Banking Supervision, "Principles for effective risk data aggregation and risk reporting": https://www.bis.org/publ/bcbs239.htm
+- EUR-Lex, "Regulation (EU) 2016/679 (General Data Protection Regulation)": https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32016R0679
+- EUR-Lex, "Regulation (EU) 2024/1689 (Artificial Intelligence Act)": https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng
+
+Use these as official context sources for why enterprise data governance, lineage, provenance, and control became strategically important. They are useful for local topic framing and timeline context, but article prose should still prefer independent sources that connect those regulatory pressures to Collibra specifically.
+
+*** Editorial guidance for source use
+
+- The funding articles are useful for chronology and scale, but they should not be treated as proof of encyclopedic significance on their own.
+- The trade-press articles are useful for describing how Collibra was characterized at specific points in time by independent observers.
+- AI and agentic-AI context is recent. It should be dated explicitly and should not be projected backward into earlier company history.
+- MDM, RDM, reference-data structures, code tables, crosswalks, and dropdown hierarchies are still under-sourced in the current source set. They should stay out of article prose unless stronger independent coverage is found.
+- Data hegemony remains a conceptual term without clear source support for inclusion in the article at this stage.
+
+** Research questions
+
+- Which independent sources best describe Collibra's notability as a company rather than as a product brand?
+- Which sources treat Collibra primarily as data governance software, and which treat it as data intelligence, metadata, catalog, or broader control software?
+- Which acquisitions or product expansions materially changed how the company is covered?
+- Which sources connect Collibra to AI governance, AI readiness, or agentic enterprise control in a way that merits mention?
+- Which sources discuss Collibra in relation to MDM, RDM, reference data, code tables, or crosswalk governance, and are those mentions central or peripheral?
+
+** Candidate sourced draft
+
+The following text is a working encyclopedia-style draft based on the current source set. It is intended as a neutral starting point for a future Wikipedia contribution, not as final article text.
+
+*** Company card
+
+- type: Private [[ref:1]]
+- industry: Software [[ref:2]]
+- founded: 2008 in Belgium [[ref:1]][[ref:2]]
+- founders: Felix Van de Maele<br />Stijn Christiaens<br />Pieter De Leenheer<br />Damien Trog / Benny Verhaeghe [[ref:2]]
+- headquarters: New York City, United States<br />Brussels, Belgium [[ref:3]]
+- key_people: Felix Van de Maele<br />Tony Mary<br />Stijn Christiaens<br />Tom Dejonghe [[ref:3]][[ref:4]]
+- website: [https://www.collibra.com collibra.com]
+
+Sources:
+- CNBC, 2021-11-09: https://www.cnbc.com/2021/11/09/collibra-doubles-valuation-as-investors-chase-next-cloud-winner.html
+- VUB TechTransfer, "COLLIBRA": https://techtransfer.research.vub.be/collibra
+- Collibra, "Discover unified governance for data and AI": https://www.collibra.com/company/who-we-are
+- Collibra, "Meet the Collibra leadership team": https://www.collibra.com/company/leadership
+
+*** Lead
+
+Collibra is a software company founded in Belgium in 2008 that develops software for data governance, data cataloging, data quality, and related enterprise data-management functions.[[ref:1]][[ref:2]] The company originated as a spin-off from the Vrije Universiteit Brussel's STARLab research group.[[ref:5]][[ref:6]] Coverage of the company has described it variously as a data governance, data management, or data intelligence vendor, reflecting product expansion and changing market vocabulary.[[ref:1]][[ref:3]] By 2021, Collibra had reached a valuation of $5.25 billion and coverage increasingly placed it in the broader enterprise market for trusted data access, compliance, analytics enablement, and AI governance.[[ref:3]][[ref:4]]
+
+Sources:
+- TechCrunch, 2017-01-18: https://techcrunch.com/2017/01/18/collibra/
+- TechCrunch, 2019-01-29: https://techcrunch.com/2019/01/29/regulatory-demands-for-better-data-governance-push-collibras-valuation-above-1-billion/
+- TechCrunch, 2021-11-09: https://techcrunch.com/2021/11/09/data-intelligence-company-collibra-brings-in-another-250m-to-more-than-double-its-valuation/
+- CNBC, 2021-11-09: https://www.cnbc.com/2021/11/09/collibra-doubles-valuation-as-investors-chase-next-cloud-winner.html
+- VUB TechTransfer, "COLLIBRA": https://techtransfer.research.vub.be/collibra
+- VUB, "From student to spin-off: how does that happen?": https://www.vub.be/en/news/from-student-spin-how-does-that-happen
+
+*** History
+
+Collibra was founded in 2008 as a Belgian software company focused on helping organizations govern and use enterprise data more effectively.[[ref:1]][[ref:2]] VUB sources describe it as a spin-off from the university's STARLab, and identify Felix Van de Maele, Stijn Christiaens, Pieter De Leenheer, and Damien Trog as founders.[[ref:6]][[ref:7]] Early coverage framed the company around data-governance problems inside large organizations, particularly the difficulty of finding, understanding, and controlling data spread across multiple systems.[[ref:1]][[ref:2]]
+
+As regulatory scrutiny and enterprise data volumes grew, Collibra raised a succession of funding rounds that tracked its rise from a venture-backed governance vendor to a company valued above $1 billion in January 2019, $2.3 billion in April 2020, and $5.25 billion in November 2021.[[ref:2]][[ref:3]][[ref:4]][[ref:5]] Coverage of the 2020 and 2021 rounds connected that growth to governance, cataloging, data protection, and the increasing operational importance of enterprise data.[[ref:3]][[ref:4]][[ref:5]]
+
+Sources:
+- TechCrunch, 2018-01-08: https://techcrunch.com/2018/01/08/collibra-snags-58-m-series-d-led-by-iconiq-and-battery-ventures-to-simplify-data-governance/
+- TechCrunch, 2019-01-29: https://techcrunch.com/2019/01/29/regulatory-demands-for-better-data-governance-push-collibras-valuation-above-1-billion/
+- TechCrunch, 2020-04-02: https://techcrunch.com/2020/04/02/collibra-nabs-another-112-5m-at-a-2-3b-valuation-for-its-big-data-management-platform/
+- TechCrunch, 2021-11-09: https://techcrunch.com/2021/11/09/data-intelligence-company-collibra-brings-in-another-250m-to-more-than-double-its-valuation/
+- CNBC, 2021-11-09: https://www.cnbc.com/2021/11/09/collibra-doubles-valuation-as-investors-chase-next-cloud-winner.html
+- VUB TechTransfer, "COLLIBRA": https://techtransfer.research.vub.be/collibra
+- VUB, "From student to spin-off: how does that happen?": https://www.vub.be/en/news/from-student-spin-how-does-that-happen
+
+*** Products
+
+Independent coverage has generally described Collibra's products as a set of enterprise tools for finding, understanding, governing, and controlling data across distributed environments.[[ref:2]][[ref:6]] While the company's early identity was closely tied to governance and catalog functions, later coverage emphasized a broader product set that combined governance with data quality, analytics-adjacent tooling, policy controls, and AI-governance capabilities.[[ref:1]][[ref:2]][[ref:3]][[ref:6]]
+
+At a high level, Collibra's product coverage in independent reporting spans data catalog and governance, data quality, analytics-oriented notebook tooling, data lineage and metadata management through acquired capabilities, and AI governance.[[ref:1]][[ref:2]][[ref:3]][[ref:6]]
+
+| Product area | High-level role |
+| Data catalog and governance | Organizing, governing, and controlling enterprise data assets. [[ref:2]][[ref:6]] |
+| Data quality | Adding predictive or automated quality capabilities to governed data workflows. [[ref:1]][[ref:2]] |
+| Data lineage and metadata | Extending traceability and metadata-management capabilities through acquisition. [[ref:2]] |
+| Analytics tooling | Adding notebook-oriented functionality for analytics workflows. [[ref:2]] |
+| AI governance | Applying governance controls to AI models and applications in relation to enterprise data. [[ref:4]][[ref:6]] |
+
+Sources:
+- TechTarget, 2021-02-03: https://www.techtarget.com/searchdatamanagement/news/252495815/Collibra-acquires-predictive-data-quality-vendor-OwlDQ
+- SiliconANGLE, 2021-02-03: https://siliconangle.com/2021/02/03/collibra-acquires-owldq-make-enterprises-data-reliable-ai/
+- TechTarget, 2023-09-07: https://www.techtarget.com/searchbusinessanalytics/news/366551315/Collibra-acquires-data-notebook-vendor-for-analytics-tools
+- TechTarget, 2024-02-29: https://www.techtarget.com/searchDataManagement/news/366571614/Collibra-adds-AI-governance-to-data-management-platform
+- TechTarget, 2024-04-10: https://www.techtarget.com/searchdatamanagement/news/366580432/Collibra-launches-AI-Governance-unveils-GenAI-capabilities
+- VentureBeat, 2024-04-10: https://venturebeat.com/ai/collibra-tackles-the-shadow-ai-problem-with-new-governance-application/
+
+*** Acquisitions
+
+Collibra has used acquisitions to broaden its platform beyond catalog and governance workflows.[[ref:1]][[ref:2]][[ref:3]][[ref:4]] Reported acquisitions have centered on data lineage, data quality, analytics workflows, data access, and unstructured data governance.[[ref:1]][[ref:2]][[ref:3]][[ref:4]]
+
+| Year | Company | Area | Notes |
+| 2019 | SQLdep | Data lineage and metadata management | Described by TechTarget in later coverage as an earlier acquisition that added lineage and metadata capabilities. [[ref:2]] |
+| 2021 | OwlDQ | Data quality | Reported as a predictive data-quality acquisition. [[ref:1]] |
+| 2023 | Husprey | SQL notebooks and analytics workflows | Reported as a data notebook acquisition for analytics tools. [[ref:2]] |
+| 2025 | Raito | Data access governance | Reported as a data access startup acquisition. [[ref:3]] |
+| 2025 | Deasy Labs | Unstructured data governance | Reported as an acquisition aimed at unstructured data. [[ref:4]] |
+
+Sources:
+- TechTarget, 2021-02-03: https://www.techtarget.com/searchdatamanagement/news/252495815/Collibra-acquires-predictive-data-quality-vendor-OwlDQ
+- TechTarget, 2023-09-07: https://www.techtarget.com/searchbusinessanalytics/news/366551315/Collibra-acquires-data-notebook-vendor-for-analytics-tools
+- TechCrunch, 2025-06-05: https://techcrunch.com/2025/06/05/collibra-acquires-data-access-startup-raito/
+- TechTarget, 2025-07-24: https://www.techtarget.com/searchdatamanagement/news/366627998/Collibras-acquisition-of-Deasy-targets-unstructured-data
+
+*** Market position and reception
+
+Coverage of Collibra has often treated the company as part of a wider enterprise shift toward making data more discoverable, reliable, and governable across large organizations.[[ref:1]][[ref:2]] Publications have described the company in varying terms, including data governance, data management, and data intelligence, while consistently placing it in the market for enterprise software used to control and operationalize data.[[ref:1]][[ref:2]] Later coverage connected that position to AI governance and data-access controls as those topics became more prominent in enterprise software.[[ref:3]]
+
+Sources:
+- TechCrunch, 2020-04-02: https://techcrunch.com/2020/04/02/collibra-nabs-another-112-5m-at-a-2-3b-valuation-for-its-big-data-management-platform/
+- TechCrunch, 2021-11-09: https://techcrunch.com/2021/11/09/data-intelligence-company-collibra-brings-in-another-250m-to-more-than-double-its-valuation/
+- TechTarget, 2024-04-10: https://www.techtarget.com/searchdatamanagement/news/366580432/Collibra-launches-AI-Governance-unveils-GenAI-capabilities
+
+** Release standard for a solid page
+
+A solid Wikipedia-facing article on Collibra should:
+
+- stand on multiple independent, reliable sources
+- keep corporate history distinct from platform description
+- position the topic within data governance without turning the article into a glossary
+- mention AI, agentic AI, analytics, executive roles, or broader technology governance only when those topics are materially covered in independent sources
+- avoid vendor terminology unless attributed or broadly established
+- preserve due weight across catalog, lineage, quality, stewardship, ownership, protection, MDM, and RDM themes
+
+** Topic-specific terminology
+
+The terms `Collibrian` and `Data Citizen` are part of Collibra's internal and public-facing vocabulary and are worth tracking in the topic model for editorial context. At present they are better kept in local topic metadata and editorial notes than in the first-version article prose, because the available support is primarily first-party.
+
+The same applies to the `Data Citizens Bill of Rights`, which is a useful primary-source artifact for understanding Collibra's vocabulary and positioning, but not yet strong enough to carry weight in the encyclopedia draft on its own.
+
+** Founder-status lineage note
+
+The repository keeps a distinction between outward article claims and deeper topic-lineage metadata. In that local lineage layer, Benny Verhaeghe is tracked alongside Damien Trog as part of the founder-status discussion, with the nuance that Damien contributed significant early engineering work while Benny built an early enterprise revenue base and is asserted to have legal founder status. Because that nuance is not yet backed by strong independent sourcing in the current source set, it belongs in topic metadata and timeline context rather than in the outward article draft.
+
+** Regulatory drivers and confidence
+
+One of the strongest local framing points for this topic is that Collibra sits in the part of enterprise software concerned with trust in claimed facts. In practice that means controls around provenance, lineage, stewardship, policy, and explainability for numbers that are used in financial reporting, compliance, risk, analytics, and AI contexts.
+
+This repository therefore tracks regulatory and trust drivers such as BCBS 239, GDPR, and the EU AI Act in the local timeline and XML apparatus. Those sources help explain why organizations care about authenticity, supply chain, and confidence in produced numbers, even when the outward article remains concise and avoids turning into a general essay on regulation.
+
+** Media references
+
+The local publication workflow may keep topic-specific media references, including a Collibra product screenshot and the Collibra logo, as editorial reference material. They should not be forced into the generated Wikipedia draft unless their licensing and publication path are explicit and defensible for encyclopedia use.
 
 ** Working model
 
@@ -22,10 +389,3 @@ This repository maintains neutral, source-driven support material for Wikipedia-
 - Org and Logseq representations are generated from the canonical Markdown source.
 - Knowledge-graph artifacts, Atom feeds, and RSS feeds are rebuilt whenever the content changes.
 - Pending maintainer notifications are prepared automatically and sent only through explicit opt-in workflows.
-
-** Initial scope
-
-- Collibra as a company
-- Collibra Platform as a product and operating model surface
-- public history and ecosystem context
-- notable industry relevance in data governance and data intelligence

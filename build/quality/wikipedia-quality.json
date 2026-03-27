@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "article_class": "software company",
+  "policy_pages": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Verifiability",
+    "https://en.wikipedia.org/wiki/Wikipedia:Neutral_point_of_view",
+    "https://en.wikipedia.org/wiki/Wikipedia:No_original_research",
+    "https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Lead_section",
+    "https://en.wikipedia.org/wiki/Wikipedia:Notability_(organizations_and_companies)"
+  ],
+  "exemplar_articles": [
+    "https://en.wikipedia.org/wiki/ServiceNow",
+    "https://en.wikipedia.org/wiki/Sun_Microsystems"
+  ],
+  "word_count": 598,
+  "distinct_publishers": [
+    "CNBC",
+    "Collibra",
+    "SiliconANGLE",
+    "TechCrunch",
+    "TechTarget",
+    "VUB TechTransfer",
+    "VentureBeat",
+    "Vrije Universiteit Brussel"
+  ],
+  "findings": []
+}

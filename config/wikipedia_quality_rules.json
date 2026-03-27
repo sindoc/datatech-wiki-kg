@@ -1,0 +1,67 @@
+{
+  "article_class": "software company",
+  "policy_pages": [
+    "https://en.wikipedia.org/wiki/Wikipedia:Verifiability",
+    "https://en.wikipedia.org/wiki/Wikipedia:Neutral_point_of_view",
+    "https://en.wikipedia.org/wiki/Wikipedia:No_original_research",
+    "https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Lead_section",
+    "https://en.wikipedia.org/wiki/Wikipedia:Notability_(organizations_and_companies)"
+  ],
+  "exemplar_articles": [
+    "https://en.wikipedia.org/wiki/ServiceNow",
+    "https://en.wikipedia.org/wiki/Sun_Microsystems"
+  ],
+  "required_sections": [
+    "Lead",
+    "History",
+    "Products",
+    "Acquisitions",
+    "Market position and reception",
+    "References"
+  ],
+  "recommended_section_order": [
+    "Lead",
+    "History",
+    "Products",
+    "Acquisitions",
+    "Market position and reception",
+    "References"
+  ],
+  "self_published_websites": [
+    "LinkedIn",
+    "Collibra"
+  ],
+  "weak_context_websites": [
+    "Forbes"
+  ],
+  "promotional_words": [
+    "leading",
+    "innovative",
+    "future-proof",
+    "world-class",
+    "best-in-class",
+    "cutting-edge",
+    "honored",
+    "commitment",
+    "marathon, not a sprint"
+  ],
+  "editorial_phrases": [
+    "matters editorially",
+    "durable article should",
+    "supports describing",
+    "if used at all",
+    "should therefore remain",
+    "may be useful as contextual research"
+  ],
+  "relative_time_words": [
+    "currently",
+    "recently",
+    "today",
+    "now"
+  ],
+  "thresholds": {
+    "min_distinct_publishers": 3,
+    "max_words": 1200,
+    "min_words": 180
+  }
+}

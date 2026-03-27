@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns="http://docbook.org/ns/docbook" version="5.2" xml:id="collibra-wikipedia-article">
+  <info>
+    <title>Collibra</title>
+    <subtitle>Generated encyclopedia-style draft</subtitle>
+  </info>
+<sidebar xmlns="http://docbook.org/ns/docbook" version="5.2" xml:id="company-card">
+  <title>Company Card</title>
+  <variablelist>
+    <varlistentry>
+      <term>Type</term>
+      <listitem>
+        <para>Private</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Industry</term>
+      <listitem>
+        <para>Software</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Founded</term>
+      <listitem>
+        <para>2008 in Belgium</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Founders</term>
+      <listitem>
+        <para>Felix Van de Maele&lt;br /&gt;Stijn Christiaens&lt;br /&gt;Pieter De Leenheer&lt;br /&gt;Damien Trog / Benny Verhaeghe</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Headquarters</term>
+      <listitem>
+        <para>New York City, United States&lt;br /&gt;Brussels, Belgium</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Key People</term>
+      <listitem>
+        <para>Felix Van de Maele&lt;br /&gt;Tony Mary&lt;br /&gt;Stijn Christiaens&lt;br /&gt;Tom Dejonghe</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Website</term>
+      <listitem>
+        <para>[https://www.collibra.com collibra.com]</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</sidebar>
+<section xmlns="http://docbook.org/ns/docbook" version="5.2">
+  <title>Lead</title>
+  <para>Collibra is a software company founded in Belgium in 2008 that develops software for data governance, data cataloging, data quality, and related enterprise data-management functions. The company originated as a spin-off from the Vrije Universiteit Brussel's STARLab research group. Coverage of the company has described it variously as a data governance, data management, or data intelligence vendor, reflecting product expansion and changing market vocabulary. By 2021, Collibra had reached a valuation of $5.25 billion and coverage increasingly placed it in the broader enterprise market for trusted data access, compliance, analytics enablement, and AI governance.</para>
+
+</section>
+<section xmlns="http://docbook.org/ns/docbook" version="5.2">
+  <title>History</title>
+  <para>Collibra was founded in 2008 as a Belgian software company focused on helping organizations govern and use enterprise data more effectively. VUB sources describe it as a spin-off from the university's STARLab, and identify Felix Van de Maele, Stijn Christiaens, Pieter De Leenheer, and Damien Trog as founders. Early coverage framed the company around data-governance problems inside large organizations, particularly the difficulty of finding, understanding, and controlling data spread across multiple systems.</para>
+  <para>As regulatory scrutiny and enterprise data volumes grew, Collibra raised a succession of funding rounds that tracked its rise from a venture-backed governance vendor to a company valued above $1 billion in January 2019, $2.3 billion in April 2020, and $5.25 billion in November 2021. Coverage of the 2020 and 2021 rounds connected that growth to governance, cataloging, data protection, and the increasing operational importance of enterprise data.</para>
+
+</section>
+<section xmlns="http://docbook.org/ns/docbook" version="5.2">
+  <title>Products</title>
+  <para>Independent coverage has generally described Collibra's products as a set of enterprise tools for finding, understanding, governing, and controlling data across distributed environments. While the company's early identity was closely tied to governance and catalog functions, later coverage emphasized a broader product set that combined governance with data quality, analytics-adjacent tooling, policy controls, and AI-governance capabilities.</para>
+  <para>At a high level, Collibra's product coverage in independent reporting spans data catalog and governance, data quality, analytics-oriented notebook tooling, data lineage and metadata management through acquired capabilities, and AI governance.</para>
+
+  <informaltable>
+    <tgroup cols="2">
+      <thead>
+        <row><entry>Product area</entry><entry>High-level role</entry></row>
+      </thead>
+      <tbody>
+      <row><entry>Data catalog and governance</entry><entry>Organizing, governing, and controlling enterprise data assets.</entry></row>
+      <row><entry>Data quality</entry><entry>Adding predictive or automated quality capabilities to governed data workflows.</entry></row>
+      <row><entry>Data lineage and metadata</entry><entry>Extending traceability and metadata-management capabilities through acquisition.</entry></row>
+      <row><entry>Analytics tooling</entry><entry>Adding notebook-oriented functionality for analytics workflows.</entry></row>
+      <row><entry>AI governance</entry><entry>Applying governance controls to AI models and applications in relation to enterprise data.</entry></row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+</section>
+<section xmlns="http://docbook.org/ns/docbook" version="5.2">
+  <title>Acquisitions</title>
+  <para>Collibra has used acquisitions to broaden its platform beyond catalog and governance workflows. Reported acquisitions have centered on data lineage, data quality, analytics workflows, data access, and unstructured data governance.</para>
+
+  <informaltable>
+    <tgroup cols="4">
+      <thead>
+        <row><entry>Year</entry><entry>Company</entry><entry>Area</entry><entry>Notes</entry></row>
+      </thead>
+      <tbody>
+      <row><entry>2019</entry><entry>SQLdep</entry><entry>Data lineage and metadata management</entry><entry>Described by TechTarget in later coverage as an earlier acquisition that added lineage and metadata capabilities.</entry></row>
+      <row><entry>2021</entry><entry>OwlDQ</entry><entry>Data quality</entry><entry>Reported as a predictive data-quality acquisition.</entry></row>
+      <row><entry>2023</entry><entry>Husprey</entry><entry>SQL notebooks and analytics workflows</entry><entry>Reported as a data notebook acquisition for analytics tools.</entry></row>
+      <row><entry>2025</entry><entry>Raito</entry><entry>Data access governance</entry><entry>Reported as a data access startup acquisition.</entry></row>
+      <row><entry>2025</entry><entry>Deasy Labs</entry><entry>Unstructured data governance</entry><entry>Reported as an acquisition aimed at unstructured data.</entry></row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+</section>
+<section xmlns="http://docbook.org/ns/docbook" version="5.2">
+  <title>Market position and reception</title>
+  <para>Coverage of Collibra has often treated the company as part of a wider enterprise shift toward making data more discoverable, reliable, and governable across large organizations. Publications have described the company in varying terms, including data governance, data management, and data intelligence, while consistently placing it in the market for enterprise software used to control and operationalize data. Later coverage connected that position to AI governance and data-access controls as those topics became more prominent in enterprise software.</para>
+
+</section>
+<appendix xmlns="http://docbook.org/ns/docbook" version="5.2" xml:id="topic-timeline">
+  <title>Topic Timeline</title>
+  <para>This appendix keeps topic-lineage context, regulatory drivers, and confidence notes tied to the article support workflow.</para>
+  <informaltable>
+    <tgroup cols="4">
+      <thead>
+        <row><entry>Date</entry><entry>Event</entry><entry>Summary</entry><entry>Confidence</entry></row>
+      </thead>
+      <tbody>
+      <row><entry>2008</entry><entry>Company founded</entry><entry>Collibra is founded in Belgium as a data-governance software company and VUB spin-off.</entry><entry>high</entry></row>
+      <row><entry>2008-2010</entry><entry>Early founding team evolution</entry><entry>Damien Trog contributed major initial engineering work during the early years; Benny Verhaeghe joined after the first years and established an early enterprise revenue base. This nuance is tracked as topic lineage metadata rather than asserted in the outward article.</entry><entry>medium</entry></row>
+      <row><entry>2013</entry><entry>BCBS 239 published</entry><entry>The Basel Committee publishes BCBS 239, a landmark framework for effective risk data aggregation and reporting that helps explain demand for trustworthy enterprise data controls.</entry><entry>high</entry></row>
+      <row><entry>2016</entry><entry>GDPR adopted</entry><entry>The European Union adopts the General Data Protection Regulation, strengthening the compliance context for enterprise data governance.</entry><entry>high</entry></row>
+      <row><entry>2019</entry><entry>Unicorn milestone</entry><entry>Collibra passes a $1 billion valuation amid broader coverage of regulatory pressure for data governance.</entry><entry>high</entry></row>
+      <row><entry>2021</entry><entry>OwlDQ acquisition</entry><entry>Collibra acquires OwlDQ to expand into data quality.</entry><entry>high</entry></row>
+      <row><entry>2023</entry><entry>Husprey acquisition</entry><entry>Collibra acquires Husprey to add notebook-oriented analytics tooling.</entry><entry>high</entry></row>
+      <row><entry>2024</entry><entry>AI governance expansion</entry><entry>Collibra launches AI-governance capabilities as regulatory and operational attention shifts toward trustworthy AI.</entry><entry>high</entry></row>
+      <row><entry>2025</entry><entry>Raito and Deasy Labs acquisitions</entry><entry>Collibra adds data-access governance through Raito and unstructured-data governance through Deasy Labs.</entry><entry>high</entry></row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+</appendix>
+<appendix xmlns="http://docbook.org/ns/docbook" version="5.2" xml:id="media-notes">
+  <title>Media Notes</title>
+  <para>This appendix tracks local media references and their publication status.</para>
+  <itemizedlist>
+    <listitem><para>Collibra logo: Track source URL, upload target, and non-free rationale before article use. (pending-upload-review)</para></listitem>
+    <listitem><para>Collibra product screenshot: User-created screenshot; keep local until a specific non-free rationale and intended use are documented. (reference-only-pending-rationale)</para></listitem>
+  </itemizedlist>
+</appendix>
+<appendix xmlns="http://docbook.org/ns/docbook" version="5.2" xml:id="editorial-notes">
+  <title>Editorial Notes</title>
+  <para>This appendix is part of the local publication apparatus and is not intended for direct Wikipedia publication.</para>
+  <para>The modular XML source is maintained with xi:include so each article section can evolve independently while the compiled article remains reproducible from git.</para>
+  <para>Downstream formats such as HTML, SVG-rich documentation, MathML-bearing content, and LaTeX-aware transformations should be layered from the DocBook article rather than hand-maintained separately.</para>
+</appendix>
+<appendix xmlns="http://docbook.org/ns/docbook" version="5.2" xml:id="discussion-points">
+  <title>Discussion Points</title>
+  <para>This appendix tracks issues that may surface in article review, talk-page discussion, and future source reassessment.</para>
+  <itemizedlist>
+    <listitem><para>Keep company history distinct from platform description.</para></listitem>
+    <listitem><para>Do not let data catalog terminology consume the full article scope.</para></listitem>
+    <listitem><para>Treat data intelligence as attributed market vocabulary rather than settled taxonomy.</para></listitem>
+    <listitem><para>Keep MDM, RDM, reference data, and code-table claims out unless independently sourced as central to Collibra.</para></listitem>
+    <listitem><para>Keep founder-status nuance and image-rights handling in local metadata when the outward article would otherwise overstate weakly sourced detail.</para></listitem>
+  </itemizedlist>
+</appendix>
+<bibliography xmlns="http://docbook.org/ns/docbook" version="5.2">
+  <biblioentry xml:id="bib-https-techcrunch-com-2017-01-18-collibra">
+    <title>Collibra nabs $50M led by ICONIQ to fix companies' data governance</title>
+    <bibliosource><ulink url="https://techcrunch.com/2017/01/18/collibra/">https://techcrunch.com/2017/01/18/collibra/</ulink></bibliosource>
+    <abbrev>TechCrunch, 2017</abbrev>
+  </biblioentry>
+  <biblioentry xml:id="bib-https-techcrunch-com-2019-01-29-regulatory-deman">
+    <title>Regulatory demands for better data governance push Collibra's valuation above $1 billion</title>
+    <bibliosource><ulink url="https://techcrunch.com/2019/01/29/regulatory-demands-for-better-data-governance-push-collibras-valuation-above-1-billion/">https://techcrunch.com/2019/01/29/regulatory-demands-for-better-data-governance-push-collibras-valuation-above-1-billion/</ulink></bibliosource>
+    <abbrev>TechCrunch, 2019</abbrev>
+  </biblioentry>
+  <biblioentry xml:id="bib-https-techcrunch-com-2021-11-09-data-intelligenc">
+    <title>Data intelligence company Collibra brings in another $250M to more than double its valuation</title>
+    <bibliosource><ulink url="https://techcrunch.com/2021/11/09/data-intelligence-company-collibra-brings-in-another-250m-to-more-than-double-its-valuation/">https://techcrunch.com/2021/11/09/data-intelligence-company-collibra-brings-in-another-250m-to-more-than-double-its-valuation/</ulink></bibliosource>
+    <abbrev>TechCrunch, 2021</abbrev>
+  </biblioentry>
+  <biblioentry xml:id="bib-https-www-cnbc-com-2021-11-09-collibra-doubles-v">
+    <title>Collibra doubles valuation as investors chase next cloud winner</title>
+    <bibliosource><ulink url="https://www.cnbc.com/2021/11/09/collibra-doubles-valuation-as-investors-chase-next-cloud-winner.html">https://www.cnbc.com/2021/11/09/collibra-doubles-valuation-as-investors-chase-next-cloud-winner.html</ulink></bibliosource>
+    <abbrev>CNBC, 2021</abbrev>
+  </biblioentry>
+  <biblioentry xml:id="bib-https-techtransfer-research-vub-be-collibra">
+    <title>COLLIBRA</title>
+    <bibliosource><ulink url="https://techtransfer.research.vub.be/collibra">https://techtransfer.research.vub.be/collibra</ulink></bibliosource>
+    <abbrev>VUB TechTransfer</abbrev>
+  </biblioentry>
+  <biblioentry xml:id="bib-https-www-vub-be-en-news-from-student-spin-how-d">
+    <title>From student to spin-off: how does that happen</title>
+    <bibliosource><ulink url="https://www.vub.be/en/news/from-student-spin-how-does-that-happen">https://www.vub.be/en/news/from-student-spin-how-does-that-happen</ulink></bibliosource>
+    <abbrev>Vrije Universiteit Brussel</abbrev>
+  </biblioentry>
+  <biblioentry xml:id="bib-https-techcrunch-com-2018-01-08-collibra-snags-5">
+    <title>Collibra snags $58M Series D led by Iconiq and Battery Ventures to simplify data governance</title>
+    <bibliosource><ulink url="https://techcrunch.com/2018/01/08/collibra-snags-58-m-series-d-led-by-iconiq-and-battery-ventures-to-simplify-data-governance/">https://techcrunch.com/2018/01/08/collibra-snags-58-m-series-d-led-by-iconiq-and-battery-ventures-to-simplify-data-governance/</ulink></bibliosource>
+    <abbrev>TechCrunch, 2018</abbrev>
+  </biblioentry>
+  <biblioentry xml:id="bib-https-techcrunch-com-2020-04-02-collibra-nabs-an">
+    <title>Collibra nabs another $112.5M at a $2.3B valuation for its big data management platform</title>
+    <bibliosource><ulink url="https://techcrunch.com/2020/04/02/collibra-nabs-another-112-5m-at-a-2-3b-valuation-for-its-big-data-management-platform/">https://techcrunch.com/2020/04/02/collibra-nabs-another-112-5m-at-a-2-3b-valuation-for-its-big-data-management-platform/</ulink></bibliosource>
+    <abbrev>TechCrunch, 2020</abbrev>
+  </biblioentry>
+  <biblioentry xml:id="bib-https-www-techtarget-com-searchdatamanagement-ne">
+    <title>Collibra acquires predictive data quality vendor OwlDQ</title>
+    <bibliosource><ulink url="https://www.techtarget.com/searchdatamanagement/news/252495815/Collibra-acquires-predictive-data-quality-vendor-OwlDQ">https://www.techtarget.com/searchdatamanagement/news/252495815/Collibra-acquires-predictive-data-quality-vendor-OwlDQ</ulink></bibliosource>
+    <abbrev>TechTarget, 2021</abbrev>
+  </biblioentry>
+  <biblioentry xml:id="bib-https-siliconangle-com-2021-02-03-collibra-acqui">
+    <title>Collibra acquires OwlDQ to make enterprises' data more reliable for AI</title>
+    <bibliosource><ulink url="https://siliconangle.com/2021/02/03/collibra-acquires-owldq-make-enterprises-data-reliable-ai/">https://siliconangle.com/2021/02/03/collibra-acquires-owldq-make-enterprises-data-reliable-ai/</ulink></bibliosource>
+    <abbrev>SiliconANGLE, 2021</abbrev>
+  </biblioentry>
+  <biblioentry xml:id="bib-https-www-techtarget-com-searchbusinessanalytics">
+    <title>Collibra acquires data notebook vendor for analytics tools</title>
+    <bibliosource><ulink url="https://www.techtarget.com/searchbusinessanalytics/news/366551315/Collibra-acquires-data-notebook-vendor-for-analytics-tools">https://www.techtarget.com/searchbusinessanalytics/news/366551315/Collibra-acquires-data-notebook-vendor-for-analytics-tools</ulink></bibliosource>
+    <abbrev>TechTarget, 2023</abbrev>
+  </biblioentry>
+  <biblioentry xml:id="bib-https-www-techtarget-com-searchdatamanagement-ne">
+    <title>Collibra adds AI governance to data management platform</title>
+    <bibliosource><ulink url="https://www.techtarget.com/searchDataManagement/news/366571614/Collibra-adds-AI-governance-to-data-management-platform">https://www.techtarget.com/searchDataManagement/news/366571614/Collibra-adds-AI-governance-to-data-management-platform</ulink></bibliosource>
+    <abbrev>TechTarget, 2024</abbrev>
+  </biblioentry>
+  <biblioentry xml:id="bib-https-www-techtarget-com-searchdatamanagement-ne">
+    <title>Collibra launches AI Governance, unveils GenAI capabilities</title>
+    <bibliosource><ulink url="https://www.techtarget.com/searchdatamanagement/news/366580432/Collibra-launches-AI-Governance-unveils-GenAI-capabilities">https://www.techtarget.com/searchdatamanagement/news/366580432/Collibra-launches-AI-Governance-unveils-GenAI-capabilities</ulink></bibliosource>
+    <abbrev>TechTarget, 2024</abbrev>
+  </biblioentry>
+  <biblioentry xml:id="bib-https-venturebeat-com-ai-collibra-tackles-the-sh">
+    <title>Collibra tackles the shadow AI problem with new governance application</title>
+    <bibliosource><ulink url="https://venturebeat.com/ai/collibra-tackles-the-shadow-ai-problem-with-new-governance-application/">https://venturebeat.com/ai/collibra-tackles-the-shadow-ai-problem-with-new-governance-application/</ulink></bibliosource>
+    <abbrev>VentureBeat, 2024</abbrev>
+  </biblioentry>
+  <biblioentry xml:id="bib-https-techcrunch-com-2025-06-05-collibra-acquire">
+    <title>Collibra acquires data access startup Raito</title>
+    <bibliosource><ulink url="https://techcrunch.com/2025/06/05/collibra-acquires-data-access-startup-raito/">https://techcrunch.com/2025/06/05/collibra-acquires-data-access-startup-raito/</ulink></bibliosource>
+    <abbrev>TechCrunch, 2025</abbrev>
+  </biblioentry>
+  <biblioentry xml:id="bib-https-www-techtarget-com-searchdatamanagement-ne">
+    <title>Collibra's acquisition of Deasy targets unstructured data</title>
+    <bibliosource><ulink url="https://www.techtarget.com/searchdatamanagement/news/366627998/Collibras-acquisition-of-Deasy-targets-unstructured-data">https://www.techtarget.com/searchdatamanagement/news/366627998/Collibras-acquisition-of-Deasy-targets-unstructured-data</ulink></bibliosource>
+    <abbrev>TechTarget, 2025</abbrev>
+  </biblioentry>
+</bibliography>
+</article>

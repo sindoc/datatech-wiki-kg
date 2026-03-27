@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sidebar xmlns="http://docbook.org/ns/docbook" version="5.2" xml:id="company-card">
+  <title>Company Card</title>
+  <variablelist>
+    <varlistentry>
+      <term>Type</term>
+      <listitem>
+        <para>Private</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Industry</term>
+      <listitem>
+        <para>Software</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Founded</term>
+      <listitem>
+        <para>2008 in Belgium</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Founders</term>
+      <listitem>
+        <para>Felix Van de Maele&lt;br /&gt;Stijn Christiaens&lt;br /&gt;Pieter De Leenheer&lt;br /&gt;Damien Trog / Benny Verhaeghe</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Headquarters</term>
+      <listitem>
+        <para>New York City, United States&lt;br /&gt;Brussels, Belgium</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Key People</term>
+      <listitem>
+        <para>Felix Van de Maele&lt;br /&gt;Tony Mary&lt;br /&gt;Stijn Christiaens&lt;br /&gt;Tom Dejonghe</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Website</term>
+      <listitem>
+        <para>[https://www.collibra.com collibra.com]</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</sidebar>

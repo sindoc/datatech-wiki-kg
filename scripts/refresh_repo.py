@@ -59,6 +59,9 @@ def main() -> int:
     run("sync_sources.py")
     run("build_graph.py")
     run("generate_campaign_assets.py")
+    run("render_reference_exports.py")
+    run("render_media_manifest.py")
+    run("render_publication_artifacts.py")
     write_notification_manifest()
     print(f"wrote {NOTIFICATIONS}")
     return 0

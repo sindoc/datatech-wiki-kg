@@ -1,6 +1,6 @@
 PYTHON ?= python3
 
-.PHONY: sync graph feeds refresh install-hooks preview-mail kernel-sync test-case visualize
+.PHONY: sync graph feeds refs media publish quality refresh install-hooks preview-mail kernel-sync test-case visualize
 
 sync:
 	$(PYTHON) scripts/sync_sources.py
@@ -10,6 +10,18 @@ graph:
 
 feeds:
 	$(PYTHON) scripts/generate_campaign_assets.py
+
+refs:
+	$(PYTHON) scripts/render_reference_exports.py
+
+media:
+	$(PYTHON) scripts/render_media_manifest.py
+
+publish:
+	$(PYTHON) scripts/render_publication_artifacts.py
+
+quality:
+	$(PYTHON) scripts/check_wikipedia_quality.py
 
 refresh:
 	$(PYTHON) scripts/refresh_repo.py

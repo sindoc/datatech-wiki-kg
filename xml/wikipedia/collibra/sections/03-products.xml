@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.2">
+  <title>Products</title>
+  <para>Independent coverage has generally described Collibra's products as a set of enterprise tools for finding, understanding, governing, and controlling data across distributed environments. While the company's early identity was closely tied to governance and catalog functions, later coverage emphasized a broader product set that combined governance with data quality, analytics-adjacent tooling, policy controls, and AI-governance capabilities.</para>
+  <para>At a high level, Collibra's product coverage in independent reporting spans data catalog and governance, data quality, analytics-oriented notebook tooling, data lineage and metadata management through acquired capabilities, and AI governance.</para>
+
+  <informaltable>
+    <tgroup cols="2">
+      <thead>
+        <row><entry>Product area</entry><entry>High-level role</entry></row>
+      </thead>
+      <tbody>
+      <row><entry>Data catalog and governance</entry><entry>Organizing, governing, and controlling enterprise data assets.</entry></row>
+      <row><entry>Data quality</entry><entry>Adding predictive or automated quality capabilities to governed data workflows.</entry></row>
+      <row><entry>Data lineage and metadata</entry><entry>Extending traceability and metadata-management capabilities through acquisition.</entry></row>
+      <row><entry>Analytics tooling</entry><entry>Adding notebook-oriented functionality for analytics workflows.</entry></row>
+      <row><entry>AI governance</entry><entry>Applying governance controls to AI models and applications in relation to enterprise data.</entry></row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+</section>
