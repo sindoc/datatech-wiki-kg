@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import hashlib
 import re
 from pathlib import Path
 from xml.sax.saxutils import escape
@@ -211,8 +212,25 @@ def source_entry(source_line: str, catalog: dict[str, dict[str, str]]) -> dict[s
     )
 
 
+def citation_name(entry: dict[str, str]) -> str:
+    url = entry.get("url", "")
+    slug = xml_id(url)[:32]
+    digest = hashlib.sha1(url.encode("utf-8")).hexdigest()[:8] if url else "source"
+    return f"ref-{slug}-{digest}"
+
+
 def citation_template(entry: dict[str, str]) -> str:
     if not entry["url"]:
+        return ""
+    ref_name = citation_name(entry)
+    return f'<ref name="{ref_name}"/>'
+
+
+def citation_definition(entry: dict[str, str], defined_refs: set[str]) -> str:
+    if not entry["url"]:
+        return ""
+    ref_name = citation_name(entry)
+    if ref_name in defined_refs:
         return ""
     title = entry["title"].replace("|", " ")
     website = entry.get("website", "").replace("|", " ")
@@ -220,27 +238,50 @@ def citation_template(entry: dict[str, str]) -> str:
     if website:
         cite += f"|website={website}"
     cite += "}}"
-    return f"<ref>{cite}</ref>"
+    defined_refs.add(ref_name)
+    return f'<ref name="{ref_name}">{cite}</ref>'
+
+
+def unique_entries(entries: list[dict[str, str]]) -> list[dict[str, str]]:
+    seen: set[str] = set()
+    unique: list[dict[str, str]] = []
+    for entry in entries:
+        key = entry.get("url", "") or entry.get("title", "")
+        if key in seen:
+            continue
+        seen.add(key)
+        unique.append(entry)
+    return unique
 
 
 def strip_inline_markers(text: str) -> str:
     return INLINE_REF_RE.sub("", text).strip()
 
 
-def render_inline_citations(text: str, source_lines: list[str], catalog: dict[str, dict[str, str]]) -> str:
+def render_inline_citations(
+    text: str,
+    source_lines: list[str],
+    catalog: dict[str, dict[str, str]],
+    defined_refs: set[str],
+) -> str:
     def replace(match: re.Match[str]) -> str:
         indexes = [int(item.strip()) for item in match.group(1).split(",")]
-        refs: list[str] = []
+        entries: list[dict[str, str]] = []
         for index in indexes:
             source_index = index - 1
             if 0 <= source_index < len(source_lines):
-                refs.append(citation_template(source_entry(source_lines[source_index], catalog)))
+                entries.append(source_entry(source_lines[source_index], catalog))
+        refs = [citation_template(entry) for entry in unique_entries(entries)]
         return "".join(refs)
 
     return INLINE_REF_RE.sub(replace, text)
 
 
-def render_infobox(company_card: dict[str, object], catalog: dict[str, dict[str, str]]) -> list[str]:
+def render_infobox(
+    company_card: dict[str, object],
+    catalog: dict[str, dict[str, str]],
+    defined_refs: set[str],
+) -> list[str]:
     fields = company_card.get("fields", [])
     if not fields:
         return []
@@ -263,7 +304,7 @@ def render_infobox(company_card: dict[str, object], catalog: dict[str, dict[str,
         key = name_map.get(str(field["key"]))
         if not key:
             continue
-        value = render_inline_citations(str(field["value"]), source_lines, catalog)
+        value = render_inline_citations(str(field["value"]), source_lines, catalog, defined_refs)
         lines.append(f"| {key} = {value}")
     lines.append("}}")
     return lines
@@ -279,7 +320,12 @@ def parse_table_rows(lines: list[str]) -> list[list[str]]:
     return rows
 
 
-def render_wikitable(lines: list[str], source_lines: list[str], catalog: dict[str, dict[str, str]]) -> list[str]:
+def render_wikitable(
+    lines: list[str],
+    source_lines: list[str],
+    catalog: dict[str, dict[str, str]],
+    defined_refs: set[str],
+) -> list[str]:
     rows = parse_table_rows(lines)
     if not rows:
         return []
@@ -292,7 +338,7 @@ def render_wikitable(lines: list[str], source_lines: list[str], catalog: dict[st
     for row in body:
         rendered.append("|-")
         for cell in row:
-            rendered.append(f"| {strip_inline_markers(render_inline_citations(cell, source_lines, catalog))}")
+            rendered.append(f"| {strip_inline_markers(render_inline_citations(cell, source_lines, catalog, defined_refs))}")
     rendered.append("|}")
     return rendered
 
@@ -304,12 +350,21 @@ def render_wikitext(
 ) -> str:
     topic_meta = load_wikipedia_topic_meta()
     pronunciation = str(topic_meta.get("pronunciation", "")).strip()
+    defined_refs: set[str] = set()
+    all_entries: list[dict[str, str]] = unique_entries(
+        [source_entry(source_line, catalog) for source_line in company_card.get("sources", [])]
+        + [
+            source_entry(source_line, catalog)
+            for section in sections
+            for source_line in section["sources"]
+        ]
+    )
     parts = [
         "<!-- generated from content/markdown/Collibra.md -->",
         "{{short description|Software company focused on data governance and data intelligence}}",
         "",
     ]
-    infobox = render_infobox(company_card, catalog)
+    infobox = render_infobox(company_card, catalog, defined_refs)
     if infobox:
         parts.extend(infobox)
         parts.append("")
@@ -319,12 +374,12 @@ def render_wikitext(
             parts.append(f"== {title} ==")
             parts.append("")
         refs = "".join(
-            citation_template(source_entry(source_line, catalog))
-            for source_line in section["sources"]
+            citation_template(entry)
+            for entry in unique_entries([source_entry(source_line, catalog) for source_line in section["sources"]])
         )
         paragraphs = section["paragraphs"]
         for p_index, paragraph in enumerate(paragraphs):
-            rendered = render_inline_citations(str(paragraph), section["sources"], catalog)
+            rendered = render_inline_citations(str(paragraph), section["sources"], catalog, defined_refs)
             suffix = refs if INLINE_REF_RE.search(str(paragraph)) is None and p_index == len(paragraphs) - 1 else ""
             clean = strip_inline_markers(rendered)
             if index == 0 and p_index == 0 and pronunciation and clean.startswith("Collibra "):
@@ -332,7 +387,7 @@ def render_wikitext(
             parts.append(f"{clean}{suffix}")
             parts.append("")
         if section.get("table"):
-            parts.extend(render_wikitable(section["table"], section["sources"], catalog))
+            parts.extend(render_wikitable(section["table"], section["sources"], catalog, defined_refs))
             parts.append("")
     see_also = topic_meta.get("see_also", [])
     if see_also:
@@ -342,7 +397,13 @@ def render_wikitext(
             parts.append(f"* [[{title}]]")
         parts.append("")
     parts.append("== References ==")
+    for entry in all_entries:
+        definition = citation_definition(entry, defined_refs)
+        if definition:
+            parts.append(definition)
     parts.append("{{reflist}}")
+    parts.append("")
+    parts.append("{{Data}}")
     parts.append("")
     for category in topic_meta.get("draft_categories", []):
         parts.append(f"[[Category:{category}]]")

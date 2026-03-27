@@ -12,7 +12,6 @@
     "https://en.wikipedia.org/wiki/Sun_Microsystems"
   ],
   "required_sections": [
-    "Lead",
     "History",
     "Products",
     "Acquisitions",
@@ -20,12 +19,25 @@
     "References"
   ],
   "recommended_section_order": [
-    "Lead",
     "History",
     "Products",
     "Acquisitions",
     "Market position and reception",
     "References"
+  ],
+  "required_see_also": [
+    "Data governance",
+    "Data lineage",
+    "Metadata management",
+    "Data quality"
+  ],
+  "required_bottom_templates": [
+    "{{Data}}"
+  ],
+  "required_article_languages": [
+    "en",
+    "nl",
+    "no"
   ],
   "self_published_websites": [
     "LinkedIn",
@@ -59,6 +71,13 @@
     "today",
     "now"
   ],
+  "forbidden_headings": [
+    "Lead"
+  ],
+  "require_pronunciation_in_lead": true,
+  "require_lead_prose": true,
+  "require_skos_labels": true,
+  "deduplicate_references": true,
   "thresholds": {
     "min_distinct_publishers": 3,
     "max_words": 1200,

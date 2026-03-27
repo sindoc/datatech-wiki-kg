@@ -1,5 +1,5 @@
 {
-  "ok": true,
+  "ok": false,
   "article_class": "software company",
   "policy_pages": [
     "https://en.wikipedia.org/wiki/Wikipedia:Verifiability",
@@ -12,7 +12,7 @@
     "https://en.wikipedia.org/wiki/ServiceNow",
     "https://en.wikipedia.org/wiki/Sun_Microsystems"
   ],
-  "word_count": 598,
+  "word_count": 865,
   "distinct_publishers": [
     "CNBC",
     "Collibra",
@@ -23,5 +23,18 @@
     "VentureBeat",
     "Vrije Universiteit Brussel"
   ],
-  "findings": []
+  "findings": [
+    {
+      "category": "article_shape",
+      "severity": "warning",
+      "rule": "section_order",
+      "message": "Section order differs from the concise company-article template."
+    },
+    {
+      "category": "sourcing",
+      "severity": "error",
+      "rule": "self_published_source",
+      "message": "Self-published or first-party source present in article citations: Collibra"
+    }
+  ]
 }
