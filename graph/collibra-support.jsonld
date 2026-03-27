@@ -76,24 +76,318 @@
       "description": "Section level 2 in canonical markdown source."
     },
     {
-      "@id": "urn:section:collibra:7",
+      "@id": "urn:section:collibra:9",
       "@type": "schema:CreativeWork",
       "name": "Editorial constraints",
-      "position": 7,
+      "position": 9,
       "description": "Section level 2 in canonical markdown source."
     },
     {
-      "@id": "urn:section:collibra:14",
+      "@id": "urn:section:collibra:17",
+      "@type": "schema:CreativeWork",
+      "name": "Article framing",
+      "position": 17,
+      "description": "Section level 2 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:27",
+      "@type": "schema:CreativeWork",
+      "name": "Scope boundaries",
+      "position": 27,
+      "description": "Section level 2 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:47",
+      "@type": "schema:CreativeWork",
+      "name": "Context in Data Governance and Data Intelligence",
+      "position": 47,
+      "description": "Section level 2 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:53",
+      "@type": "schema:CreativeWork",
+      "name": "Relationship to Artificial Intelligence and Agentic AI",
+      "position": 53,
+      "description": "Section level 2 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:59",
+      "@type": "schema:CreativeWork",
+      "name": "Relationship to Technology Governance",
+      "position": 59,
+      "description": "Section level 2 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:65",
+      "@type": "schema:CreativeWork",
+      "name": "Adjacent subject areas to evaluate for due weight",
+      "position": 65,
+      "description": "Section level 2 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:85",
+      "@type": "schema:CreativeWork",
+      "name": "Topics that need disciplined treatment",
+      "position": 85,
+      "description": "Section level 2 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:87",
+      "@type": "schema:CreativeWork",
+      "name": "Data Catalog",
+      "position": 87,
+      "description": "Section level 3 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:91",
+      "@type": "schema:CreativeWork",
+      "name": "Data Lineage",
+      "position": 91,
+      "description": "Section level 3 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:95",
+      "@type": "schema:CreativeWork",
+      "name": "Data Quality",
+      "position": 95,
+      "description": "Section level 3 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:99",
+      "@type": "schema:CreativeWork",
+      "name": "Analytics",
+      "position": 99,
+      "description": "Section level 3 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:103",
+      "@type": "schema:CreativeWork",
+      "name": "Chief Data Officer, Chief Digital Officer, Chief Information Officer",
+      "position": 103,
+      "description": "Section level 3 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:107",
+      "@type": "schema:CreativeWork",
+      "name": "Data Hegemony",
+      "position": 107,
+      "description": "Section level 3 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:111",
+      "@type": "schema:CreativeWork",
+      "name": "Data Ownership, Data Protection, and Data Stewardship",
+      "position": 111,
+      "description": "Section level 3 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:115",
+      "@type": "schema:CreativeWork",
+      "name": "Master Data Management and Reference Data Management",
+      "position": 115,
+      "description": "Section level 3 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:119",
+      "@type": "schema:CreativeWork",
+      "name": "Company versus platform",
+      "position": 119,
+      "description": "Section level 2 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:139",
+      "@type": "schema:CreativeWork",
+      "name": "Candidate article structure",
+      "position": 139,
+      "description": "Section level 2 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:143",
+      "@type": "schema:CreativeWork",
+      "name": "Lead",
+      "position": 143,
+      "description": "Section level 3 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:147",
+      "@type": "schema:CreativeWork",
+      "name": "History",
+      "position": 147,
+      "description": "Section level 3 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:151",
+      "@type": "schema:CreativeWork",
+      "name": "Products and platform",
+      "position": 151,
+      "description": "Section level 3 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:155",
+      "@type": "schema:CreativeWork",
+      "name": "Market position and reception",
+      "position": 155,
+      "description": "Section level 3 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:159",
+      "@type": "schema:CreativeWork",
+      "name": "Role in enterprise data governance",
+      "position": 159,
+      "description": "Section level 3 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:163",
+      "@type": "schema:CreativeWork",
+      "name": "Source strategy",
+      "position": 163,
+      "description": "Section level 2 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:187",
+      "@type": "schema:CreativeWork",
+      "name": "Source candidates as of 2026-03-27",
+      "position": 187,
+      "description": "Section level 2 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:191",
+      "@type": "schema:CreativeWork",
+      "name": "Company history, growth, and funding",
+      "position": 191,
+      "description": "Section level 3 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:202",
+      "@type": "schema:CreativeWork",
+      "name": "Platform expansion: lineage, quality, analytics, and AI",
+      "position": 202,
+      "description": "Section level 3 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:215",
+      "@type": "schema:CreativeWork",
+      "name": "Primary sources for basic company facts",
+      "position": 215,
+      "description": "Section level 3 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:222",
+      "@type": "schema:CreativeWork",
+      "name": "Belgian and university-origin coverage",
+      "position": 222,
+      "description": "Section level 3 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:232",
+      "@type": "schema:CreativeWork",
+      "name": "Regulation and trust context",
+      "position": 232,
+      "description": "Section level 3 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:240",
+      "@type": "schema:CreativeWork",
+      "name": "Editorial guidance for source use",
+      "position": 240,
+      "description": "Section level 3 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:248",
+      "@type": "schema:CreativeWork",
+      "name": "Research questions",
+      "position": 248,
+      "description": "Section level 2 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:256",
+      "@type": "schema:CreativeWork",
+      "name": "Candidate sourced draft",
+      "position": 256,
+      "description": "Section level 2 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:260",
+      "@type": "schema:CreativeWork",
+      "name": "Company card",
+      "position": 260,
+      "description": "Section level 3 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:276",
+      "@type": "schema:CreativeWork",
+      "name": "Lead",
+      "position": 276,
+      "description": "Section level 3 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:288",
+      "@type": "schema:CreativeWork",
+      "name": "History",
+      "position": 288,
+      "description": "Section level 3 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:303",
+      "@type": "schema:CreativeWork",
+      "name": "Products",
+      "position": 303,
+      "description": "Section level 3 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:324",
+      "@type": "schema:CreativeWork",
+      "name": "Acquisitions",
+      "position": 324,
+      "description": "Section level 3 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:341",
+      "@type": "schema:CreativeWork",
+      "name": "Market position and reception",
+      "position": 341,
+      "description": "Section level 3 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:350",
+      "@type": "schema:CreativeWork",
+      "name": "Release standard for a solid page",
+      "position": 350,
+      "description": "Section level 2 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:361",
+      "@type": "schema:CreativeWork",
+      "name": "Topic-specific terminology",
+      "position": 361,
+      "description": "Section level 2 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:367",
+      "@type": "schema:CreativeWork",
+      "name": "Founder-status lineage note",
+      "position": 367,
+      "description": "Section level 2 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:371",
+      "@type": "schema:CreativeWork",
+      "name": "Regulatory drivers and confidence",
+      "position": 371,
+      "description": "Section level 2 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:377",
+      "@type": "schema:CreativeWork",
+      "name": "Media references",
+      "position": 377,
+      "description": "Section level 2 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:381",
       "@type": "schema:CreativeWork",
       "name": "Working model",
-      "position": 14,
-      "description": "Section level 2 in canonical markdown source."
-    },
-    {
-      "@id": "urn:section:collibra:21",
-      "@type": "schema:CreativeWork",
-      "name": "Initial scope",
-      "position": 21,
+      "position": 381,
       "description": "Section level 2 in canonical markdown source."
     },
     {
@@ -295,6 +589,255 @@
       ]
     },
     {
+      "@id": "urn:topic:collibra",
+      "@type": "schema:DefinedTermSet",
+      "name": "Collibra",
+      "description": "Topic model for the Collibra article, including article-subject people, editorial terms, and topic-scoped editorial metadata.",
+      "about": {
+        "@id": "urn:entity:company:collibra"
+      }
+    },
+    {
+      "@id": "urn:topic-person:collibra:felix-van-de-maele",
+      "@type": "schema:Person",
+      "name": "Felix Van de Maele",
+      "description": "Topic-scoped person with relationship founder-ceo and status current.",
+      "about": [
+        {
+          "@id": "urn:entity:article:wikipedia:collibra"
+        },
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ],
+      "knowsAbout": [
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ]
+    },
+    {
+      "@id": "urn:topic-person:collibra:stijn-christiaens",
+      "@type": "schema:Person",
+      "name": "Stijn Christiaens",
+      "description": "Topic-scoped person with relationship founder-chief-data-citizen and status current.",
+      "about": [
+        {
+          "@id": "urn:entity:article:wikipedia:collibra"
+        },
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ],
+      "knowsAbout": [
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ]
+    },
+    {
+      "@id": "urn:topic-person:collibra:tony-mary",
+      "@type": "schema:Person",
+      "name": "Tony Mary",
+      "description": "Topic-scoped person with relationship chair-board-of-directors and status current.",
+      "about": [
+        {
+          "@id": "urn:entity:article:wikipedia:collibra"
+        },
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ],
+      "knowsAbout": [
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ]
+    },
+    {
+      "@id": "urn:topic-person:collibra:tom-dejonghe",
+      "@type": "schema:Person",
+      "name": "Tom Dejonghe",
+      "description": "Topic-scoped person with relationship vp-product-management-governance and status current.",
+      "about": [
+        {
+          "@id": "urn:entity:article:wikipedia:collibra"
+        },
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ],
+      "knowsAbout": [
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ]
+    },
+    {
+      "@id": "urn:topic-person:collibra:pieter-de-leenheer",
+      "@type": "schema:Person",
+      "name": "Pieter De Leenheer",
+      "description": "Topic-scoped person with relationship founding-team and status historical.",
+      "about": [
+        {
+          "@id": "urn:entity:article:wikipedia:collibra"
+        },
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ],
+      "knowsAbout": [
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ]
+    },
+    {
+      "@id": "urn:topic-person:collibra:benny-verhaeghe",
+      "@type": "schema:Person",
+      "name": "Benny Verhaeghe",
+      "description": "Topic-scoped person with relationship co-founder-legal-status-topic-lineage and status historical.",
+      "about": [
+        {
+          "@id": "urn:entity:article:wikipedia:collibra"
+        },
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ],
+      "knowsAbout": [
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ]
+    },
+    {
+      "@id": "urn:topic-term:collibra:collibrian",
+      "@type": "skos:Concept",
+      "name": "Collibrian",
+      "description": "Topic-scoped editorial term with default article status exclude.",
+      "about": {
+        "@id": "urn:entity:article:wikipedia:collibra"
+      }
+    },
+    {
+      "@id": "urn:topic-term:collibra:data-citizen",
+      "@type": "skos:Concept",
+      "name": "Data Citizen",
+      "description": "Topic-scoped editorial term with default article status exclude.",
+      "about": {
+        "@id": "urn:entity:article:wikipedia:collibra"
+      }
+    },
+    {
+      "@id": "urn:topic-timeline:collibra:1",
+      "@type": "schema:Event",
+      "name": "Company founded",
+      "description": "Collibra is founded in Belgium as a data-governance software company and VUB spin-off.",
+      "startDate": "2008",
+      "about": {
+        "@id": "urn:entity:article:wikipedia:collibra"
+      }
+    },
+    {
+      "@id": "urn:topic-timeline:collibra:2",
+      "@type": "schema:Event",
+      "name": "Early founding team evolution",
+      "description": "Damien Trog contributed major initial engineering work during the early years; Benny Verhaeghe joined after the first years and established an early enterprise revenue base. This nuance is tracked as topic lineage metadata rather than asserted in the outward article.",
+      "startDate": "2008-2010",
+      "about": {
+        "@id": "urn:entity:article:wikipedia:collibra"
+      }
+    },
+    {
+      "@id": "urn:topic-timeline:collibra:3",
+      "@type": "schema:Event",
+      "name": "BCBS 239 published",
+      "description": "The Basel Committee publishes BCBS 239, a landmark framework for effective risk data aggregation and reporting that helps explain demand for trustworthy enterprise data controls.",
+      "startDate": "2013",
+      "about": {
+        "@id": "urn:entity:article:wikipedia:collibra"
+      }
+    },
+    {
+      "@id": "urn:topic-timeline:collibra:4",
+      "@type": "schema:Event",
+      "name": "GDPR adopted",
+      "description": "The European Union adopts the General Data Protection Regulation, strengthening the compliance context for enterprise data governance.",
+      "startDate": "2016",
+      "about": {
+        "@id": "urn:entity:article:wikipedia:collibra"
+      }
+    },
+    {
+      "@id": "urn:topic-timeline:collibra:5",
+      "@type": "schema:Event",
+      "name": "Unicorn milestone",
+      "description": "Collibra passes a $1 billion valuation amid broader coverage of regulatory pressure for data governance.",
+      "startDate": "2019",
+      "about": {
+        "@id": "urn:entity:article:wikipedia:collibra"
+      }
+    },
+    {
+      "@id": "urn:topic-timeline:collibra:6",
+      "@type": "schema:Event",
+      "name": "OwlDQ acquisition",
+      "description": "Collibra acquires OwlDQ to expand into data quality.",
+      "startDate": "2021",
+      "about": {
+        "@id": "urn:entity:article:wikipedia:collibra"
+      }
+    },
+    {
+      "@id": "urn:topic-timeline:collibra:7",
+      "@type": "schema:Event",
+      "name": "Husprey acquisition",
+      "description": "Collibra acquires Husprey to add notebook-oriented analytics tooling.",
+      "startDate": "2023",
+      "about": {
+        "@id": "urn:entity:article:wikipedia:collibra"
+      }
+    },
+    {
+      "@id": "urn:topic-timeline:collibra:8",
+      "@type": "schema:Event",
+      "name": "AI governance expansion",
+      "description": "Collibra launches AI-governance capabilities as regulatory and operational attention shifts toward trustworthy AI.",
+      "startDate": "2024",
+      "about": {
+        "@id": "urn:entity:article:wikipedia:collibra"
+      }
+    },
+    {
+      "@id": "urn:topic-timeline:collibra:9",
+      "@type": "schema:Event",
+      "name": "Raito and Deasy Labs acquisitions",
+      "description": "Collibra adds data-access governance through Raito and unstructured-data governance through Deasy Labs.",
+      "startDate": "2025",
+      "about": {
+        "@id": "urn:entity:article:wikipedia:collibra"
+      }
+    },
+    {
+      "@id": "urn:topic-media:collibra:collibra-logo",
+      "@type": "schema:MediaObject",
+      "name": "Collibra logo",
+      "description": "Track source URL, upload target, and non-free rationale before article use.",
+      "about": {
+        "@id": "urn:entity:article:wikipedia:collibra"
+      }
+    },
+    {
+      "@id": "urn:topic-media:collibra:collibra-product-screenshot",
+      "@type": "schema:MediaObject",
+      "name": "Collibra product screenshot",
+      "description": "User-created screenshot; keep local until a specific non-free rationale and intended use are documented.",
+      "about": {
+        "@id": "urn:entity:article:wikipedia:collibra"
+      }
+    },
+    {
       "@id": "urn:artifact:notifications:pending",
       "@type": "schema:DataFeed",
       "name": "Pending maintainer notifications",
@@ -306,7 +849,7 @@
       "name": "DataTech Wikipedia Support Knowledge Graph",
       "description": "Neutral, source-driven support material for Wikipedia contributions about Collibra as a company and platform.",
       "url": "https://foss.lutino.io/wikipedia/",
-      "dateModified": "2026-03-27T11:44:12Z"
+      "dateModified": "2026-03-27T21:29:59Z"
     }
   ]
 }

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appendix xmlns="http://docbook.org/ns/docbook" version="5.2" xml:id="editorial-notes">
+  <title>Editorial Notes</title>
+  <para>This appendix is part of the local publication apparatus and is not intended for direct Wikipedia publication.</para>
+  <para>The modular XML source is maintained with xi:include so each article section can evolve independently while the compiled article remains reproducible from git.</para>
+  <para>Downstream formats such as HTML, SVG-rich documentation, MathML-bearing content, and LaTeX-aware transformations should be layered from the DocBook article rather than hand-maintained separately.</para>
+</appendix>

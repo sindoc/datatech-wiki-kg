@@ -1,0 +1,62 @@
+{
+  "topic": {
+    "id": "urn:topic:collibra",
+    "slug": "collibra",
+    "name": "Collibra",
+    "article_id": "urn:entity:article:wikipedia:collibra",
+    "entity_id": "urn:entity:company:collibra",
+    "description": "Topic model for the Collibra article, including article-subject people, editorial terms, and topic-scoped editorial metadata."
+  },
+  "article_people": [
+    {
+      "name": "Felix Van de Maele",
+      "relationship": "founder-ceo",
+      "status": "current",
+      "source_class": "independent-and-primary"
+    },
+    {
+      "name": "Stijn Christiaens",
+      "relationship": "founder-chief-data-citizen",
+      "status": "current",
+      "source_class": "primary"
+    },
+    {
+      "name": "Tony Mary",
+      "relationship": "chair-board-of-directors",
+      "status": "current",
+      "source_class": "primary"
+    },
+    {
+      "name": "Tom Dejonghe",
+      "relationship": "vp-product-management-governance",
+      "status": "current",
+      "source_class": "primary"
+    },
+    {
+      "name": "Pieter De Leenheer",
+      "relationship": "founding-team",
+      "status": "historical",
+      "source_class": "independent-and-primary"
+    },
+    {
+      "name": "Benny Verhaeghe",
+      "relationship": "co-founder-legal-status-topic-lineage",
+      "status": "historical",
+      "source_class": "independent-limited"
+    }
+  ],
+  "editorial_terms": [
+    {
+      "label": "Collibrian",
+      "scope": "topic-context",
+      "source_class": "primary",
+      "article_default": "exclude"
+    },
+    {
+      "label": "Data Citizen",
+      "scope": "topic-context",
+      "source_class": "primary",
+      "article_default": "exclude"
+    }
+  ]
+}

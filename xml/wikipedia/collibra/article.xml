@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns="http://docbook.org/ns/docbook"
+         xmlns:xi="http://www.w3.org/2001/XInclude"
+         version="5.2"
+         xml:id="collibra-wikipedia-article">
+  <info>
+    <title>Collibra</title>
+    <subtitle>Modular local article source for Wikipedia-oriented publication</subtitle>
+  </info>
+  <xi:include href="apparatus/company-card.xml"/>
+  <xi:include href="sections/01-lead.xml"/>
+  <xi:include href="sections/02-history.xml"/>
+  <xi:include href="sections/03-products.xml"/>
+  <xi:include href="sections/04-acquisitions.xml"/>
+  <xi:include href="sections/05-market-position-and-reception.xml"/>
+  <xi:include href="apparatus/timeline.xml"/>
+  <xi:include href="apparatus/media-notes.xml"/>
+  <xi:include href="apparatus/editorial-notes.xml"/>
+  <xi:include href="apparatus/discussion-points.xml"/>
+  <xi:include href="bibliography.xml"/>
+</article>

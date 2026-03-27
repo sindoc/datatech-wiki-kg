@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appendix xmlns="http://docbook.org/ns/docbook" version="5.2" xml:id="topic-timeline">
+  <title>Topic Timeline</title>
+  <para>This appendix keeps topic-lineage context, regulatory drivers, and confidence notes tied to the article support workflow.</para>
+  <informaltable>
+    <tgroup cols="4">
+      <thead>
+        <row><entry>Date</entry><entry>Event</entry><entry>Summary</entry><entry>Confidence</entry></row>
+      </thead>
+      <tbody>
+      <row><entry>2008</entry><entry>Company founded</entry><entry>Collibra is founded in Belgium as a data-governance software company and VUB spin-off.</entry><entry>high</entry></row>
+      <row><entry>2008-2010</entry><entry>Early founding team evolution</entry><entry>Damien Trog contributed major initial engineering work during the early years; Benny Verhaeghe joined after the first years and established an early enterprise revenue base. This nuance is tracked as topic lineage metadata rather than asserted in the outward article.</entry><entry>medium</entry></row>
+      <row><entry>2013</entry><entry>BCBS 239 published</entry><entry>The Basel Committee publishes BCBS 239, a landmark framework for effective risk data aggregation and reporting that helps explain demand for trustworthy enterprise data controls.</entry><entry>high</entry></row>
+      <row><entry>2016</entry><entry>GDPR adopted</entry><entry>The European Union adopts the General Data Protection Regulation, strengthening the compliance context for enterprise data governance.</entry><entry>high</entry></row>
+      <row><entry>2019</entry><entry>Unicorn milestone</entry><entry>Collibra passes a $1 billion valuation amid broader coverage of regulatory pressure for data governance.</entry><entry>high</entry></row>
+      <row><entry>2021</entry><entry>OwlDQ acquisition</entry><entry>Collibra acquires OwlDQ to expand into data quality.</entry><entry>high</entry></row>
+      <row><entry>2023</entry><entry>Husprey acquisition</entry><entry>Collibra acquires Husprey to add notebook-oriented analytics tooling.</entry><entry>high</entry></row>
+      <row><entry>2024</entry><entry>AI governance expansion</entry><entry>Collibra launches AI-governance capabilities as regulatory and operational attention shifts toward trustworthy AI.</entry><entry>high</entry></row>
+      <row><entry>2025</entry><entry>Raito and Deasy Labs acquisitions</entry><entry>Collibra adds data-access governance through Raito and unstructured-data governance through Deasy Labs.</entry><entry>high</entry></row>
+      </tbody>
+    </tgroup>
+  </informaltable>
+</appendix>

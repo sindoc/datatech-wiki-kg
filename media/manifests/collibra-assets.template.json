@@ -1,0 +1,35 @@
+{
+  "topic": "collibra",
+  "assets": [
+    {
+      "id": "collibra-logo",
+      "local_filename": "collibra-logo.svg",
+      "creator": "Collibra brand source",
+      "source_url": "",
+      "captured_or_published_date": "",
+      "rights_basis": "non-free logo candidate unless a free license is documented",
+      "upload_target": "english-wikipedia",
+      "uploaded_filename": "",
+      "uploaded_page_url": "",
+      "article": "Collibra",
+      "purpose": "Primary visual identification of the company in the article infobox.",
+      "non_free_rationale_required": true,
+      "notes": ""
+    },
+    {
+      "id": "collibra-product-screenshot",
+      "local_filename": "collibra-product-screenshot.png",
+      "creator": "User-captured screenshot",
+      "source_url": "",
+      "captured_or_published_date": "",
+      "rights_basis": "non-free screenshot candidate pending article-specific rationale",
+      "upload_target": "english-wikipedia",
+      "uploaded_filename": "",
+      "uploaded_page_url": "",
+      "article": "Collibra",
+      "purpose": "Potentially illustrate the product interface if contextual significance can be shown.",
+      "non_free_rationale_required": true,
+      "notes": ""
+    }
+  ]
+}

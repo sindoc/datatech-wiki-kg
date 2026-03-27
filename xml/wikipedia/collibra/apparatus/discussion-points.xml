@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appendix xmlns="http://docbook.org/ns/docbook" version="5.2" xml:id="discussion-points">
+  <title>Discussion Points</title>
+  <para>This appendix tracks issues that may surface in article review, talk-page discussion, and future source reassessment.</para>
+  <itemizedlist>
+    <listitem><para>Keep company history distinct from platform description.</para></listitem>
+    <listitem><para>Do not let data catalog terminology consume the full article scope.</para></listitem>
+    <listitem><para>Treat data intelligence as attributed market vocabulary rather than settled taxonomy.</para></listitem>
+    <listitem><para>Keep MDM, RDM, reference data, and code-table claims out unless independently sourced as central to Collibra.</para></listitem>
+    <listitem><para>Keep founder-status nuance and image-rights handling in local metadata when the outward article would otherwise overstate weakly sourced detail.</para></listitem>
+  </itemizedlist>
+</appendix>

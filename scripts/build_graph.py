@@ -10,6 +10,9 @@ ROOT = Path(__file__).resolve().parents[1]
 CONFIG = json.loads((ROOT / "config" / "project.json").read_text(encoding="utf-8"))
 CAMPAIGN = json.loads((ROOT / "data" / "collibra-campaign.json").read_text(encoding="utf-8"))
 PARTICIPANTS = json.loads((ROOT / "outreach" / "proposed_participants.json").read_text(encoding="utf-8"))
+TOPIC_MODEL = json.loads((ROOT / CONFIG["topic_model"]["collibra"]).read_text(encoding="utf-8"))
+TOPIC_TIMELINE = json.loads((ROOT / CONFIG["topic_timeline"]["collibra"]).read_text(encoding="utf-8"))
+MEDIA_MODEL = json.loads((ROOT / CONFIG["media_model"]["collibra"]).read_text(encoding="utf-8"))
 CANONICAL = ROOT / CONFIG["content"]["canonical_markdown"]
 GRAPH_PATH = ROOT / "graph" / "collibra-support.jsonld"
 
@@ -51,10 +54,78 @@ def participant_nodes() -> list[dict]:
     return nodes
 
 
+def topic_model_nodes() -> list[dict]:
+    topic = TOPIC_MODEL["topic"]
+    nodes: list[dict] = [
+        {
+            "@id": topic["id"],
+            "@type": "schema:DefinedTermSet",
+            "name": topic["name"],
+            "description": topic["description"],
+            "about": {"@id": topic["entity_id"]},
+        }
+    ]
+    for item in TOPIC_MODEL["article_people"]:
+        slug = item["name"].lower().replace(".", "").replace(" ", "-")
+        nodes.append(
+            {
+                "@id": f"urn:topic-person:{topic['slug']}:{slug}",
+                "@type": "schema:Person",
+                "name": item["name"],
+                "description": f"Topic-scoped person with relationship {item['relationship']} and status {item['status']}.",
+                "about": [{"@id": topic["article_id"]}, {"@id": topic["entity_id"]}],
+                "knowsAbout": [{"@id": topic["entity_id"]}],
+            }
+        )
+    for item in TOPIC_MODEL["editorial_terms"]:
+        slug = item["label"].lower().replace(" ", "-")
+        nodes.append(
+            {
+                "@id": f"urn:topic-term:{topic['slug']}:{slug}",
+                "@type": "skos:Concept",
+                "name": item["label"],
+                "description": f"Topic-scoped editorial term with default article status {item['article_default']}.",
+                "about": {"@id": topic["article_id"]},
+            }
+        )
+    return nodes
+
+
+def timeline_nodes() -> list[dict]:
+    nodes: list[dict] = []
+    for index, item in enumerate(TOPIC_TIMELINE["events"], start=1):
+        nodes.append(
+            {
+                "@id": f"urn:topic-timeline:collibra:{index}",
+                "@type": "schema:Event",
+                "name": item["label"],
+                "description": item["summary"],
+                "startDate": item["date"],
+                "about": {"@id": "urn:entity:article:wikipedia:collibra"},
+            }
+        )
+    return nodes
+
+
+def media_nodes() -> list[dict]:
+    nodes: list[dict] = []
+    for item in MEDIA_MODEL["assets"]:
+        nodes.append(
+            {
+                "@id": f"urn:topic-media:collibra:{item['id']}",
+                "@type": "schema:MediaObject",
+                "name": item["label"],
+                "description": item["notes"],
+                "about": {"@id": "urn:entity:article:wikipedia:collibra"},
+            }
+        )
+    return nodes
+
+
 def build_graph() -> dict:
     lines = CANONICAL.read_text(encoding="utf-8").splitlines()
     graph = json.loads((ROOT / "graph" / "collibra-support.jsonld").read_text(encoding="utf-8"))
-    graph["@graph"] = graph["@graph"][:5] + heading_nodes(lines) + participant_nodes() + [
+    graph["@graph"] = graph["@graph"][:5] + heading_nodes(lines) + participant_nodes() + topic_model_nodes() + timeline_nodes() + media_nodes() + [
         {
             "@id": "urn:artifact:notifications:pending",
             "@type": "schema:DataFeed",
