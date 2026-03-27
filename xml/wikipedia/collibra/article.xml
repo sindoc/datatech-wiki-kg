@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <article xmlns="http://docbook.org/ns/docbook"
          xmlns:xi="http://www.w3.org/2001/XInclude"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
          version="5.2"
          xml:id="collibra-wikipedia-article">
   <info>
     <title>Collibra</title>
     <subtitle>Modular local article source for Wikipedia-oriented publication</subtitle>
+    <rdf:RDF>
+      <skos:Concept rdf:about="urn:datatech-wiki-kg:concept:collibra">
+        <skos:prefLabel xml:lang="en">Collibra</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">Collibra</skos:prefLabel>
+        <skos:prefLabel xml:lang="no">Collibra</skos:prefLabel>
+      </skos:Concept>
+    </rdf:RDF>
   </info>
   <xi:include href="apparatus/company-card.xml"/>
   <xi:include href="sections/01-lead.xml"/>

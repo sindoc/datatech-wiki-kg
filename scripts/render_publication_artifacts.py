@@ -303,6 +303,7 @@ def render_wikitext(
     company_card: dict[str, object],
 ) -> str:
     topic_meta = load_wikipedia_topic_meta()
+    pronunciation = str(topic_meta.get("pronunciation", "")).strip()
     parts = [
         "<!-- generated from content/markdown/Collibra.md -->",
         "{{short description|Software company focused on data governance and data intelligence}}",
@@ -314,9 +315,9 @@ def render_wikitext(
         parts.append("")
     for index, section in enumerate(sections):
         title = str(section["title"])
-        heading = f"== {title} ==" if index > 0 else "== Lead =="
-        parts.append(heading)
-        parts.append("")
+        if index > 0:
+            parts.append(f"== {title} ==")
+            parts.append("")
         refs = "".join(
             citation_template(source_entry(source_line, catalog))
             for source_line in section["sources"]
@@ -325,7 +326,10 @@ def render_wikitext(
         for p_index, paragraph in enumerate(paragraphs):
             rendered = render_inline_citations(str(paragraph), section["sources"], catalog)
             suffix = refs if INLINE_REF_RE.search(str(paragraph)) is None and p_index == len(paragraphs) - 1 else ""
-            parts.append(f"{strip_inline_markers(rendered)}{suffix}")
+            clean = strip_inline_markers(rendered)
+            if index == 0 and p_index == 0 and pronunciation and clean.startswith("Collibra "):
+                clean = clean.replace("Collibra ", f"Collibra ({pronunciation}) ", 1)
+            parts.append(f"{clean}{suffix}")
             parts.append("")
         if section.get("table"):
             parts.extend(render_wikitable(section["table"], section["sources"], catalog))
@@ -630,11 +634,21 @@ def render_modular_docbook(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         + '<article xmlns="http://docbook.org/ns/docbook"\n'
         + '         xmlns:xi="http://www.w3.org/2001/XInclude"\n'
+        + '         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"\n'
+        + '         xmlns:skos="http://www.w3.org/2004/02/skos/core#"\n'
         + '         version="5.2"\n'
         + '         xml:id="collibra-wikipedia-article">\n'
         + "  <info>\n"
         + "    <title>Collibra</title>\n"
         + "    <subtitle>Modular local article source for Wikipedia-oriented publication</subtitle>\n"
+        + "    <rdf:RDF>\n"
+        + '      <skos:Concept rdf:about="urn:datatech-wiki-kg:concept:collibra">\n'
+        + "".join(
+            f'        <skos:prefLabel xml:lang="{lang}">{escape(page.get("title", ""))}</skos:prefLabel>\n'
+            for lang, page in load_wikipedia_topic_meta().get("language_pages", {}).items()
+        )
+        + "      </skos:Concept>\n"
+        + "    </rdf:RDF>\n"
         + "  </info>\n"
         + (f'  <xi:include href="{company_card_href}"/>\n' if company_card_href else "")
         + f"{xi_sections}\n"
