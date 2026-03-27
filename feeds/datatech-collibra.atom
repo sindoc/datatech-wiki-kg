@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>urn:singine:campaign:datatech-wiki-kg:collibra</id>
+  <title>DataTech Wikipedia Support Knowledge Graph</title>
+  <updated>2026-03-27T11:44:12Z</updated>
+  <subtitle>Neutral, source-driven support material for Wikipedia contributions about Collibra as a company and platform.</subtitle>
+  <author><name>Sina Heshmati</name></author>
+  <link href="https://foss.lutino.io/wikipedia/feeds/datatech-collibra.atom" rel="self"/>
+  <entry>
+    <id>urn:update:2026-03-27:launch</id>
+    <title>Campaign launch and repository seed</title>
+    <updated>2026-03-27T12:00:00Z</updated>
+    <summary>Seeded a neutral knowledge-graph project for Wikipedia-supporting research on Collibra, plus opt-in feeds and outreach templates.</summary>
+    <link href="https://foss.lutino.io/wikipedia/updates/launch" rel="alternate"/>
+    <category term="launch"/>
+    <category term="collibra"/>
+    <category term="wikipedia"/>
+    <category term="knowledge-graph"/>
+  </entry>
+  <entry>
+    <id>urn:update:2026-03-27:neutrality</id>
+    <title>Neutrality and consent policy adopted</title>
+    <updated>2026-03-27T12:05:00Z</updated>
+    <summary>The project will separate public facts from private contact data, and all email outreach will remain opt-in.</summary>
+    <link href="https://foss.lutino.io/wikipedia/updates/neutrality-policy" rel="alternate"/>
+    <category term="neutrality"/>
+    <category term="policy"/>
+    <category term="outreach"/>
+  </entry>
+</feed>

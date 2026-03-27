@@ -1,0 +1,312 @@
+{
+  "@context": {
+    "schema": "https://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "member": "schema:member",
+    "about": "schema:about",
+    "sameAs": "schema:sameAs",
+    "knowsAbout": "schema:knowsAbout"
+  },
+  "@graph": [
+    {
+      "@id": "urn:singine:campaign:datatech-wiki-kg:collibra",
+      "@type": "schema:Project",
+      "name": "DataTech Wikipedia Support Knowledge Graph",
+      "description": "Neutral support project for Wikipedia contributions and public knowledge work about Collibra.",
+      "about": {
+        "@id": "urn:entity:company:collibra"
+      },
+      "member": [
+        {
+          "@id": "urn:person:sina-heshmati"
+        }
+      ]
+    },
+    {
+      "@id": "urn:entity:company:collibra",
+      "@type": "schema:Organization",
+      "name": "Collibra",
+      "description": "Software company associated with data governance and data intelligence."
+    },
+    {
+      "@id": "urn:entity:platform:collibra-platform",
+      "@type": "schema:SoftwareApplication",
+      "name": "Collibra Platform",
+      "description": "Data governance platform and related product surface.",
+      "sameAs": "urn:entity:company:collibra"
+    },
+    {
+      "@id": "urn:entity:article:wikipedia:collibra",
+      "@type": "schema:CreativeWork",
+      "name": "Collibra Wikipedia Entry",
+      "description": "Wikipedia article to be supported by neutral, verifiable source material.",
+      "about": {
+        "@id": "urn:entity:company:collibra"
+      }
+    },
+    {
+      "@id": "urn:person:sina-heshmati",
+      "@type": "schema:Person",
+      "name": "Sina Heshmati",
+      "knowsAbout": [
+        {
+          "@id": "urn:entity:company:collibra"
+        },
+        {
+          "@id": "urn:entity:platform:collibra-platform"
+        }
+      ]
+    },
+    {
+      "@id": "urn:section:collibra:1",
+      "@type": "schema:CreativeWork",
+      "name": "Collibra",
+      "position": 1,
+      "description": "Section level 1 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:3",
+      "@type": "schema:CreativeWork",
+      "name": "Purpose",
+      "position": 3,
+      "description": "Section level 2 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:7",
+      "@type": "schema:CreativeWork",
+      "name": "Editorial constraints",
+      "position": 7,
+      "description": "Section level 2 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:14",
+      "@type": "schema:CreativeWork",
+      "name": "Working model",
+      "position": 14,
+      "description": "Section level 2 in canonical markdown source."
+    },
+    {
+      "@id": "urn:section:collibra:21",
+      "@type": "schema:CreativeWork",
+      "name": "Initial scope",
+      "position": 21,
+      "description": "Section level 2 in canonical markdown source."
+    },
+    {
+      "@id": "urn:person:damien-coraboeuf",
+      "@type": "schema:Person",
+      "name": "Damien Coraboeuf",
+      "description": "Planning-list participant with relationship former-collibra-orbit.",
+      "knowsAbout": [
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ]
+    },
+    {
+      "@id": "urn:person:piotr-boczkowski",
+      "@type": "schema:Person",
+      "name": "Piotr Boczkowski",
+      "description": "Planning-list participant with relationship former-collibra-orbit.",
+      "knowsAbout": [
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ]
+    },
+    {
+      "@id": "urn:person:bas-van-reeuwijk",
+      "@type": "schema:Person",
+      "name": "Bas van Reeuwijk",
+      "description": "Planning-list participant with relationship former-collibra-orbit.",
+      "knowsAbout": [
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ]
+    },
+    {
+      "@id": "urn:person:piotr-malinski",
+      "@type": "schema:Person",
+      "name": "Piotr Malinski",
+      "description": "Planning-list participant with relationship former-collibra-orbit.",
+      "knowsAbout": [
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ]
+    },
+    {
+      "@id": "urn:person:hafees-chett",
+      "@type": "schema:Person",
+      "name": "Hafees Chett",
+      "description": "Planning-list participant with relationship former-collibra-orbit.",
+      "knowsAbout": [
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ]
+    },
+    {
+      "@id": "urn:person:jevgenijs-jelistratovs",
+      "@type": "schema:Person",
+      "name": "Jevgenijs Jelistratovs",
+      "description": "Planning-list participant with relationship former-collibra-orbit.",
+      "knowsAbout": [
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ]
+    },
+    {
+      "@id": "urn:person:john-f-marchese",
+      "@type": "schema:Person",
+      "name": "John F. Marchese",
+      "description": "Planning-list participant with relationship former-collibra-orbit.",
+      "knowsAbout": [
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ]
+    },
+    {
+      "@id": "urn:person:stephen-campbell",
+      "@type": "schema:Person",
+      "name": "Stephen Campbell",
+      "description": "Planning-list participant with relationship former-collibra-orbit.",
+      "knowsAbout": [
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ]
+    },
+    {
+      "@id": "urn:person:philip-carty",
+      "@type": "schema:Person",
+      "name": "Philip Carty",
+      "description": "Planning-list participant with relationship former-collibra-orbit.",
+      "knowsAbout": [
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ]
+    },
+    {
+      "@id": "urn:person:john-wills",
+      "@type": "schema:Person",
+      "name": "John Wills",
+      "description": "Planning-list participant with relationship former-collibra-orbit.",
+      "knowsAbout": [
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ]
+    },
+    {
+      "@id": "urn:person:spencer-forrest",
+      "@type": "schema:Person",
+      "name": "Spencer Forrest",
+      "description": "Planning-list participant with relationship former-collibra-orbit.",
+      "knowsAbout": [
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ]
+    },
+    {
+      "@id": "urn:person:maarten-masschelein",
+      "@type": "schema:Person",
+      "name": "Maarten Masschelein",
+      "description": "Planning-list participant with relationship former-collibra-orbit.",
+      "knowsAbout": [
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ]
+    },
+    {
+      "@id": "urn:person:toby-pearson",
+      "@type": "schema:Person",
+      "name": "Toby Pearson",
+      "description": "Planning-list participant with relationship former-collibra-orbit.",
+      "knowsAbout": [
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ]
+    },
+    {
+      "@id": "urn:person:john-dorney",
+      "@type": "schema:Person",
+      "name": "John Dorney",
+      "description": "Planning-list participant with relationship former-collibra-orbit.",
+      "knowsAbout": [
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ]
+    },
+    {
+      "@id": "urn:person:john-weisensee",
+      "@type": "schema:Person",
+      "name": "John Weisensee",
+      "description": "Planning-list participant with relationship former-collibra-orbit.",
+      "knowsAbout": [
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ]
+    },
+    {
+      "@id": "urn:person:angela-losacco",
+      "@type": "schema:Person",
+      "name": "Angela Losacco",
+      "description": "Planning-list participant with relationship former-collibra-orbit.",
+      "knowsAbout": [
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ]
+    },
+    {
+      "@id": "urn:person:michelle-rosen",
+      "@type": "schema:Person",
+      "name": "Michelle Rosen",
+      "description": "Planning-list participant with relationship legal-community.",
+      "knowsAbout": [
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ]
+    },
+    {
+      "@id": "urn:person:amanda-weare",
+      "@type": "schema:Person",
+      "name": "Amanda Weare",
+      "description": "Planning-list participant with relationship legal-community.",
+      "knowsAbout": [
+        {
+          "@id": "urn:entity:company:collibra"
+        }
+      ]
+    },
+    {
+      "@id": "urn:artifact:notifications:pending",
+      "@type": "schema:DataFeed",
+      "name": "Pending maintainer notifications",
+      "description": "Generated after refresh runs to summarize changes that may require maintainers to be informed."
+    },
+    {
+      "@id": "urn:singine:campaign:datatech-wiki-kg:collibra",
+      "@type": "schema:Project",
+      "name": "DataTech Wikipedia Support Knowledge Graph",
+      "description": "Neutral, source-driven support material for Wikipedia contributions about Collibra as a company and platform.",
+      "url": "https://foss.lutino.io/wikipedia/",
+      "dateModified": "2026-03-27T11:44:12Z"
+    }
+  ]
+}

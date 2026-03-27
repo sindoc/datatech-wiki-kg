@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<adr-record xmlns="urn:lutino:adr"
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <record-id>ADR-0001</record-id>
+  <title>Maintainer-Owned Repository Location</title>
+  <status>accepted</status>
+  <date>2026-03-27</date>
+  <system>datatech-wiki-kg</system>
+  <canonical-repository-path>/Users/skh/ws/git/github/sindoc/datatech-wiki-kg</canonical-repository-path>
+  <owner>sindoc</owner>
+  <summary>Maintainer-owned repositories use /Users/skh/ws/git/github/sindoc/&lt;repo_name&gt; as the canonical local workspace location.</summary>
+  <rationale>
+    <point>One canonical path simplifies Singine automation and workspace references.</point>
+    <point>One canonical path simplifies SilkPage publication and XML payload generation.</point>
+    <point>One canonical path simplifies Logseq, Emacs, and Collibra import references.</point>
+  </rationale>
+  <collibra-import>
+    <asset-type>Architecture Decision Record</asset-type>
+    <domain>Engineering Governance</domain>
+    <community>sindoc</community>
+    <format>xml</format>
+  </collibra-import>
+</adr-record>

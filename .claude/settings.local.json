@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/skh/ws/git/github/sindoc/datatech-wiki-kg remote -v)",
+      "Bash(gh repo:*)"
+    ]
+  }
+}

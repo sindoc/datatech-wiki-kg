@@ -1,0 +1,106 @@
+{
+  "policy": {
+    "publish_contact_details": false,
+    "invite_mode": "manual-opt-in",
+    "notes": [
+      "Names are kept here as a planning list only.",
+      "Do not infer consent to publish endorsements or contact information.",
+      "Employment changes or competitive overlap do not change the neutrality requirement."
+    ]
+  },
+  "participants": [
+    {
+      "name": "Damien Coraboeuf",
+      "relationship": "former-collibra-orbit",
+      "status": "proposed"
+    },
+    {
+      "name": "Piotr Boczkowski",
+      "relationship": "former-collibra-orbit",
+      "status": "proposed"
+    },
+    {
+      "name": "Bas van Reeuwijk",
+      "relationship": "former-collibra-orbit",
+      "status": "proposed"
+    },
+    {
+      "name": "Piotr Malinski",
+      "relationship": "former-collibra-orbit",
+      "status": "proposed"
+    },
+    {
+      "name": "Hafees Chett",
+      "relationship": "former-collibra-orbit",
+      "status": "proposed"
+    },
+    {
+      "name": "Jevgenijs Jelistratovs",
+      "relationship": "former-collibra-orbit",
+      "status": "proposed"
+    },
+    {
+      "name": "John F. Marchese",
+      "relationship": "former-collibra-orbit",
+      "status": "proposed"
+    },
+    {
+      "name": "Stephen Campbell",
+      "relationship": "former-collibra-orbit",
+      "status": "proposed"
+    },
+    {
+      "name": "Philip Carty",
+      "relationship": "former-collibra-orbit",
+      "status": "proposed"
+    },
+    {
+      "name": "John Wills",
+      "relationship": "former-collibra-orbit",
+      "status": "proposed"
+    },
+    {
+      "name": "Spencer Forrest",
+      "relationship": "former-collibra-orbit",
+      "status": "proposed"
+    },
+    {
+      "name": "Maarten Masschelein",
+      "relationship": "former-collibra-orbit",
+      "status": "proposed"
+    },
+    {
+      "name": "Toby Pearson",
+      "relationship": "former-collibra-orbit",
+      "status": "proposed"
+    },
+    {
+      "name": "John Dorney",
+      "relationship": "former-collibra-orbit",
+      "status": "proposed"
+    },
+    {
+      "name": "John Weisensee",
+      "relationship": "former-collibra-orbit",
+      "status": "proposed"
+    },
+    {
+      "name": "Angela Losacco",
+      "relationship": "former-collibra-orbit",
+      "status": "proposed"
+    },
+    {
+      "name": "Michelle Rosen",
+      "relationship": "legal-community",
+      "status": "proposed"
+    },
+    {
+      "name": "Amanda Weare",
+      "relationship": "legal-community",
+      "status": "proposed",
+      "aliases": [
+        "Mandy"
+      ]
+    }
+  ]
+}

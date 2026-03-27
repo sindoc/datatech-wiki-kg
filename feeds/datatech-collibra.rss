@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rss="http://purl.org/rss/1.0/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rss:channel rdf:about="urn:singine:campaign:datatech-wiki-kg:collibra">
+    <rss:title>DataTech Wikipedia Support Knowledge Graph</rss:title>
+    <rss:link>https://foss.lutino.io/wikipedia</rss:link>
+    <rss:description>Neutral, source-driven support material for Wikipedia contributions about Collibra as a company and platform.</rss:description>
+    <dc:date>2026-03-27T11:44:12Z</dc:date>
+    <rss:items>
+      <rdf:Seq>
+        <rss:item rdf:resource="https://foss.lutino.io/wikipedia/updates/launch"/>
+        <rss:item rdf:resource="https://foss.lutino.io/wikipedia/updates/neutrality-policy"/>
+      </rdf:Seq>
+    </rss:items>
+  </rss:channel>
+  <rss:item rdf:about="https://foss.lutino.io/wikipedia/updates/launch">
+    <rss:title>Campaign launch and repository seed</rss:title>
+    <rss:link>https://foss.lutino.io/wikipedia/updates/launch</rss:link>
+    <rss:description>Seeded a neutral knowledge-graph project for Wikipedia-supporting research on Collibra, plus opt-in feeds and outreach templates.</rss:description>
+    <dc:date>2026-03-27T12:00:00Z</dc:date>
+  </rss:item>
+  <rss:item rdf:about="https://foss.lutino.io/wikipedia/updates/neutrality-policy">
+    <rss:title>Neutrality and consent policy adopted</rss:title>
+    <rss:link>https://foss.lutino.io/wikipedia/updates/neutrality-policy</rss:link>
+    <rss:description>The project will separate public facts from private contact data, and all email outreach will remain opt-in.</rss:description>
+    <dc:date>2026-03-27T12:05:00Z</dc:date>
+  </rss:item>
+</rdf:RDF>

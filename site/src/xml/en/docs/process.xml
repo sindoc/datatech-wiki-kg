@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article>
+  <title>Process</title>
+  <para>
+    The process is public, opt-in, and source-driven. Derived assets are rebuilt
+    from git-tracked sources, and notification artifacts are prepared without
+    sending mail automatically.
+  </para>
+</article>

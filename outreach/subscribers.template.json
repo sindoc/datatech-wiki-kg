@@ -1,0 +1,15 @@
+{
+  "mailing_list": "singineers-datatech",
+  "subscribers": [
+    {
+      "name": "Example Recipient",
+      "email": "person@example.org",
+      "status": "opted-in",
+      "topics": [
+        "collibra",
+        "wikipedia",
+        "data-tech"
+      ]
+    }
+  ]
+}

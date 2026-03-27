@@ -1,0 +1,80 @@
+{
+  "campaign": {
+    "id": "urn:singine:campaign:datatech-wiki-kg:collibra",
+    "slug": "datatech-wiki-kg",
+    "title": "DataTech Wikipedia Support Knowledge Graph",
+    "category": "Data Tech",
+    "focus_topic": "Collibra",
+    "summary": "Neutral, source-driven support material for Wikipedia contributions about Collibra as a company and platform.",
+    "maintainer": "Sina Heshmati",
+    "public_base_url": "https://foss.lutino.io/wikipedia",
+    "mailing_list_name": "singineers-datatech",
+    "communication_policy": {
+      "email_mode": "opt-in-only",
+      "feed_formats": [
+        "atom-1.0",
+        "rss-1.0"
+      ],
+      "notes": [
+        "Do not publish personal email addresses in the repository.",
+        "Do not send campaign updates to people who have not opted in.",
+        "Keep company stakeholders informed only through neutral, public, or consent-based channels."
+      ]
+    }
+  },
+  "entities": [
+    {
+      "id": "urn:entity:company:collibra",
+      "type": "Organization",
+      "name": "Collibra",
+      "description": "Software company known for data intelligence and data governance products.",
+      "topic_role": "subject-company"
+    },
+    {
+      "id": "urn:entity:platform:collibra-platform",
+      "type": "SoftwareApplication",
+      "name": "Collibra Platform",
+      "description": "Platform used for data governance, catalog, stewardship, and operating-model workflows.",
+      "topic_role": "subject-platform"
+    },
+    {
+      "id": "urn:entity:article:wikipedia:collibra",
+      "type": "CreativeWork",
+      "name": "Collibra Wikipedia Entry",
+      "description": "Target encyclopedia article supported by neutral, verifiable public research."
+    },
+    {
+      "id": "urn:entity:category:datatech",
+      "type": "DefinedTerm",
+      "name": "Data Tech",
+      "description": "Working category for public knowledge work on data and governance technologies."
+    }
+  ],
+  "updates": [
+    {
+      "id": "urn:update:2026-03-27:launch",
+      "title": "Campaign launch and repository seed",
+      "updated": "2026-03-27T12:00:00Z",
+      "summary": "Seeded a neutral knowledge-graph project for Wikipedia-supporting research on Collibra, plus opt-in feeds and outreach templates.",
+      "link": "https://foss.lutino.io/wikipedia/updates/launch",
+      "tags": [
+        "launch",
+        "collibra",
+        "wikipedia",
+        "knowledge-graph"
+      ]
+    },
+    {
+      "id": "urn:update:2026-03-27:neutrality",
+      "title": "Neutrality and consent policy adopted",
+      "updated": "2026-03-27T12:05:00Z",
+      "summary": "The project will separate public facts from private contact data, and all email outreach will remain opt-in.",
+      "link": "https://foss.lutino.io/wikipedia/updates/neutrality-policy",
+      "tags": [
+        "neutrality",
+        "policy",
+        "outreach"
+      ]
+    }
+  ]
+}

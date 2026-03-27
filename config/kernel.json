@@ -1,0 +1,7 @@
+{
+  "kernel_graph_root": "/Users/skh/ws/logseq/singine/kernel",
+  "kernel_pages_dir": "/Users/skh/ws/logseq/singine/kernel/pages",
+  "emacsclient_bin": "emacsclient",
+  "logseq_api_url": "http://127.0.0.1:12315",
+  "kernel_namespace": "Wikipedia"
+}

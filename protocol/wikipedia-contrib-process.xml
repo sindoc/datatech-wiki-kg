@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<singine-process xmlns="urn:singine:protocol:wikipedia"
+                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <process-id>urn:singine:protocol:wikipedia:collibra:process</process-id>
+  <title>Wikipedia Contribution Draft Process</title>
+  <topic>collibra</topic>
+  <site-url>https://foss.lutino.io/wikipedia/</site-url>
+  <repository-root>/Users/skh/ws/git/github/sindoc/datatech-wiki-kg</repository-root>
+  <stage id="author">
+    <label>Author canonical draft</label>
+    <artifact format="markdown">content/markdown/Collibra.md</artifact>
+    <artifact format="markdown">docs/process.md</artifact>
+    <artifact format="markdown">adrs/ADR-0001-maintainer-repository-location.md</artifact>
+  </stage>
+  <stage id="refresh">
+    <label>Refresh derived artifacts</label>
+    <command>python3 scripts/refresh_repo.py</command>
+    <artifact format="jsonld">graph/collibra-support.jsonld</artifact>
+    <artifact format="atom">feeds/datatech-collibra.atom</artifact>
+    <artifact format="rss">feeds/datatech-collibra.rss</artifact>
+  </stage>
+  <stage id="visualize">
+    <label>Project into visual surfaces</label>
+    <command>python3 scripts/sync_kernel_views.py</command>
+    <command>python3 scripts/render_process_visual.py</command>
+    <artifact format="logseq">content/logseq/pages/Wikipedia___Index.md</artifact>
+    <artifact format="mermaid">visuals/wikipedia-contrib-process.mmd</artifact>
+  </stage>
+  <stage id="publish">
+    <label>Prepare publication source</label>
+    <artifact format="xml">site/src/xml/en/layout.xml</artifact>
+    <artifact format="xml">site/src/xml/en/docs/process.xml</artifact>
+  </stage>
+  <stage id="verify">
+    <label>Run one end-to-end test case</label>
+    <command>python3 scripts/test_case.py</command>
+    <command>python3 -m singine.command wikipedia contrib collibra --action test-case --json</command>
+  </stage>
+</singine-process>

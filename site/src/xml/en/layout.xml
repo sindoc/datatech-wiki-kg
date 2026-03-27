@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xml:id="xml:catalog:id:lutino:foss:wikipedia">
+  <config param="headlink" value="contact" altval="Contact"/>
+  <config param="headlink" value="sitemap" altval="Site Map"/>
+  <config param="title" value="Wikipedia Support Graph"/>
+
+  <copyright role="license">
+    <year>2026</year>
+    <holder role="https://foss.lutino.io/wikipedia/">Lutino and MarkupWare</holder>
+  </copyright>
+
+  <style src="css/foss-wikipedia.css" type="text/css"/>
+
+  <toc page="index.xml" filename="index.html">
+    <tocentry page="about/index.xml" dir="about" filename="index.html"/>
+    <tocentry page="docs/index.xml" dir="docs" filename="index.html">
+      <tocentry page="docs/plan.xml" dir="plan" filename="index.html"/>
+      <tocentry page="docs/backlog.xml" dir="backlog" filename="index.html"/>
+      <tocentry page="docs/roadmap.xml" dir="roadmap" filename="index.html"/>
+      <tocentry page="docs/process.xml" dir="process" filename="index.html"/>
+    </tocentry>
+  </toc>
+
+  <notoc page="sitemap.xml" dir="site/map" filename="index.html"/>
+</layout>

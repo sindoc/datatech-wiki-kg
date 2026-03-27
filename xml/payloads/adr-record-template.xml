@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<adr-record xmlns="urn:lutino:adr"
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <record-id>ADR-XXXX</record-id>
+  <title>Decision title</title>
+  <status>proposed</status>
+  <date>YYYY-MM-DD</date>
+  <system>system-name</system>
+  <canonical-repository-path>/Users/skh/ws/git/github/sindoc/system-name</canonical-repository-path>
+  <owner>sindoc</owner>
+  <summary>Short decision summary.</summary>
+  <rationale>
+    <point>Reason one.</point>
+    <point>Reason two.</point>
+  </rationale>
+  <collibra-import>
+    <asset-type>Architecture Decision Record</asset-type>
+    <domain>Engineering Governance</domain>
+    <community>sindoc</community>
+    <format>xml</format>
+  </collibra-import>
+</adr-record>

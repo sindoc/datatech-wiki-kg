@@ -1,0 +1,16 @@
+{
+  "project_name": "datatech-wiki-kg",
+  "canonical_repo_root": "/Users/skh/ws/git/github/sindoc/datatech-wiki-kg",
+  "site_url": "https://foss.lutino.io/wikipedia/",
+  "mailing_list_name": "singineers-datatech",
+  "dependencies": {
+    "singine_root": "/Users/skh/ws/git/github/sindoc/singine",
+    "silkpage_root": "/Users/skh/ws/git/github/sindoc/silkpage",
+    "lutino_site_root": "/Users/skh/ws/git/lutino.io/lutino"
+  },
+  "content": {
+    "canonical_markdown": "content/markdown/Collibra.md",
+    "org_export": "content/org/Collibra.org",
+    "logseq_export": "content/logseq/pages/Collibra.md"
+  }
+}

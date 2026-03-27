@@ -1,0 +1,16 @@
+Subject: Invitation to opt in to DataTech Wikipedia support updates
+
+Hello {name},
+
+I am starting a neutral, public knowledge-graph project to support Wikipedia-facing research on data technology topics, beginning with Collibra as a company and platform.
+
+The intent is not marketing or company advocacy. The intent is to improve the public knowledge base with verifiable sources, transparent revision history, and careful separation between public facts and private context.
+
+If you want to follow or contribute, I can add you to the opt-in `singineers-datatech` update list. Updates are planned through Atom 1.0, RSS 1.0, GitHub, and occasional manual email summaries.
+
+Project URL: https://foss.lutino.io/wikipedia/
+
+If you prefer not to receive updates, no action is needed.
+
+Best,
+Sina

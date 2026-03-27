@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article>
+  <title>Wikipedia Support Graph</title>
+  <subtitle>Public process and public progress for source-driven article support</subtitle>
+
+  <para>
+    This site publishes the public process behind a git-based knowledge graph
+    for Wikipedia-supporting work on data technology topics.
+  </para>
+
+  <section>
+    <title>Current focus</title>
+    <para>
+      The first active topic is Collibra, treated both as a company and as a
+      platform, with the work kept neutral, source-driven, and openly reviewable.
+    </para>
+  </section>
+
+  <section>
+    <title>Public documents</title>
+    <itemizedlist>
+      <listitem><para>Plan</para></listitem>
+      <listitem><para>Backlog</para></listitem>
+      <listitem><para>Roadmap</para></listitem>
+      <listitem><para>Process</para></listitem>
+    </itemizedlist>
+  </section>
+</article>
