@@ -90,5 +90,15 @@ Collibra has used acquisitions to broaden its platform beyond catalog and govern
 
 Coverage of Collibra has often treated the company as part of a wider enterprise shift toward making data more discoverable, reliable, and governable across large organizations.<ref>{{cite web|url=https://techcrunch.com/2020/04/02/collibra-nabs-another-112-5m-at-a-2-3b-valuation-for-its-big-data-management-platform/|title=Collibra nabs another $112.5M at a $2.3B valuation for its big data management platform|website=TechCrunch}}</ref><ref>{{cite web|url=https://techcrunch.com/2021/11/09/data-intelligence-company-collibra-brings-in-another-250m-to-more-than-double-its-valuation/|title=Data intelligence company Collibra brings in another $250M to more than double its valuation|website=TechCrunch}}</ref> Publications have described the company in varying terms, including data governance, data management, and data intelligence, while consistently placing it in the market for enterprise software used to control and operationalize data.<ref>{{cite web|url=https://techcrunch.com/2020/04/02/collibra-nabs-another-112-5m-at-a-2-3b-valuation-for-its-big-data-management-platform/|title=Collibra nabs another $112.5M at a $2.3B valuation for its big data management platform|website=TechCrunch}}</ref><ref>{{cite web|url=https://techcrunch.com/2021/11/09/data-intelligence-company-collibra-brings-in-another-250m-to-more-than-double-its-valuation/|title=Data intelligence company Collibra brings in another $250M to more than double its valuation|website=TechCrunch}}</ref> Later coverage connected that position to AI governance and data-access controls as those topics became more prominent in enterprise software.<ref>{{cite web|url=https://www.techtarget.com/searchdatamanagement/news/366580432/Collibra-launches-AI-Governance-unveils-GenAI-capabilities|title=Collibra launches AI Governance, unveils GenAI capabilities|website=TechTarget}}</ref>
 
+== See also ==
+
+* [[Data governance]]
+* [[Metadata management]]
+* [[Data quality]]
+
 == References ==
 {{reflist}}
+
+[[Category:Software companies of Belgium]]
+[[Category:Software companies established in 2008]]
+[[Category:Data management software]]

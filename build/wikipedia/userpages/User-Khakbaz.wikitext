@@ -1,0 +1,31 @@
+{{User page}}
+
+'''Khakbaz''' is the Wikipedia account of '''Sina K. Heshmati''', a Brussels-based builder working across data, knowledge representation, software, and public documentation.
+
+This page is a simple editor introduction so other contributors can quickly see the main public links and topic interests behind the account.
+
+== About ==
+
+I work on data and knowledge systems, open publication workflows, and software projects that connect technical structure with public explanation.
+
+Outside direct article work, I use public repositories and writing spaces to document ideas, prototypes, and long-form notes in the open.
+
+== Main links ==
+
+* [https://lutino.io/ Lutino]
+* [https://github.com/sindoc GitHub profile]
+* [https://www.linkedin.com/in/sinaheshmati/ LinkedIn]
+* [https://sindoc.github.io/website/ Public website]
+* [https://lutino.substack.com/ Writing and updates]
+
+== Editing interests ==
+
+* Source-driven article improvement
+* Data and knowledge systems
+* History of ideas, technology, and public documentation
+* Clear sourcing, neutral tone, and durable editorial structure
+
+== Notes ==
+
+This user page is descriptive rather than authoritative. For encyclopedia content, please rely on reliable, independent sources and normal Wikipedia discussion processes.
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userpage username="Khakbaz" display-name="Sina K. Heshmati">
+  <lead>
+    <para><strong>Khakbaz</strong> is the Wikipedia account of <strong>Sina K. Heshmati</strong>, a Brussels-based builder working across data, knowledge representation, software, and public documentation.</para>
+    <para>This page is a simple editor introduction so other contributors can quickly see the main public links and topic interests behind the account.</para>
+  </lead>
+
+  <section title="About">
+    <para>I work on data and knowledge systems, open publication workflows, and software projects that connect technical structure with public explanation.</para>
+    <para>Outside direct article work, I use public repositories and writing spaces to document ideas, prototypes, and long-form notes in the open.</para>
+  </section>
+
+  <section title="Main links">
+    <list>
+      <item href="https://lutino.io/" label="Lutino">Lutino</item>
+      <item href="https://github.com/sindoc" label="GitHub">GitHub profile</item>
+      <item href="https://www.linkedin.com/in/sinaheshmati/" label="LinkedIn">LinkedIn</item>
+      <item href="https://sindoc.github.io/website/" label="Website">Public website</item>
+      <item href="https://lutino.substack.com/" label="Substack">Writing and updates</item>
+    </list>
+  </section>
+
+  <section title="Editing interests">
+    <list>
+      <item>Source-driven article improvement</item>
+      <item>Data and knowledge systems</item>
+      <item>History of ideas, technology, and public documentation</item>
+      <item>Clear sourcing, neutral tone, and durable editorial structure</item>
+    </list>
+  </section>
+
+  <section title="Notes">
+    <para>This user page is descriptive rather than authoritative. For encyclopedia content, please rely on reliable, independent sources and normal Wikipedia discussion processes.</para>
+  </section>
+</userpage>

@@ -33,13 +33,18 @@ This repository is also intended to make the editorial process visible. Source s
 - `content/markdown/Collibra.md`: canonical article-support source
 - `data/topics/collibra-topic.json`: topic-scoped people, terms, and editorial metadata for Collibra
 - `data/topics/collibra-timeline.json`: topic timeline with confidence-bearing metadata and regulatory context
+- `data/topics/collibra-wikipedia.json`: Wikipedia-facing metadata for categories, cross-language pages, and deterministic drift checks
 - `data/media/collibra-media.json`: local media references and publication-status metadata
 - `media/README.md`: media workflow for Commons and English Wikipedia
 - `media/manifests/`: tracked upload manifests for topic media
 - `content/org/Collibra.org`: generated Org mirror
 - `content/logseq/pages/Collibra.md`: generated Logseq mirror
 - `build/wikipedia/Collibra.wikitext`: generated Wikipedia-facing draft output
+- `build/wikipedia/userpages/User-Khakbaz.wikitext`: generated user-page wikitext derived from canonical XML
+- `build/wikipedia/templates/Template-Data-technology.wikitext`: generated navbox template draft derived from canonical XML
 - `xml/wikipedia/collibra/article.xml`: modular xi:include-driven local XML source
+- `xml/wikipedia/users/Khakbaz/profile.xml`: canonical XML source for the `User:Khakbaz` user page
+- `xml/wikipedia/templates/data-technology-navbox.xml`: canonical XML source for the local `Data technology` navbox draft
 - `build/docbook/Collibra.xml`: generated DocBook article output
 - `build/rdf/Collibra.rdf`: generated RDF/XML publication output
 - `references/zotero/`: tracked Zotero export workspace for the Collibra subcollection
@@ -65,6 +70,9 @@ This repository is also intended to make the editorial process visible. Source s
 - `scripts/generate_campaign_assets.py`: generates Atom and RSS outputs
 - `scripts/render_media_manifest.py`: generates the concrete topic media manifest from tracked assets and template metadata
 - `scripts/render_publication_artifacts.py`: generates Wikipedia, DocBook, and RDF publication artifacts
+- `scripts/render_user_pages.py`: renders simple Wikipedia user pages from canonical XML sources
+- `scripts/render_navboxes.py`: renders Wikipedia navbox drafts from canonical XML sources
+- `scripts/analyze_wikipedia_language_drift.py`: compares the `en`, `nl`, and `no` Collibra entries using sections, categories, references, and named fact atoms without an LLM
 - `scripts/check_wikipedia_quality.py`: runs categorized article checks against the generated Wikipedia draft
 - `xml/wikipedia/collibra/`: version-managed modular article source and editorial apparatus
 - `scripts/refresh_repo.py`: run all refresh steps and prepare a pending notification manifest
@@ -129,7 +137,7 @@ That decision is captured in [ADR-0001-maintainer-repository-location.md](/Users
 make refresh
 ```
 
-That syncs the canonical Markdown source into Org and Logseq, rebuilds the JSON-LD knowledge graph, regenerates Atom and RSS feeds, renders Wikipedia/DocBook/RDF publication artifacts, and writes `notifications/pending-update.json`.
+That syncs the canonical Markdown source into Org and Logseq, rebuilds the JSON-LD knowledge graph, regenerates Atom and RSS feeds, renders Wikipedia/DocBook/RDF publication artifacts, renders configured user pages and navboxes from XML, and writes `notifications/pending-update.json`.
 
 It also regenerates `media/manifests/collibra-assets.json` from the files present under `media/assets/` and the tracked template metadata.
 
@@ -158,6 +166,7 @@ make publish
 That renders:
 
 - `build/wikipedia/Collibra.wikitext`
+- `build/wikipedia/userpages/User-Khakbaz.wikitext`
 - `xml/wikipedia/collibra/article.xml`
 - `build/docbook/Collibra.xml`
 - `build/rdf/Collibra.rdf`
@@ -165,6 +174,8 @@ That renders:
 The intent is to keep Wikipedia-facing and XML/RDF-facing publication outputs derivable from the canonical research brief at all times.
 
 The publication path is DocBook-first: the modular local XML source uses `xi:include` so sections, apparatus, and bibliography can evolve independently, while the compiled article XML remains the stable intermediate for HTML, SVG, MathML, and LaTeX-aware downstream processing.
+
+The draft metadata for Collibra also carries explicit `See also` links and candidate category tags so broader context such as `[[Data governance]]` can be kept in the generated wikitext rather than added ad hoc.
 
 ## Run article quality checks
 
@@ -175,6 +186,14 @@ make quality
 That evaluates the generated article against categorized checks for article shape, sourcing, neutrality and tone, due weight and scope, stability, and maintainability. The report is written under `build/quality/`.
 
 The governing rule set lives in `config/wikipedia_quality_rules.json`. If the policy contract changes, update the ADRs and rules together.
+
+## Analyze cross-language drift
+
+```bash
+make drift
+```
+
+That compares the configured `Collibra` entries across `en.wikipedia.org`, `nl.wikipedia.org`, and `no.wikipedia.org` without an LLM. The current implementation uses deterministic signals only: section structure, category overlap, reference counts, Wikidata linkage presence, and coverage of named fact atoms such as founders and acquisition names.
 
 ## Install Commit Hook
 
