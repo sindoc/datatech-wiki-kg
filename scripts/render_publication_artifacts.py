@@ -17,6 +17,7 @@ RDF_PATH = ROOT / CONFIG["publication"]["rdf_xml"]
 REFERENCES_JSON = ROOT / CONFIG["references"]["csl_json_export"]
 TIMELINE_JSON = ROOT / CONFIG["topic_timeline"]["collibra"]
 MEDIA_JSON = ROOT / CONFIG["media_model"]["collibra"]
+WIKIPEDIA_TOPIC_META = ROOT / "data" / "topics" / "collibra-wikipedia.json"
 
 SOURCE_WITH_TITLE = re.compile(r'^- (?P<label>.+?), "(?P<title>.+?)": (?P<url>https?://\S+)$')
 SOURCE_SIMPLE = re.compile(r"^- (?P<label>.+?): (?P<url>https?://\S+)$")
@@ -95,6 +96,12 @@ def load_media_model() -> dict[str, object]:
     if not MEDIA_JSON.exists():
         return {"assets": []}
     return json.loads(MEDIA_JSON.read_text(encoding="utf-8"))
+
+
+def load_wikipedia_topic_meta() -> dict[str, object]:
+    if not WIKIPEDIA_TOPIC_META.exists():
+        return {}
+    return json.loads(WIKIPEDIA_TOPIC_META.read_text(encoding="utf-8"))
 
 
 def parse_candidate_sections(lines: list[str]) -> list[dict[str, object]]:
@@ -295,6 +302,7 @@ def render_wikitext(
     catalog: dict[str, dict[str, str]],
     company_card: dict[str, object],
 ) -> str:
+    topic_meta = load_wikipedia_topic_meta()
     parts = [
         "<!-- generated from content/markdown/Collibra.md -->",
         "{{short description|Software company focused on data governance and data intelligence}}",
@@ -322,9 +330,20 @@ def render_wikitext(
         if section.get("table"):
             parts.extend(render_wikitable(section["table"], section["sources"], catalog))
             parts.append("")
+    see_also = topic_meta.get("see_also", [])
+    if see_also:
+        parts.append("== See also ==")
+        parts.append("")
+        for title in see_also:
+            parts.append(f"* [[{title}]]")
+        parts.append("")
     parts.append("== References ==")
     parts.append("{{reflist}}")
     parts.append("")
+    for category in topic_meta.get("draft_categories", []):
+        parts.append(f"[[Category:{category}]]")
+    if topic_meta.get("draft_categories"):
+        parts.append("")
     return "\n".join(parts)
 
 

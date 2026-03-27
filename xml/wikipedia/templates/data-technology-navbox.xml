@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navbox name="Data" title="[[Data]]" state="{{{state|autocollapse}}}" listclass="hlist">
+  <meta>
+    <para>This draft retains the broad scope of the current data navbox while reorganizing it into smaller topic clusters. It also adds stronger representation for master data, reference data, code tables, crosswalks, hierarchies, the data economy, quality dimensions, and digital twins.</para>
+    <para>Data-digital-twin tooling is represented outwardly through the general article [[Digital twin]]. Vendor examples such as Xyenta and xflow are tracked as local ecosystem context rather than forced into the outward navbox without stable article targets.</para>
+    <para>The vendor-and-actor row is an editorial synthesis based on vendors that appear in public-facing Gartner and Forrester market materials or public vendor summaries of those reports. It is not a rendering of proprietary quadrant or wave placement.</para>
+  </meta>
+
+  <row group="Information, data, and value">
+    <item target="Information"/>
+    <item target="Metadata" label="Meta"/>
+    <item target="Data type" label="Type"/>
+    <item target="Data structure" label="Structure"/>
+    <item target="Data ecosystem" label="Ecosystem"/>
+    <item target="Data library" label="Library"/>
+    <item target="Data infrastructure" label="Infrastructure"/>
+    <item target="Value of information" label="Value"/>
+  </row>
+
+  <row group="Data categories and semantic structure">
+    <item raw="Data categories"/>
+    <item target="Master data"/>
+    <item target="Master data management"/>
+    <item target="Reference data"/>
+    <item target="Transaction data"/>
+    <item raw="Analytical data"/>
+    <item target="Metadata"/>
+    <item target="Code (metadata)" label="Code tables"/>
+    <item target="Controlled vocabulary"/>
+    <item raw="Crosswalks"/>
+    <item target="Data hierarchy" label="Hierarchies"/>
+    <item raw="Observation data"/>
+    <item target="Market data" label="Trade and market data"/>
+  </row>
+
+  <row group="Data management and governance">
+    <item target="Data management" label="Management"/>
+    <item target="Data governance" label="Governance">
+      <item target="Data cooperative" label="Cooperatives"/>
+    </item>
+    <item target="Data ethics" label="Ethics"/>
+    <item target="Data steward" label="Stewardship"/>
+    <item target="Data lineage" label="Lineage"/>
+    <item target="Data curation" label="Curation"/>
+    <item target="Data preservation" label="Preservation"/>
+    <item target="Data retention" label="Retention"/>
+    <item target="Data publishing" label="Publishing">
+      <item target="Open data"/>
+    </item>
+    <item target="Master data management"/>
+    <item target="Reference data"/>
+  </row>
+
+  <row group="Data quality, trust, and protection">
+    <item target="Data quality" label="Quality"/>
+    <item target="Information quality"/>
+    <item target="Data validation" label="Validation"/>
+    <item target="Data cleansing" label="Cleansing"/>
+    <item target="Data scrubbing" label="Scrubbing"/>
+    <item target="Data integrity" label="Integrity"/>
+    <item target="Information privacy" label="Protection (privacy)"/>
+    <item target="Data security" label="Security"/>
+    <item target="Data anonymization" label="Anonymization"/>
+    <item target="Data de-identification" label="De-identification"/>
+    <item target="Data re-identification" label="Re-identification"/>
+    <item target="Data erasure" label="Erasure"/>
+    <item target="Data remanence" label="Remanence"/>
+    <item target="Data corruption" label="Corruption"/>
+    <item target="Data degradation" label="Degradation"/>
+    <item target="Data loss" label="Loss"/>
+    <item target="Data recovery" label="Recovery"/>
+  </row>
+
+  <row group="Quality dimensions">
+    <item raw="Accuracy"/>
+    <item raw="Completeness"/>
+    <item raw="Consistency"/>
+    <item raw="Timeliness"/>
+    <item raw="Validity"/>
+    <item raw="Uniqueness"/>
+    <item raw="Integrity"/>
+    <item raw="Conformity"/>
+    <item raw="Relevance"/>
+  </row>
+
+  <row group="Data engineering and movement">
+    <item target="Data engineering" label="Engineering"/>
+    <item target="Data integration" label="Integration"/>
+    <item target="Data storage" label="Storage"/>
+    <item raw="[[Extract, transform, load|ETL]]/[[Extract, load, transform|ELT]]">
+      <item target="Data extraction" label="Extract"/>
+      <item target="Data transformation" label="Transform"/>
+      <item target="Data loading" label="Load"/>
+    </item>
+    <item target="Data migration" label="Migration"/>
+    <item target="Data synchronization" label="Synchronization"/>
+    <item target="Data compression" label="Compression"/>
+    <item target="Data fusion" label="Fusion"/>
+    <item target="Data format management" label="Format management"/>
+  </row>
+
+  <row group="Data preparation and operations">
+    <item target="Data acquisition" label="Acquisition"/>
+    <item target="Data augmentation" label="Augmentation"/>
+    <item target="Data collection" label="Collection"/>
+    <item target="Data annotation" label="Annotation"/>
+    <item target="Data editing" label="Editing"/>
+    <item target="Data deduplication" label="Deduplication"/>
+    <item target="Data pre-processing" label="Pre-processing"/>
+    <item target="Data preparation" label="Preparation"/>
+    <item target="Data processing" label="Processing"/>
+    <item target="Data reduction" label="Reduction"/>
+    <item target="Data redundancy" label="Redundancy"/>
+    <item target="Data wrangling" label="Wrangling/munging"/>
+    <item target="Data scraping" label="Scraping"/>
+    <item target="Data rescue" label="Rescue"/>
+  </row>
+
+  <row group="Analysis, science, and interpretation">
+    <item target="Big data" label="Big"/>
+    <item target="Data analysis" label="Analysis"/>
+    <item target="Data exploration" label="Exploration"/>
+    <item target="Data mining" label="Mining"/>
+    <item target="Data science" label="Science"/>
+    <item target="Topological data analysis"/>
+    <item target="Data warehouse" label="Warehouse"/>
+    <item target="Business intelligence"/>
+  </row>
+
+  <row group="Data economy and exchange">
+    <item raw="Data economy"/>
+    <item target="Data sharing" label="Sharing"/>
+    <item target="Open data"/>
+    <item target="Data philanthropy" label="Philanthropy"/>
+    <item target="Data as a service"/>
+    <item target="Data broker"/>
+    <item raw="Responsible reuse"/>
+  </row>
+
+  <row group="Exchange, use, and public context">
+    <item target="Data exhaust" label="Exhaust"/>
+    <item target="Data farming" label="Farming"/>
+    <item target="Data archaeology" label="Archaeology"/>
+  </row>
+
+  <row group="Distributed data, domains, and digital twins">
+    <item target="Data mesh"/>
+    <item target="Data product"/>
+    <item target="Data domain" label="Data domains"/>
+    <item raw="Data categories"/>
+    <item target="Digital twin" label="Data digital twins"/>
+    <item raw="Digital thread"/>
+    <item raw="Operational twins"/>
+    <item raw="Analytical twins"/>
+  </row>
+
+  <row group="Vendors and actors">
+    <item raw="Data vendors"/>
+    <item raw="Data technology vendors"/>
+    <item target="Data as a service" label="Data service providers"/>
+    <item target="Data broker" label="Data brokers"/>
+    <item target="Chief data officer" label="Chief data officers"/>
+    <item target="Information professional" label="Information professionals"/>
+    <item target="Collibra"/>
+    <item target="Informatica"/>
+    <item target="IBM"/>
+    <item target="SAP"/>
+    <item target="Oracle Corporation" label="Oracle"/>
+    <item target="SAS Institute" label="SAS"/>
+    <item target="Qlik"/>
+    <item target="Experian"/>
+    <item target="Alation"/>
+    <item raw="Ataccama"/>
+    <item raw="Precisely"/>
+  </row>
+
+</navbox>

@@ -1,6 +1,6 @@
 PYTHON ?= python3
 
-.PHONY: sync graph feeds refs media publish quality refresh install-hooks preview-mail kernel-sync test-case visualize
+.PHONY: sync graph feeds refs media publish userpages navboxes quality refresh install-hooks preview-mail kernel-sync test-case visualize drift
 
 sync:
 	$(PYTHON) scripts/sync_sources.py
@@ -19,6 +19,12 @@ media:
 
 publish:
 	$(PYTHON) scripts/render_publication_artifacts.py
+
+userpages:
+	$(PYTHON) scripts/render_user_pages.py
+
+navboxes:
+	$(PYTHON) scripts/render_navboxes.py
 
 quality:
 	$(PYTHON) scripts/check_wikipedia_quality.py
@@ -40,3 +46,6 @@ test-case:
 
 visualize:
 	$(PYTHON) scripts/render_process_visual.py
+
+drift:
+	$(PYTHON) scripts/analyze_wikipedia_language_drift.py

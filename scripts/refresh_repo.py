@@ -62,6 +62,8 @@ def main() -> int:
     run("render_reference_exports.py")
     run("render_media_manifest.py")
     run("render_publication_artifacts.py")
+    run("render_user_pages.py")
+    run("render_navboxes.py")
     write_notification_manifest()
     print(f"wrote {NOTIFICATIONS}")
     return 0

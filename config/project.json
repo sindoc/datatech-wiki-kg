@@ -28,6 +28,18 @@
     "docbook_xml": "build/docbook/Collibra.xml",
     "rdf_xml": "build/rdf/Collibra.rdf"
   },
+  "user_pages": {
+    "Khakbaz": {
+      "xml_source": "xml/wikipedia/users/Khakbaz/profile.xml",
+      "wikitext_output": "build/wikipedia/userpages/User-Khakbaz.wikitext"
+    }
+  },
+  "templates": {
+    "data_technology_navbox": {
+      "xml_source": "xml/wikipedia/templates/data-technology-navbox.xml",
+      "wikitext_output": "build/wikipedia/templates/Template-Data-technology.wikitext"
+    }
+  },
   "references": {
     "zotero_collection": "My Library/Collibra",
     "tracked_exports_dir": "references/zotero",

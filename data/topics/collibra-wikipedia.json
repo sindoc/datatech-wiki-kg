@@ -1,0 +1,133 @@
+{
+  "topic": "collibra",
+  "draft_categories": [
+    "Software companies of Belgium",
+    "Software companies established in 2008",
+    "Data management software"
+  ],
+  "see_also": [
+    "Data governance",
+    "Metadata management",
+    "Data quality"
+  ],
+  "language_pages": {
+    "en": {
+      "site": "en.wikipedia.org",
+      "title": "Collibra"
+    },
+    "nl": {
+      "site": "nl.wikipedia.org",
+      "title": "Collibra"
+    },
+    "no": {
+      "site": "no.wikipedia.org",
+      "title": "Collibra"
+    }
+  },
+  "section_aliases": {
+    "lead": [
+      "lead",
+      "inleiding"
+    ],
+    "history": [
+      "history",
+      "historie"
+    ],
+    "products": [
+      "products",
+      "producten",
+      "produkter"
+    ],
+    "acquisitions": [
+      "acquisitions",
+      "overnames",
+      "oppkjop"
+    ],
+    "market_position_and_reception": [
+      "market position and reception",
+      "marktpositie en ontvangst",
+      "markedsposisjon og mottakelse",
+      "mottakelse"
+    ],
+    "references": [
+      "references",
+      "referanser",
+      "bronnen"
+    ]
+  },
+  "fact_atoms": [
+    {
+      "id": "founded-2008",
+      "label": "Founded in 2008",
+      "aliases": [
+        "2008"
+      ]
+    },
+    {
+      "id": "founder-felix",
+      "label": "Felix Van de Maele mentioned",
+      "aliases": [
+        "Felix Van de Maele"
+      ]
+    },
+    {
+      "id": "founder-stijn",
+      "label": "Stijn Christiaens mentioned",
+      "aliases": [
+        "Stijn Christiaens"
+      ]
+    },
+    {
+      "id": "founder-pieter",
+      "label": "Pieter De Leenheer mentioned",
+      "aliases": [
+        "Pieter De Leenheer"
+      ]
+    },
+    {
+      "id": "founder-damien",
+      "label": "Damien Trog mentioned",
+      "aliases": [
+        "Damien Trog"
+      ]
+    },
+    {
+      "id": "owldq",
+      "label": "OwlDQ acquisition covered",
+      "aliases": [
+        "OwlDQ"
+      ]
+    },
+    {
+      "id": "husprey",
+      "label": "Husprey acquisition covered",
+      "aliases": [
+        "Husprey"
+      ]
+    },
+    {
+      "id": "raito",
+      "label": "Raito acquisition covered",
+      "aliases": [
+        "Raito"
+      ]
+    },
+    {
+      "id": "deasy",
+      "label": "Deasy Labs acquisition covered",
+      "aliases": [
+        "Deasy Labs",
+        "Deasy"
+      ]
+    },
+    {
+      "id": "ai-governance",
+      "label": "AI governance coverage",
+      "aliases": [
+        "AI Governance",
+        "AI governance",
+        "AI-governance"
+      ]
+    }
+  ]
+}
