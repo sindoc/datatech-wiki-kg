@@ -13,6 +13,7 @@
 
   <toc page="index.xml" filename="index.html">
     <tocentry page="about/index.xml" dir="about" filename="index.html"/>
+    <tocentry page="topics/git-hook-topology.xml" dir="topics/git-hook-topology" filename="index.html"/>
     <tocentry page="docs/index.xml" dir="docs" filename="index.html">
       <tocentry page="docs/plan.xml" dir="plan" filename="index.html"/>
       <tocentry page="docs/backlog.xml" dir="backlog" filename="index.html"/>

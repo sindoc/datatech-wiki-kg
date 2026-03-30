@@ -3,21 +3,32 @@ from __future__ import annotations
 
 from pathlib import Path
 import os
-import shutil
+import subprocess
 
 
 ROOT = Path(__file__).resolve().parents[1]
-HOOKS_DIR = ROOT / ".git" / "hooks"
-SOURCE = ROOT / "hooks" / "post-commit"
-TARGET = HOOKS_DIR / "post-commit"
+SINGINE_ROOT = Path("/Users/skh/ws/git/github/sindoc/singine")
 
 
 def main() -> int:
-    HOOKS_DIR.mkdir(parents=True, exist_ok=True)
-    shutil.copyfile(SOURCE, TARGET)
-    os.chmod(TARGET, 0o755)
-    print(f"installed {TARGET}")
-    return 0
+    env = os.environ.copy()
+    current_pythonpath = env.get("PYTHONPATH", "")
+    env["PYTHONPATH"] = f"{SINGINE_ROOT}:{current_pythonpath}" if current_pythonpath else str(SINGINE_ROOT)
+    proc = subprocess.run(
+        [
+            "python3",
+            "-m",
+            "singine.command",
+            "git",
+            "hooks",
+            "install",
+            "datatech-wiki-kg",
+        ],
+        cwd=SINGINE_ROOT,
+        env=env,
+        check=False,
+    )
+    return proc.returncode
 
 
 if __name__ == "__main__":

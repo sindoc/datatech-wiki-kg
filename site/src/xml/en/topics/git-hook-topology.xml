@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article>
+  <title>Git Hook Topology</title>
+  <subtitle>Singine-managed hook relationships across the main working repositories</subtitle>
+
+  <para>
+    This topic documents the current shared hook model for the active Sindoc
+    repositories. The hooks themselves are thin launchers. They delegate to
+    Singine, and Singine decides what follow-up command to run for the current
+    repository and event.
+  </para>
+
+  <section>
+    <title>Control surface</title>
+    <itemizedlist>
+      <listitem>
+        <para><code>singine git repos --json</code></para>
+        <sidebar><para>Lists the registered repositories and their declared archetypes.</para></sidebar>
+      </listitem>
+      <listitem>
+        <para><code>singine git hooks install --all --json</code></para>
+        <sidebar><para>Installs the shared <code>pre-commit</code>, <code>post-commit</code>, and <code>post-merge</code> launchers into every registered repository.</para></sidebar>
+      </listitem>
+      <listitem>
+        <para><code>singine git hooks graph</code></para>
+        <sidebar><para>Renders the current topology in Mermaid form from the same registry.</para></sidebar>
+      </listitem>
+    </itemizedlist>
+  </section>
+
+  <section>
+    <title>Event flow</title>
+    <orderedlist>
+      <listitem>
+        <para>Git fires a local hook such as <code>pre-commit</code> or <code>post-merge</code>.</para>
+      </listitem>
+      <listitem>
+        <para>The installed hook launcher calls <code>python3 -m singine.command git hooks run --event ... --repo-root ...</code>.</para>
+      </listitem>
+      <listitem>
+        <para>Singine resolves the repository from its registry and runs the commands configured for that event.</para>
+      </listitem>
+      <listitem>
+        <para>The repository-specific command completes, and its output becomes the local hook feedback.</para>
+      </listitem>
+    </orderedlist>
+  </section>
+
+  <section>
+    <title>Repository relationships</title>
+    <itemizedlist>
+      <listitem>
+        <para><strong>datatech-wiki-kg</strong></para>
+        <sidebar>
+          <para><code>pre-commit</code> delegates to <code>singine git hooks run --event pre-commit --repo-root /Users/skh/ws/git/github/sindoc/datatech-wiki-kg</code>, which runs <code>python3 scripts/check_wikipedia_quality.py</code>.</para>
+          <para><code>post-commit</code> and <code>post-merge</code> delegate to the same Singine surface and run <code>python3 scripts/refresh_repo.py</code>.</para>
+        </sidebar>
+      </listitem>
+      <listitem>
+        <para><strong>singine</strong></para>
+        <sidebar>
+          <para><code>pre-commit</code> delegates to <code>singine git hooks run --event pre-commit --repo-root /Users/skh/ws/git/github/sindoc/singine</code>, which runs <code>python3 -m py_compile singine/command.py singine/wikipedia_contrib.py</code>.</para>
+          <para><code>post-commit</code> and <code>post-merge</code> currently remain registry-backed no-op surfaces so the same control model applies without forcing a heavyweight local pipeline.</para>
+        </sidebar>
+      </listitem>
+      <listitem>
+        <para><strong>silkpage</strong></para>
+        <sidebar>
+          <para>The installed hooks call the Singine runner and currently serve as registry-backed no-op surfaces until a SilkPage-specific verification or rendering command is promoted into the shared registry.</para>
+        </sidebar>
+      </listitem>
+      <listitem>
+        <para><strong>collibra</strong></para>
+        <sidebar>
+          <para>The installed hooks call the Singine runner and currently serve as registry-backed no-op surfaces until the repository-specific validation and publication commands are declared in the shared registry.</para>
+        </sidebar>
+      </listitem>
+    </itemizedlist>
+  </section>
+</article>
