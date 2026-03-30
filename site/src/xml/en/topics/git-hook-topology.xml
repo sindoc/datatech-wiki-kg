@@ -53,7 +53,8 @@
         <para><strong>datatech-wiki-kg</strong></para>
         <sidebar>
           <para><code>pre-commit</code> delegates to <code>singine git hooks run --event pre-commit --repo-root /Users/skh/ws/git/github/sindoc/datatech-wiki-kg</code>, which runs <code>python3 scripts/check_wikipedia_quality.py</code>.</para>
-          <para><code>post-commit</code> and <code>post-merge</code> delegate to the same Singine surface and run <code>python3 scripts/refresh_repo.py</code>.</para>
+          <para><code>post-commit</code> delegates to the same Singine surface but is intentionally a no-op so ordinary commits do not leave tracked build artifacts dirty.</para>
+          <para><code>post-merge</code> delegates to the same Singine surface and runs <code>python3 scripts/refresh_repo.py</code>.</para>
         </sidebar>
       </listitem>
       <listitem>
