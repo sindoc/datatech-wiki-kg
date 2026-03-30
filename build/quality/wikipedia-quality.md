@@ -1,7 +1,7 @@
 # Wikipedia Quality Report
 
 - Article class: `software company`
-- Word count: `865`
+- Word count: `891`
 - Distinct publishers: `CNBC, Collibra, SiliconANGLE, TechCrunch, TechTarget, VUB TechTransfer, VentureBeat, Vrije Universiteit Brussel`
 - Status: `needs work`
 

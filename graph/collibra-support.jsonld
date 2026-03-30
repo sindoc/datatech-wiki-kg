@@ -335,66 +335,66 @@
       "description": "Section level 3 in canonical markdown source."
     },
     {
-      "@id": "urn:section:collibra:312",
+      "@id": "urn:section:collibra:310",
       "@type": "schema:CreativeWork",
       "name": "Products",
-      "position": 312,
+      "position": 310,
       "description": "Section level 3 in canonical markdown source."
     },
     {
-      "@id": "urn:section:collibra:333",
+      "@id": "urn:section:collibra:331",
       "@type": "schema:CreativeWork",
       "name": "Acquisitions",
-      "position": 333,
+      "position": 331,
       "description": "Section level 3 in canonical markdown source."
     },
     {
-      "@id": "urn:section:collibra:350",
+      "@id": "urn:section:collibra:348",
       "@type": "schema:CreativeWork",
       "name": "Market position and reception",
-      "position": 350,
+      "position": 348,
       "description": "Section level 3 in canonical markdown source."
     },
     {
-      "@id": "urn:section:collibra:364",
+      "@id": "urn:section:collibra:357",
       "@type": "schema:CreativeWork",
       "name": "Release standard for a solid page",
-      "position": 364,
+      "position": 357,
       "description": "Section level 2 in canonical markdown source."
     },
     {
-      "@id": "urn:section:collibra:375",
+      "@id": "urn:section:collibra:368",
       "@type": "schema:CreativeWork",
       "name": "Topic-specific terminology",
-      "position": 375,
+      "position": 368,
       "description": "Section level 2 in canonical markdown source."
     },
     {
-      "@id": "urn:section:collibra:381",
+      "@id": "urn:section:collibra:374",
       "@type": "schema:CreativeWork",
       "name": "Founder-status lineage note",
-      "position": 381,
+      "position": 374,
       "description": "Section level 2 in canonical markdown source."
     },
     {
-      "@id": "urn:section:collibra:385",
+      "@id": "urn:section:collibra:378",
       "@type": "schema:CreativeWork",
       "name": "Regulatory drivers and confidence",
-      "position": 385,
+      "position": 378,
       "description": "Section level 2 in canonical markdown source."
     },
     {
-      "@id": "urn:section:collibra:391",
+      "@id": "urn:section:collibra:384",
       "@type": "schema:CreativeWork",
       "name": "Media references",
-      "position": 391,
+      "position": 384,
       "description": "Section level 2 in canonical markdown source."
     },
     {
-      "@id": "urn:section:collibra:395",
+      "@id": "urn:section:collibra:388",
       "@type": "schema:CreativeWork",
       "name": "Working model",
-      "position": 395,
+      "position": 388,
       "description": "Section level 2 in canonical markdown source."
     },
     {
@@ -856,7 +856,7 @@
       "name": "DataTech Wikipedia Support Knowledge Graph",
       "description": "Neutral, source-driven support material for Wikipedia contributions about Collibra as a company and platform.",
       "url": "https://foss.lutino.io/wikipedia/",
-      "dateModified": "2026-03-28T15:45:02Z"
+      "dateModified": "2026-03-30T18:01:51Z"
     }
   ]
 }

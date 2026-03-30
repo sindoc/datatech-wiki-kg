@@ -273,9 +273,9 @@ tags:: wikipedia, datatech, collibra
     - type: Private [[ref:1]]
     - industry: Software [[ref:2]]
     - founded: 2008 in Belgium [[ref:1]][[ref:2]]
-    - founders: Felix Van de Maele<br />Stijn Christiaens<br />Pieter De Leenheer<br />Damien Trog / Benny Verhaeghe [[ref:2]]
+    - founders: Felix Van de Maele<br />Stijn Christiaens<br />Pieter De Leenheer<br />Benny Verhaeghe / Damien Trog [[ref:2]]
     - headquarters: New York City, United States<br />Brussels, Belgium [[ref:3]]
-    - key_people: Felix Van de Maele<br />Tony Mary<br />Stijn Christiaens<br />Tom Dejonghe [[ref:3]][[ref:4]]
+    - key_people: Felix Van de Maele<br />Stijn Christiaens<br />Tom Dejonghe<br />Dieter Wachters<br/ >Tony Mary<br/>Patrick Polak
     - website: [https://www.collibra.com collibra.com]
 
     - Sources:
@@ -286,7 +286,7 @@ tags:: wikipedia, datatech, collibra
 
     - Lead
 
-    - Collibra is a software company founded in Belgium in 2008 that develops software for data governance, data cataloging, data quality, and related enterprise data-management functions.[[ref:1]][[ref:2]] The company originated as a spin-off from the Vrije Universiteit Brussel's STARLab research group.[[ref:5]][[ref:6]] Coverage of the company has described it variously as a data governance, data management, or data intelligence vendor, reflecting product expansion and changing market vocabulary.[[ref:1]][[ref:3]] By 2021, Collibra had reached a valuation of $5.25 billion and coverage increasingly placed it in the broader enterprise market for trusted data access, compliance, analytics enablement, and AI governance.[[ref:3]][[ref:4]]
+    - '''Collibra''' ({{IPAc-en|k|ə|ˈ|l|iː|b|r|ə}}) is a software company founded in Belgium in 2008 that develops software for data governance, data cataloging, data quality, and related enterprise data-management functions.[[ref:1]][[ref:2]] The company originated as a spin-off from the Vrije Universiteit Brussel's STARLab research group.[[ref:5]][[ref:6]] Coverage of the company has described it variously as a data governance, data management, or data intelligence vendor, reflecting product expansion and changing market vocabulary.[[ref:1]][[ref:3]] By 2021, Collibra had reached a valuation of $5.25 billion and coverage increasingly placed it in the broader enterprise market for trusted data access, compliance, analytics enablement, and AI governance.[[ref:3]][[ref:4]]
 
     - Sources:
     - TechCrunch, 2017-01-18: https://techcrunch.com/2017/01/18/collibra/
@@ -300,7 +300,7 @@ tags:: wikipedia, datatech, collibra
 
     - Collibra was founded in 2008 as a Belgian software company focused on helping organizations govern and use enterprise data more effectively.[[ref:1]][[ref:2]] VUB sources describe it as a spin-off from the university's STARLab, and identify Felix Van de Maele, Stijn Christiaens, Pieter De Leenheer, and Damien Trog as founders.[[ref:6]][[ref:7]] Early coverage framed the company around data-governance problems inside large organizations, particularly the difficulty of finding, understanding, and controlling data spread across multiple systems.[[ref:1]][[ref:2]]
 
-    - As regulatory scrutiny and enterprise data volumes grew, Collibra raised a succession of funding rounds that tracked its rise from a venture-backed governance vendor to a company valued above $1 billion in January 2019, $2.3 billion in April 2020, and $5.25 billion in November 2021.[[ref:2]][[ref:3]][[ref:4]][[ref:5]] Coverage of the 2020 and 2021 rounds connected that growth to governance, cataloging, data protection, and the increasing operational importance of enterprise data.[[ref:3]][[ref:4]][[ref:5]] Belgian business press also treated the 2019 valuation milestone as a national technology milestone, describing Collibra as Belgium's first unicorn and linking its rise to the country's startup ecosystem.[[ref:8]][[ref:9]]
+    - As regulatory scrutiny and enterprise data volumes grew, Collibra raised a succession of funding rounds that tracked its rise from a venture-backed governance vendor to a company valued above $1 billion in January 2019, $2.3 billion in April 2020, and $5.25 billion in November 2021.[[ref:2]][[ref:3]][[ref:4]][[ref:5]] Coverage of the 2020 and 2021 rounds connected that growth to governance, cataloging, data protection, and the increasing operational importance of enterprise data.[[ref:3]][[ref:4]][[ref:5]]
 
     - Sources:
     - TechCrunch, 2018-01-08: https://techcrunch.com/2018/01/08/collibra-snags-58-m-series-d-led-by-iconiq-and-battery-ventures-to-simplify-data-governance/
@@ -310,8 +310,6 @@ tags:: wikipedia, datatech, collibra
     - CNBC, 2021-11-09: https://www.cnbc.com/2021/11/09/collibra-doubles-valuation-as-investors-chase-next-cloud-winner.html
     - VUB TechTransfer, "COLLIBRA": https://techtransfer.research.vub.be/collibra
     - VUB, "From student to spin-off: how does that happen?": https://www.vub.be/en/news/from-student-spin-how-does-that-happen
-    - HLN, 2019-01-30: https://www.hln.be/de-krant/dataspecialist-collibra-is-eerste-belgische-unicorn~a14ddb3c/
-    - Trends, 2018-11-22: https://trends.knack.be/ondernemen/de-mijlpalen-van-tien-jaar-collibra-durfkapitaal-is-geen-gratis-geld/
 
     - Products
 
@@ -339,10 +337,10 @@ tags:: wikipedia, datatech, collibra
     - Collibra has used acquisitions to broaden its platform beyond catalog and governance workflows.[[ref:1]][[ref:2]][[ref:3]][[ref:4]] Reported acquisitions have centered on data lineage, data quality, analytics workflows, data access, and unstructured data governance.[[ref:1]][[ref:2]][[ref:3]][[ref:4]]
 
     - | Year | Company | Area | Notes |
-    - | 2019 | SQLdep | Data lineage and metadata management | Described by TechTarget in later coverage as an earlier acquisition that added lineage and metadata capabilities. [[ref:2]] |
-    - | 2021 | OwlDQ | Data quality | Reported as a predictive data-quality acquisition. [[ref:1]] |
-    - | 2023 | Husprey | SQL notebooks and analytics workflows | Reported as a data notebook acquisition for analytics tools. [[ref:2]] |
-    - | 2025 | Raito | Data access governance | Reported as a data access startup acquisition. [[ref:3]] |
+    - | 2019 | SQLdep | Data lineage and metadata management | A [[Brno]]-based software company, focused on reverse engineering data lineage from BI Tools and SQL code. [[ref:2]] |
+    - | 2021 | OwlDQ | Data quality | A US-based predictive data quality platform focused on automated data anomaly detection. [[ref:1]] |
+    - | 2023 | Husprey | SQL notebooks and analytics workflows | A French startup focusing on data notebook acquisition for analytics tools and workflows. [[ref:2]] |
+    - | 2025 | Raito | Data access governance | A Belgian startup whose founders had worked at Collibra previously. Dieter Wachters had led Collibra's engineering team for about a decade. [[ref:3]] |
     - | 2025 | Deasy Labs | Unstructured data governance | Reported as an acquisition aimed at unstructured data. [[ref:4]] |
 
     - Sources:
@@ -353,16 +351,11 @@ tags:: wikipedia, datatech, collibra
 
     - Market position and reception
 
-    - Coverage of Collibra has often treated the company as part of a wider enterprise shift toward making data more discoverable, reliable, and governable across large organizations.[[ref:1]][[ref:2]][[ref:3]] Publications have described the company in varying terms, including data governance, data management, and data intelligence, while consistently placing it in the market for enterprise software used to control and operationalize data.[[ref:1]][[ref:2]][[ref:3]] That coverage has generally appeared in business and trade publications rather than consumer-oriented media, reflecting the specialized enterprise market in which the company operates.[[ref:1]][[ref:2]][[ref:4]]
-
-    - Across multiple years, coverage of Collibra's funding rounds, acquisitions, and product expansion described the company as part of a sustained market trend around governance, trust, compliance, analytics enablement, and later AI governance rather than as a single isolated startup story.[[ref:1]][[ref:2]][[ref:4]][[ref:5]][[ref:6]] Later coverage connected that position to AI governance and data-access controls as those topics became more prominent in enterprise software.[[ref:5]][[ref:6]]
+    - Coverage of Collibra has often treated the company as part of a wider enterprise shift toward making data more discoverable, reliable, and governable across large organizations.[[ref:1]][[ref:2]] Publications have described the company in varying terms, including data governance, data management, and data intelligence, while consistently placing it in the market for enterprise software used to control and operationalize data.[[ref:1]][[ref:2]] Later coverage connected that position to AI governance and data-access controls as those topics became more prominent in enterprise software.[[ref:3]]
 
     - Sources:
     - TechCrunch, 2020-04-02: https://techcrunch.com/2020/04/02/collibra-nabs-another-112-5m-at-a-2-3b-valuation-for-its-big-data-management-platform/
     - TechCrunch, 2021-11-09: https://techcrunch.com/2021/11/09/data-intelligence-company-collibra-brings-in-another-250m-to-more-than-double-its-valuation/
-    - CNBC, 2021-11-09: https://www.cnbc.com/2021/11/09/collibra-doubles-valuation-as-investors-chase-next-cloud-winner.html
-    - HLN, 2019-01-30: https://www.hln.be/de-krant/dataspecialist-collibra-is-eerste-belgische-unicorn~a14ddb3c/
-    - TechTarget, 2024-02-29: https://www.techtarget.com/searchDataManagement/news/366571614/Collibra-adds-AI-governance-to-data-management-platform
     - TechTarget, 2024-04-10: https://www.techtarget.com/searchdatamanagement/news/366580432/Collibra-launches-AI-Governance-unveils-GenAI-capabilities
 
   - Release standard for a solid page

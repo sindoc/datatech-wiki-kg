@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>urn:singine:campaign:datatech-wiki-kg:collibra</id>
   <title>DataTech Wikipedia Support Knowledge Graph</title>
-  <updated>2026-03-28T15:45:02Z</updated>
+  <updated>2026-03-30T18:01:51Z</updated>
   <subtitle>Neutral, source-driven support material for Wikipedia contributions about Collibra as a company and platform.</subtitle>
   <author><name>Sina Heshmati</name></author>
   <link href="https://foss.lutino.io/wikipedia/feeds/datatech-collibra.atom" rel="self"/>
