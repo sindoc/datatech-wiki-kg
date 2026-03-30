@@ -1,0 +1,31 @@
+{
+  "pageid": 51277126,
+  "ns": 10,
+  "title": "Template:Data",
+  "contentmodel": "wikitext",
+  "pagelanguage": "en",
+  "pagelanguagehtmlcode": "en",
+  "pagelanguagedir": "ltr",
+  "touched": "2026-03-29T00:40:44Z",
+  "lastrevid": 1345923794,
+  "length": 4448,
+  "fullurl": "https://en.wikipedia.org/wiki/Template:Data",
+  "editurl": "https://en.wikipedia.org/w/index.php?title=Template:Data&action=edit",
+  "canonicalurl": "https://en.wikipedia.org/wiki/Template:Data",
+  "revisions": [
+    {
+      "revid": 1345923794,
+      "parentid": 1345753757,
+      "user": "Dabed",
+      "timestamp": "2026-03-29T00:40:44Z",
+      "slots": {
+        "main": {
+          "contentmodel": "wikitext",
+          "contentformat": "text/x-wiki",
+          "content": "{{Navbox\n| name = Data\n| title = [[Data]]\n| state = {{{state|autocollapse}}}\n| listclass = hlist\n| group1 = Information, data, and value\n| list1 =\n* [[Information]]\n* [[Metadata|Meta]]\n* [[Data type|Type]]\n* [[Data structure|Structure]]\n* [[Data ecosystem|Ecosystem]]\n* [[Data library|Library]]\n* [[Data infrastructure|Infrastructure]]\n* [[Value of information|Value]]\n\n| group2 = Data categories and semantic structure\n| list2 =\n* Data categories\n* [[Master data]]\n* [[Master data management]]\n* [[Reference data]]\n* [[Transaction data]]\n* Analytical data\n* [[Metadata]]\n* [[Code (metadata)|Code tables]]\n* [[Controlled vocabulary]]\n* Crosswalks\n* [[Data hierarchy|Hierarchies]]\n* Observation data\n* [[Dark data]]\n* [[Market data|Trade and market data]]\n\n| group3 = Data management and governance\n| list3 =\n* [[Data management|Management]]\n* [[Data governance|Governance]]\n** [[Data cooperative|Cooperatives]]\n* [[Data ethics|Ethics]]\n* [[Data steward|Stewardship]]\n* [[Data lineage|Lineage]]\n* [[Data curation|Curation]]\n* [[Data preservation|Preservation]]\n* [[Data retention|Retention]]\n* [[Data publishing|Publishing]]\n** [[Open data]]\n* [[Master data management]]\n* [[Reference data]]\n\n| group4 = Data quality, trust, and protection\n| list4 =\n* [[Data quality|Quality]]\n* [[Information quality]]\n* [[Data validation|Validation]]\n* [[Data cleansing|Cleansing]]\n* [[Data scrubbing|Scrubbing]]\n* [[Data integrity|Integrity]]\n* [[Information privacy|Protection (privacy)]]\n* [[Data security|Security]]\n* [[Data anonymization|Anonymization]]\n* [[Data de-identification|De-identification]]\n* [[Data re-identification|Re-identification]]\n* [[Data erasure|Erasure]]\n* [[Data remanence|Remanence]]\n* [[Data corruption|Corruption]]\n* [[Data degradation|Degradation]]\n* [[Data loss|Loss]]\n* [[Data recovery|Recovery]]\n\n| group5 = Quality dimensions\n| list5 =\n* Accuracy\n* Completeness\n* Consistency\n* Timeliness\n* Validity\n* Uniqueness\n* Integrity\n* Conformity\n* Relevance\n\n| group6 = Data engineering and movement\n| list6 =\n* [[Data engineering|Engineering]]\n* [[Data integration|Integration]]\n* [[Data storage|Storage]]\n* [[Extract, transform, load|ETL]]/[[Extract, load, transform|ELT]]\n** [[Data extraction|Extract]]\n** [[Data transformation|Transform]]\n** [[Data loading|Load]]\n* [[Data migration|Migration]]\n* [[Data synchronization|Synchronization]]\n* [[Data compression|Compression]]\n* [[Data fusion|Fusion]]\n* [[Data format management|Format management]]\n\n| group7 = Data preparation and operations\n| list7 =\n* [[Data acquisition|Acquisition]]\n* [[Data augmentation|Augmentation]]\n* [[Data collection|Collection]]\n* [[Data annotation|Annotation]]\n* [[Data editing|Editing]]\n* [[Data deduplication|Deduplication]]\n* [[Data pre-processing|Pre-processing]]\n* [[Data preparation|Preparation]]\n* [[Data processing|Processing]]\n* [[Data reduction|Reduction]]\n* [[Data redundancy|Redundancy]]\n* [[Data wrangling|Wrangling/munging]]\n* [[Data scraping|Scraping]]\n* [[Data rescue|Rescue]]\n\n| group8 = Analysis, science, and interpretation\n| list8 =\n* [[Big data|Big]]\n* [[Data analysis|Analysis]]\n* [[Data exploration|Exploration]]\n* [[Data mining|Mining]]\n* [[Data science|Science]]\n* [[Topological data analysis]]\n* [[Data warehouse|Warehouse]]\n* [[Business intelligence]]\n\n| group9 = Data economy and exchange\n| list9 =\n* Data economy\n* [[Data sharing|Sharing]]\n* [[Open data]]\n* [[Data philanthropy|Philanthropy]]\n* [[Data as a service]]\n* [[Data broker]]\n* Responsible reuse\n\n| group10 = Exchange, use, and public context\n| list10 =\n* [[Data exhaust|Exhaust]]\n* [[Data farming|Farming]]\n* [[Data archaeology|Archaeology]]\n\n| group11 = Distributed data, domains, and digital twins\n| list11 =\n* [[Data mesh]]\n* [[Data product]]\n* [[Data domain|Data domains]]\n* Data categories\n* [[Digital twin|Data digital twins]]\n* Digital thread\n* Operational twins\n* Analytical twins\n\n| group12 = Vendors and actors\n| list12 =\n* Data vendors\n* Data technology vendors\n* [[Data as a service|Data service providers]]\n* [[Data broker|Data brokers]]\n* [[Chief data officer|Chief data officers]]\n* [[Information professional|Information professionals]]\n* [[Collibra]]\n* [[Informatica]]\n* [[IBM]]\n* [[SAP]]\n* [[Oracle Corporation|Oracle]]\n* [[SAS Institute|SAS]]\n* [[Qlik]]\n* [[Experian]]\n* [[Alation]]\n* Ataccama\n* Precisely\n}}<noinclude>{{documentation|content=\nA [[template:navbox|navbox]] for [[data]]-related topics.\n\n[[Category:Computing templates]]\n}}</noinclude>"
+        }
+      },
+      "comment": "+ [[Dark data]]"
+    }
+  ]
+}

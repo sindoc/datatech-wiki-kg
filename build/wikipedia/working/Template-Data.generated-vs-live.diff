@@ -1,0 +1,20 @@
+--- /Users/skh/ws/git/github/sindoc/datatech-wiki-kg/build/wikipedia/templates/Template-Data-technology.wikitext
++++ live:Template:Data
+@@ -28,6 +28,7 @@
+ * Crosswalks
+ * [[Data hierarchy|Hierarchies]]
+ * Observation data
++* [[Dark data]]
+ * [[Market data|Trade and market data]]
+ 
+ | group3 = Data management and governance
+@@ -167,5 +168,8 @@
+ * [[Alation]]
+ * Ataccama
+ * Precisely
++}}<noinclude>{{documentation|content=
++A [[template:navbox|navbox]] for [[data]]-related topics.
+ 
+-}}
++[[Category:Computing templates]]
++}}</noinclude>

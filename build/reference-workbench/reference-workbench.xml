@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Reference Workbench</title>
+  <subtitle>Claim-to-source support graph for the current Collibra article build</subtitle>
+  <para>This page is the SilkPage-facing semantic view of the current reference graph. Runtime serving and orchestration belong in Singine; page rendering and visual treatment belong in SilkPage; this repository emits the underlying content model.</para>
+  <section>
+    <title>Summary</title>
+    <para>The current build exposes 24 claim lines, 18 references, and 16 references that support more than one claim.</para>
+  </section>
+  <section>
+    <title>Coverage Health</title>
+    <para>Coverage health is a local editorial triage metric for how well a claim line is supported by the attached references. It favors independent support and multiple corroborating references.</para>
+  </section>
+  <section>
+    <title>Credibility Method Lineage</title>
+    <para>Local weighted heuristic for editorial triage. It rewards recognized independent publications and penalizes publisher-owned company sources.</para>
+    <itemizedlist>
+    <listitem><para>Base score: +50</para></listitem>
+    <listitem><para>HTTPS: +5</para></listitem>
+    <listitem><para>Known publisher mapping: variable</para></listitem>
+    <listitem><para>Academic domain heuristic: +12</para></listitem>
+    <listitem><para>Promotional path heuristic: -6</para></listitem>
+    </itemizedlist>
+    <sidebar><para>The score is for support tooling inside this repo. It is not a substitute for editorial judgment or Wikipedia sourcing policy.</para></sidebar>
+  </section>
+  <section>
+    <title>Claim Sample</title>
+    <itemizedlist>
+    <listitem>
+      <para>Type: Private</para>
+      <sidebar><para>Section: Lead. Coverage health: 75 (strong). References: ref-https-www-cnbc-com-2021-11-09-co-b492b371.</para></sidebar>
+    </listitem>
+    <listitem>
+      <para>Industry: Software</para>
+      <sidebar><para>Section: Lead. Coverage health: 45 (weak). References: ref-https-techtransfer-research-vub--96b17a97.</para></sidebar>
+    </listitem>
+    <listitem>
+      <para>Founded: 2008 in Belgium</para>
+      <sidebar><para>Section: Lead. Coverage health: 75 (strong). References: ref-https-www-cnbc-com-2021-11-09-co-b492b371, ref-https-techtransfer-research-vub--96b17a97.</para></sidebar>
+    </listitem>
+    <listitem>
+      <para>Founders: Felix Van de Maele&lt;br /&gt;Stijn Christiaens&lt;br /&gt;Pieter De Leenheer&lt;br /&gt;Benny Verhaeghe / Damien Trog</para>
+      <sidebar><para>Section: Lead. Coverage health: 45 (weak). References: ref-https-techtransfer-research-vub--96b17a97.</para></sidebar>
+    </listitem>
+    <listitem>
+      <para>Headquarters: New York City, United States&lt;br /&gt;Brussels, Belgium</para>
+      <sidebar><para>Section: Lead. Coverage health: 35 (weak). References: .</para></sidebar>
+    </listitem>
+    <listitem>
+      <para>Key People: Felix Van de Maele&lt;br /&gt;Stijn Christiaens&lt;br /&gt;Tom Dejonghe&lt;br /&gt;Dieter Wachters&lt;br/ &gt;Tony Mary&lt;br/&gt;Patrick Polak</para>
+      <sidebar><para>Section: Lead. Coverage health: 35 (weak). References: .</para></sidebar>
+    </listitem>
+    <listitem>
+      <para>Website: [https://www.collibra.com collibra.com]</para>
+      <sidebar><para>Section: Lead. Coverage health: 35 (weak). References: .</para></sidebar>
+    </listitem>
+    <listitem>
+      <para>'''Collibra''' ({{IPAc-en|k|ə|ˈ|l|iː|b|r|ə}}) is a software company founded in Belgium in 2008 that develops software for data governance, data cataloging, data quality, and related enterprise data-management functions. The company originated as a spin-off from the Vrije Universiteit Brussel's STARLab research group. Coverage of the company has described it variously as a data governance, data management, or data intelligence vendor, reflecting product expansion and changing market vocabulary. By 2021, Collibra had reached a valuation of $5.25 billion and coverage increasingly placed it in the broader enterprise market for trusted data access, compliance, analytics enablement, and AI governance.</para>
+      <sidebar><para>Section: Lead. Coverage health: 85 (strong). References: ref-https-techcrunch-com-2017-01-18--f9aafb60, ref-https-techcrunch-com-2019-01-29--d66521fb, ref-https-techtransfer-research-vub--96b17a97, ref-https-www-vub-be-en-news-from-st-65a7345d, ref-https-techcrunch-com-2021-11-09--b651224f, ref-https-www-cnbc-com-2021-11-09-co-b492b371.</para></sidebar>
+    </listitem>
+    <listitem>
+      <para>Collibra was founded in 2008 as a Belgian software company focused on helping organizations govern and use enterprise data more effectively. VUB sources describe it as a spin-off from the university's STARLab, and identify Felix Van de Maele, Stijn Christiaens, Pieter De Leenheer, and Damien Trog as founders. Early coverage framed the company around data-governance problems inside large organizations, particularly the difficulty of finding, understanding, and controlling data spread across multiple systems.</para>
+      <sidebar><para>Section: History. Coverage health: 75 (strong). References: ref-https-techcrunch-com-2018-01-08--e4bf7bad, ref-https-techcrunch-com-2019-01-29--d66521fb, ref-https-techtransfer-research-vub--96b17a97, ref-https-www-vub-be-en-news-from-st-65a7345d.</para></sidebar>
+    </listitem>
+    <listitem>
+      <para>As regulatory scrutiny and enterprise data volumes grew, Collibra raised a succession of funding rounds that tracked its rise from a venture-backed governance vendor to a company valued above $1 billion in January 2019, $2.3 billion in April 2020, and $5.25 billion in November 2021. Coverage of the 2020 and 2021 rounds connected that growth to governance, cataloging, data protection, and the increasing operational importance of enterprise data.</para>
+      <sidebar><para>Section: History. Coverage health: 85 (strong). References: ref-https-techcrunch-com-2019-01-29--d66521fb, ref-https-techcrunch-com-2020-04-02--9b72eaaf, ref-https-techcrunch-com-2021-11-09--b651224f, ref-https-www-cnbc-com-2021-11-09-co-b492b371.</para></sidebar>
+    </listitem>
+    <listitem>
+      <para>Independent coverage has generally described Collibra's products as a set of enterprise tools for finding, understanding, governing, and controlling data across distributed environments. While the company's early identity was closely tied to governance and catalog functions, later coverage emphasized a broader product set that combined governance with data quality, analytics-adjacent tooling, policy controls, and AI-governance capabilities.</para>
+      <sidebar><para>Section: Products. Coverage health: 75 (strong). References: ref-https-siliconangle-com-2021-02-0-e4ee54cf, ref-https-venturebeat-com-ai-collibr-50c93f06, ref-https-www-techtarget-com-searchd-68ca764c, ref-https-www-techtarget-com-searchb-3d40d4a7.</para></sidebar>
+    </listitem>
+    <listitem>
+      <para>At a high level, Collibra's product coverage in independent reporting spans data catalog and governance, data quality, analytics-oriented notebook tooling, data lineage and metadata management through acquired capabilities, and AI governance.</para>
+      <sidebar><para>Section: Products. Coverage health: 75 (strong). References: ref-https-www-techtarget-com-searchd-68ca764c, ref-https-siliconangle-com-2021-02-0-e4ee54cf, ref-https-www-techtarget-com-searchb-3d40d4a7, ref-https-venturebeat-com-ai-collibr-50c93f06.</para></sidebar>
+    </listitem>
+    <listitem>
+      <para>Data catalog and governance: Organizing, governing, and controlling enterprise data assets.</para>
+      <sidebar><para>Section: Products. Coverage health: 75 (strong). References: ref-https-siliconangle-com-2021-02-0-e4ee54cf, ref-https-venturebeat-com-ai-collibr-50c93f06.</para></sidebar>
+    </listitem>
+    <listitem>
+      <para>Data quality: Adding predictive or automated quality capabilities to governed data workflows.</para>
+      <sidebar><para>Section: Products. Coverage health: 75 (strong). References: ref-https-www-techtarget-com-searchd-68ca764c, ref-https-siliconangle-com-2021-02-0-e4ee54cf.</para></sidebar>
+    </listitem>
+    <listitem>
+      <para>Data lineage and metadata: Extending traceability and metadata-management capabilities through acquisition.</para>
+      <sidebar><para>Section: Products. Coverage health: 65 (moderate). References: ref-https-siliconangle-com-2021-02-0-e4ee54cf.</para></sidebar>
+    </listitem>
+    <listitem>
+      <para>Analytics tooling: Adding notebook-oriented functionality for analytics workflows.</para>
+      <sidebar><para>Section: Products. Coverage health: 65 (moderate). References: ref-https-siliconangle-com-2021-02-0-e4ee54cf.</para></sidebar>
+    </listitem>
+    <listitem>
+      <para>AI governance: Applying governance controls to AI models and applications in relation to enterprise data.</para>
+      <sidebar><para>Section: Products. Coverage health: 75 (strong). References: ref-https-www-techtarget-com-searchd-2d386cbd, ref-https-venturebeat-com-ai-collibr-50c93f06.</para></sidebar>
+    </listitem>
+    <listitem>
+      <para>Collibra has used acquisitions to broaden its platform beyond catalog and governance workflows. Reported acquisitions have centered on data lineage, data quality, analytics workflows, data access, and unstructured data governance.</para>
+      <sidebar><para>Section: Acquisitions. Coverage health: 75 (strong). References: ref-https-www-techtarget-com-searchd-68ca764c, ref-https-www-techtarget-com-searchb-3d40d4a7, ref-https-techcrunch-com-2025-06-05--55f793ee, ref-https-www-techtarget-com-searchd-30dd15da.</para></sidebar>
+    </listitem>
+    <listitem>
+      <para>2019 | SQLdep | Data lineage and metadata management | A [[Brno]]-based software company, focused on reverse engineering data lineage from BI Tools and SQL code.</para>
+      <sidebar><para>Section: Acquisitions. Coverage health: 65 (moderate). References: ref-https-www-techtarget-com-searchb-3d40d4a7.</para></sidebar>
+    </listitem>
+    <listitem>
+      <para>2021 | OwlDQ | Data quality | A US-based predictive data quality platform focused on automated data anomaly detection.</para>
+      <sidebar><para>Section: Acquisitions. Coverage health: 65 (moderate). References: ref-https-www-techtarget-com-searchd-68ca764c.</para></sidebar>
+    </listitem>
+    <listitem>
+      <para>2023 | Husprey | SQL notebooks and analytics workflows | A French startup focusing on data notebook acquisition for analytics tools and workflows.</para>
+      <sidebar><para>Section: Acquisitions. Coverage health: 65 (moderate). References: ref-https-www-techtarget-com-searchb-3d40d4a7.</para></sidebar>
+    </listitem>
+    <listitem>
+      <para>2025 | Raito | Data access governance | A Belgian startup whose founders had worked at Collibra previously. Dieter Wachters had led Collibra's engineering team for about a decade.</para>
+      <sidebar><para>Section: Acquisitions. Coverage health: 65 (moderate). References: ref-https-techcrunch-com-2025-06-05--55f793ee.</para></sidebar>
+    </listitem>
+    <listitem>
+      <para>2025 | Deasy Labs | Unstructured data governance | Reported as an acquisition aimed at unstructured data.</para>
+      <sidebar><para>Section: Acquisitions. Coverage health: 65 (moderate). References: ref-https-www-techtarget-com-searchd-30dd15da.</para></sidebar>
+    </listitem>
+    <listitem>
+      <para>Coverage of Collibra has often treated the company as part of a wider enterprise shift toward making data more discoverable, reliable, and governable across large organizations. Publications have described the company in varying terms, including data governance, data management, and data intelligence, while consistently placing it in the market for enterprise software used to control and operationalize data. Later coverage connected that position to AI governance and data-access controls as those topics became more prominent in enterprise software.</para>
+      <sidebar><para>Section: Market position and reception. Coverage health: 75 (strong). References: ref-https-techcrunch-com-2020-04-02--9b72eaaf, ref-https-techcrunch-com-2021-11-09--b651224f, ref-https-www-techtarget-com-searchd-cf67b7bb.</para></sidebar>
+    </listitem>
+    </itemizedlist>
+  </section>
+  <section>
+    <title>Reference Sample</title>
+    <itemizedlist>
+    <listitem>
+      <para><link xlink:href="https://siliconangle.com/2021/02/03/collibra-acquires-owldq-make-enterprises-data-reliable-ai/">Collibra acquires OwlDQ to make enterprises' data more reliable for AI</link></para>
+      <sidebar><para>Publisher: SiliconANGLE. Credibility: 67. Independence: independent. Used by 12 claim(s).</para></sidebar>
+    </listitem>
+    <listitem>
+      <para><link xlink:href="https://techtransfer.research.vub.be/collibra">COLLIBRA</link></para>
+      <sidebar><para>Publisher: VUB TechTransfer. Credibility: 65. Independence: contextual. Used by 10 claim(s).</para></sidebar>
+    </listitem>
+    <listitem>
+      <para><link xlink:href="https://www.techtarget.com/searchbusinessanalytics/news/366551315/Collibra-acquires-data-notebook-vendor-for-analytics-tools">Collibra acquires data notebook vendor for analytics tools</link></para>
+      <sidebar><para>Publisher: TechTarget. Credibility: 73. Independence: independent. Used by 10 claim(s).</para></sidebar>
+    </listitem>
+    <listitem>
+      <para><link xlink:href="https://www.techtarget.com/searchdatamanagement/news/252495815/Collibra-acquires-predictive-data-quality-vendor-OwlDQ">Collibra acquires predictive data quality vendor OwlDQ</link></para>
+      <sidebar><para>Publisher: TechTarget. Credibility: 73. Independence: independent. Used by 10 claim(s).</para></sidebar>
+    </listitem>
+    <listitem>
+      <para><link xlink:href="https://www.cnbc.com/2021/11/09/collibra-doubles-valuation-as-investors-chase-next-cloud-winner.html">Collibra doubles valuation as investors chase next cloud winner</link></para>
+      <sidebar><para>Publisher: CNBC. Credibility: 77. Independence: independent. Used by 8 claim(s).</para></sidebar>
+    </listitem>
+    <listitem>
+      <para><link xlink:href="https://venturebeat.com/ai/collibra-tackles-the-shadow-ai-problem-with-new-governance-application/">Collibra tackles the shadow AI problem with new governance application</link></para>
+      <sidebar><para>Publisher: VentureBeat. Credibility: 71. Independence: independent. Used by 8 claim(s).</para></sidebar>
+    </listitem>
+    <listitem>
+      <para><link xlink:href="https://techcrunch.com/2021/11/09/data-intelligence-company-collibra-brings-in-another-250m-to-more-than-double-its-valuation/">Data intelligence company Collibra brings in another $250M to more than double its valuation</link></para>
+      <sidebar><para>Publisher: TechCrunch. Credibility: 73. Independence: independent. Used by 6 claim(s).</para></sidebar>
+    </listitem>
+    <listitem>
+      <para><link xlink:href="https://techcrunch.com/2019/01/29/regulatory-demands-for-better-data-governance-push-collibras-valuation-above-1-billion/">Regulatory demands for better data governance push Collibra's valuation above $1 billion</link></para>
+      <sidebar><para>Publisher: TechCrunch. Credibility: 73. Independence: independent. Used by 6 claim(s).</para></sidebar>
+    </listitem>
+    <listitem>
+      <para><link xlink:href="https://techcrunch.com/2025/06/05/collibra-acquires-data-access-startup-raito/">Collibra acquires data access startup Raito</link></para>
+      <sidebar><para>Publisher: TechCrunch. Credibility: 73. Independence: independent. Used by 4 claim(s).</para></sidebar>
+    </listitem>
+    <listitem>
+      <para><link xlink:href="https://techcrunch.com/2020/04/02/collibra-nabs-another-112-5m-at-a-2-3b-valuation-for-its-big-data-management-platform/">Collibra nabs another $112.5M at a $2.3B valuation for its big data management platform</link></para>
+      <sidebar><para>Publisher: TechCrunch. Credibility: 73. Independence: independent. Used by 4 claim(s).</para></sidebar>
+    </listitem>
+    <listitem>
+      <para><link xlink:href="https://www.techtarget.com/searchdatamanagement/news/366627998/Collibras-acquisition-of-Deasy-targets-unstructured-data">Collibra's acquisition of Deasy targets unstructured data</link></para>
+      <sidebar><para>Publisher: TechTarget. Credibility: 73. Independence: independent. Used by 4 claim(s).</para></sidebar>
+    </listitem>
+    <listitem>
+      <para><link xlink:href="https://www.vub.be/en/news/from-student-spin-how-does-that-happen">From student to spin-off: how does that happen</link></para>
+      <sidebar><para>Publisher: Vrije Universiteit Brussel. Credibility: 65. Independence: contextual. Used by 4 claim(s).</para></sidebar>
+    </listitem>
+    <listitem>
+      <para><link xlink:href="https://www.techtarget.com/searchDataManagement/news/366571614/Collibra-adds-AI-governance-to-data-management-platform">Collibra adds AI governance to data management platform</link></para>
+      <sidebar><para>Publisher: TechTarget. Credibility: 73. Independence: independent. Used by 2 claim(s).</para></sidebar>
+    </listitem>
+    <listitem>
+      <para><link xlink:href="https://www.techtarget.com/searchdatamanagement/news/366580432/Collibra-launches-AI-Governance-unveils-GenAI-capabilities">Collibra launches AI Governance, unveils GenAI capabilities</link></para>
+      <sidebar><para>Publisher: TechTarget. Credibility: 73. Independence: independent. Used by 2 claim(s).</para></sidebar>
+    </listitem>
+    <listitem>
+      <para><link xlink:href="https://techcrunch.com/2017/01/18/collibra/">Collibra nabs $50M led by ICONIQ to fix companies' data governance</link></para>
+      <sidebar><para>Publisher: TechCrunch. Credibility: 73. Independence: independent. Used by 2 claim(s).</para></sidebar>
+    </listitem>
+    <listitem>
+      <para><link xlink:href="https://techcrunch.com/2018/01/08/collibra-snags-58-m-series-d-led-by-iconiq-and-battery-ventures-to-simplify-data-governance/">Collibra snags $58M Series D led by Iconiq and Battery Ventures to simplify data governance</link></para>
+      <sidebar><para>Publisher: TechCrunch. Credibility: 73. Independence: independent. Used by 2 claim(s).</para></sidebar>
+    </listitem>
+    <listitem>
+      <para><link xlink:href="https://www.collibra.com/company/who-we-are">Discover unified governance for data and AI</link></para>
+      <sidebar><para>Publisher: Collibra. Credibility: 21. Independence: primary. Used by 1 claim(s).</para></sidebar>
+    </listitem>
+    <listitem>
+      <para><link xlink:href="https://www.collibra.com/company/leadership">Meet the Collibra leadership team</link></para>
+      <sidebar><para>Publisher: Collibra. Credibility: 21. Independence: primary. Used by 0 claim(s).</para></sidebar>
+    </listitem>
+    </itemizedlist>
+  </section>
+</article>

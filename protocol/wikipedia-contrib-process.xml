@@ -19,6 +19,14 @@
     <artifact format="atom">feeds/datatech-collibra.atom</artifact>
     <artifact format="rss">feeds/datatech-collibra.rss</artifact>
   </stage>
+  <stage id="ingest-live">
+    <label>Ingest live MediaWiki changes</label>
+    <command>python3 -m singine.command time date --offset-days -2 --json</command>
+    <command>python3 scripts/ingest_wikipedia_changes.py</command>
+    <command>python3 -m singine.command wikipedia contrib collibra --action ingest-live --json</command>
+    <artifact format="json">data/wikipedia-ingest/manifest.json</artifact>
+    <artifact format="markdown">build/wikipedia/live-sync-report.md</artifact>
+  </stage>
   <stage id="visualize">
     <label>Project into visual surfaces</label>
     <command>python3 scripts/sync_kernel_views.py</command>

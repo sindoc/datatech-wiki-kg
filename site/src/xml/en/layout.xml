@@ -18,6 +18,7 @@
       <tocentry page="docs/backlog.xml" dir="backlog" filename="index.html"/>
       <tocentry page="docs/roadmap.xml" dir="roadmap" filename="index.html"/>
       <tocentry page="docs/process.xml" dir="process" filename="index.html"/>
+      <tocentry page="docs/reference-workbench.xml" dir="reference-workbench" filename="index.html"/>
     </tocentry>
   </toc>
 

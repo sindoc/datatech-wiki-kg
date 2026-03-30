@@ -1,6 +1,6 @@
 PYTHON ?= python3
 
-.PHONY: sync graph feeds refs media publish userpages navboxes quality refresh install-hooks preview-mail kernel-sync test-case visualize drift
+.PHONY: sync graph feeds refs media publish userpages navboxes quality refresh install-hooks preview-mail kernel-sync test-case visualize drift wiki-ingest wiki-pull wiki-audit ref-workbench
 
 sync:
 	$(PYTHON) scripts/sync_sources.py
@@ -49,3 +49,15 @@ visualize:
 
 drift:
 	$(PYTHON) scripts/analyze_wikipedia_language_drift.py
+
+wiki-ingest:
+	$(PYTHON) scripts/ingest_wikipedia_changes.py
+
+wiki-pull:
+	$(PYTHON) scripts/pull_wikipedia_working_copy.py
+
+wiki-audit:
+	$(PYTHON) scripts/render_wikipedia_audit_registry.py
+
+ref-workbench:
+	$(PYTHON) scripts/render_reference_workbench.py

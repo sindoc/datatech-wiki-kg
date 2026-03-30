@@ -233,6 +233,13 @@ tags:: wikipedia, datatech, collibra
 
     - Use these for Collibra's origin as a Vrije Universiteit Brussel spin-off, Belgian context, and carefully attributed statements about the founding team and board chair. Founder lists vary across sources and should be presented cautiously.
 
+  - Verification backlog as of 2026-03-28
+
+    - Forbes Cloud 100 appearances are promising notability evidence, but the article should not claim specific years or rankings until the direct Forbes list pages are captured and checked.
+    - Gartner and Forrester recognition may support market-position coverage, but only if tied to the original analyst material or genuinely independent reporting rather than Collibra or partner marketing.
+    - Partner pages, reseller pages, and consulting-firm solution pages should be treated as research leads only, not as article sources.
+    - If a future revision adds analyst-recognition material, it should be introduced in attributed prose and paired with precise citations rather than broad market-language claims.
+
     - Regulation and trust context
 
     - Basel Committee on Banking Supervision, "Principles for effective risk data aggregation and risk reporting": https://www.bis.org/publ/bcbs239.htm
@@ -293,7 +300,7 @@ tags:: wikipedia, datatech, collibra
 
     - Collibra was founded in 2008 as a Belgian software company focused on helping organizations govern and use enterprise data more effectively.[[ref:1]][[ref:2]] VUB sources describe it as a spin-off from the university's STARLab, and identify Felix Van de Maele, Stijn Christiaens, Pieter De Leenheer, and Damien Trog as founders.[[ref:6]][[ref:7]] Early coverage framed the company around data-governance problems inside large organizations, particularly the difficulty of finding, understanding, and controlling data spread across multiple systems.[[ref:1]][[ref:2]]
 
-    - As regulatory scrutiny and enterprise data volumes grew, Collibra raised a succession of funding rounds that tracked its rise from a venture-backed governance vendor to a company valued above $1 billion in January 2019, $2.3 billion in April 2020, and $5.25 billion in November 2021.[[ref:2]][[ref:3]][[ref:4]][[ref:5]] Coverage of the 2020 and 2021 rounds connected that growth to governance, cataloging, data protection, and the increasing operational importance of enterprise data.[[ref:3]][[ref:4]][[ref:5]]
+    - As regulatory scrutiny and enterprise data volumes grew, Collibra raised a succession of funding rounds that tracked its rise from a venture-backed governance vendor to a company valued above $1 billion in January 2019, $2.3 billion in April 2020, and $5.25 billion in November 2021.[[ref:2]][[ref:3]][[ref:4]][[ref:5]] Coverage of the 2020 and 2021 rounds connected that growth to governance, cataloging, data protection, and the increasing operational importance of enterprise data.[[ref:3]][[ref:4]][[ref:5]] Belgian business press also treated the 2019 valuation milestone as a national technology milestone, describing Collibra as Belgium's first unicorn and linking its rise to the country's startup ecosystem.[[ref:8]][[ref:9]]
 
     - Sources:
     - TechCrunch, 2018-01-08: https://techcrunch.com/2018/01/08/collibra-snags-58-m-series-d-led-by-iconiq-and-battery-ventures-to-simplify-data-governance/
@@ -303,6 +310,8 @@ tags:: wikipedia, datatech, collibra
     - CNBC, 2021-11-09: https://www.cnbc.com/2021/11/09/collibra-doubles-valuation-as-investors-chase-next-cloud-winner.html
     - VUB TechTransfer, "COLLIBRA": https://techtransfer.research.vub.be/collibra
     - VUB, "From student to spin-off: how does that happen?": https://www.vub.be/en/news/from-student-spin-how-does-that-happen
+    - HLN, 2019-01-30: https://www.hln.be/de-krant/dataspecialist-collibra-is-eerste-belgische-unicorn~a14ddb3c/
+    - Trends, 2018-11-22: https://trends.knack.be/ondernemen/de-mijlpalen-van-tien-jaar-collibra-durfkapitaal-is-geen-gratis-geld/
 
     - Products
 
@@ -344,11 +353,16 @@ tags:: wikipedia, datatech, collibra
 
     - Market position and reception
 
-    - Coverage of Collibra has often treated the company as part of a wider enterprise shift toward making data more discoverable, reliable, and governable across large organizations.[[ref:1]][[ref:2]] Publications have described the company in varying terms, including data governance, data management, and data intelligence, while consistently placing it in the market for enterprise software used to control and operationalize data.[[ref:1]][[ref:2]] Later coverage connected that position to AI governance and data-access controls as those topics became more prominent in enterprise software.[[ref:3]]
+    - Coverage of Collibra has often treated the company as part of a wider enterprise shift toward making data more discoverable, reliable, and governable across large organizations.[[ref:1]][[ref:2]][[ref:3]] Publications have described the company in varying terms, including data governance, data management, and data intelligence, while consistently placing it in the market for enterprise software used to control and operationalize data.[[ref:1]][[ref:2]][[ref:3]] That coverage has generally appeared in business and trade publications rather than consumer-oriented media, reflecting the specialized enterprise market in which the company operates.[[ref:1]][[ref:2]][[ref:4]]
+
+    - Across multiple years, coverage of Collibra's funding rounds, acquisitions, and product expansion described the company as part of a sustained market trend around governance, trust, compliance, analytics enablement, and later AI governance rather than as a single isolated startup story.[[ref:1]][[ref:2]][[ref:4]][[ref:5]][[ref:6]] Later coverage connected that position to AI governance and data-access controls as those topics became more prominent in enterprise software.[[ref:5]][[ref:6]]
 
     - Sources:
     - TechCrunch, 2020-04-02: https://techcrunch.com/2020/04/02/collibra-nabs-another-112-5m-at-a-2-3b-valuation-for-its-big-data-management-platform/
     - TechCrunch, 2021-11-09: https://techcrunch.com/2021/11/09/data-intelligence-company-collibra-brings-in-another-250m-to-more-than-double-its-valuation/
+    - CNBC, 2021-11-09: https://www.cnbc.com/2021/11/09/collibra-doubles-valuation-as-investors-chase-next-cloud-winner.html
+    - HLN, 2019-01-30: https://www.hln.be/de-krant/dataspecialist-collibra-is-eerste-belgische-unicorn~a14ddb3c/
+    - TechTarget, 2024-02-29: https://www.techtarget.com/searchDataManagement/news/366571614/Collibra-adds-AI-governance-to-data-management-platform
     - TechTarget, 2024-04-10: https://www.techtarget.com/searchdatamanagement/news/366580432/Collibra-launches-AI-Governance-unveils-GenAI-capabilities
 
   - Release standard for a solid page

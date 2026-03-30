@@ -1,0 +1,171 @@
+{{Navbox
+| name = Data
+| title = [[Data]]
+| state = {{{state|autocollapse}}}
+| listclass = hlist
+| group1 = Information, data, and value
+| list1 =
+* [[Information]]
+* [[Metadata|Meta]]
+* [[Data type|Type]]
+* [[Data structure|Structure]]
+* [[Data ecosystem|Ecosystem]]
+* [[Data library|Library]]
+* [[Data infrastructure|Infrastructure]]
+* [[Value of information|Value]]
+
+| group2 = Data categories and semantic structure
+| list2 =
+* Data categories
+* [[Master data]]
+* [[Master data management]]
+* [[Reference data]]
+* [[Transaction data]]
+* Analytical data
+* [[Metadata]]
+* [[Code (metadata)|Code tables]]
+* [[Controlled vocabulary]]
+* Crosswalks
+* [[Data hierarchy|Hierarchies]]
+* Observation data
+* [[Market data|Trade and market data]]
+
+| group3 = Data management and governance
+| list3 =
+* [[Data management|Management]]
+* [[Data governance|Governance]]
+** [[Data cooperative|Cooperatives]]
+* [[Data ethics|Ethics]]
+* [[Data steward|Stewardship]]
+* [[Data lineage|Lineage]]
+* [[Data curation|Curation]]
+* [[Data preservation|Preservation]]
+* [[Data retention|Retention]]
+* [[Data publishing|Publishing]]
+** [[Open data]]
+* [[Master data management]]
+* [[Reference data]]
+
+| group4 = Data quality, trust, and protection
+| list4 =
+* [[Data quality|Quality]]
+* [[Information quality]]
+* [[Data validation|Validation]]
+* [[Data cleansing|Cleansing]]
+* [[Data scrubbing|Scrubbing]]
+* [[Data integrity|Integrity]]
+* [[Information privacy|Protection (privacy)]]
+* [[Data security|Security]]
+* [[Data anonymization|Anonymization]]
+* [[Data de-identification|De-identification]]
+* [[Data re-identification|Re-identification]]
+* [[Data erasure|Erasure]]
+* [[Data remanence|Remanence]]
+* [[Data corruption|Corruption]]
+* [[Data degradation|Degradation]]
+* [[Data loss|Loss]]
+* [[Data recovery|Recovery]]
+
+| group5 = Quality dimensions
+| list5 =
+* Accuracy
+* Completeness
+* Consistency
+* Timeliness
+* Validity
+* Uniqueness
+* Integrity
+* Conformity
+* Relevance
+
+| group6 = Data engineering and movement
+| list6 =
+* [[Data engineering|Engineering]]
+* [[Data integration|Integration]]
+* [[Data storage|Storage]]
+* [[Extract, transform, load|ETL]]/[[Extract, load, transform|ELT]]
+** [[Data extraction|Extract]]
+** [[Data transformation|Transform]]
+** [[Data loading|Load]]
+* [[Data migration|Migration]]
+* [[Data synchronization|Synchronization]]
+* [[Data compression|Compression]]
+* [[Data fusion|Fusion]]
+* [[Data format management|Format management]]
+
+| group7 = Data preparation and operations
+| list7 =
+* [[Data acquisition|Acquisition]]
+* [[Data augmentation|Augmentation]]
+* [[Data collection|Collection]]
+* [[Data annotation|Annotation]]
+* [[Data editing|Editing]]
+* [[Data deduplication|Deduplication]]
+* [[Data pre-processing|Pre-processing]]
+* [[Data preparation|Preparation]]
+* [[Data processing|Processing]]
+* [[Data reduction|Reduction]]
+* [[Data redundancy|Redundancy]]
+* [[Data wrangling|Wrangling/munging]]
+* [[Data scraping|Scraping]]
+* [[Data rescue|Rescue]]
+
+| group8 = Analysis, science, and interpretation
+| list8 =
+* [[Big data|Big]]
+* [[Data analysis|Analysis]]
+* [[Data exploration|Exploration]]
+* [[Data mining|Mining]]
+* [[Data science|Science]]
+* [[Topological data analysis]]
+* [[Data warehouse|Warehouse]]
+* [[Business intelligence]]
+
+| group9 = Data economy and exchange
+| list9 =
+* Data economy
+* [[Data sharing|Sharing]]
+* [[Open data]]
+* [[Data philanthropy|Philanthropy]]
+* [[Data as a service]]
+* [[Data broker]]
+* Responsible reuse
+
+| group10 = Exchange, use, and public context
+| list10 =
+* [[Data exhaust|Exhaust]]
+* [[Data farming|Farming]]
+* [[Data archaeology|Archaeology]]
+
+| group11 = Distributed data, domains, and digital twins
+| list11 =
+* [[Data mesh]]
+* [[Data product]]
+* [[Data domain|Data domains]]
+* Data categories
+* [[Digital twin|Data digital twins]]
+* Digital thread
+* Operational twins
+* Analytical twins
+
+| group12 = Vendors and actors
+| list12 =
+* Data vendors
+* Data technology vendors
+* [[Data as a service|Data service providers]]
+* [[Data broker|Data brokers]]
+* [[Chief data officer|Chief data officers]]
+* [[Information professional|Information professionals]]
+* [[Collibra]]
+* [[Informatica]]
+* [[IBM]]
+* [[SAP]]
+* [[Oracle Corporation|Oracle]]
+* [[SAS Institute|SAS]]
+* [[Qlik]]
+* [[Experian]]
+* [[Alation]]
+* Ataccama
+* Precisely
+
+}}

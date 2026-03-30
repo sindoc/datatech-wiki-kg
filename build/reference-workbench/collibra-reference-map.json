@@ -1,0 +1,1664 @@
+{
+  "article": {
+    "title": "Collibra",
+    "source_wikitext": "build/wikipedia/Collibra.wikitext",
+    "source_xml": "xml/wikipedia/collibra/article.xml"
+  },
+  "summary": {
+    "claim_count": 24,
+    "reference_count": 18,
+    "multi_use_reference_count": 16
+  },
+  "credibility_method": {
+    "id": "heuristic-web-credibility-v1",
+    "description": "Local weighted heuristic for editorial triage. It rewards recognized independent publications and penalizes publisher-owned company sources.",
+    "lineage": [
+      {
+        "factor": "Base score",
+        "effect": "+50"
+      },
+      {
+        "factor": "HTTPS",
+        "effect": "+5"
+      },
+      {
+        "factor": "Known publisher mapping",
+        "effect": "variable"
+      },
+      {
+        "factor": "Academic domain heuristic",
+        "effect": "+12"
+      },
+      {
+        "factor": "Promotional path heuristic",
+        "effect": "-6"
+      }
+    ],
+    "warning": "The score is for support tooling inside this repo. It is not a substitute for editorial judgment or Wikipedia sourcing policy."
+  },
+  "claims": [
+    {
+      "id": "claim-001",
+      "section": "Lead",
+      "line_number": 1,
+      "claim_type": "infobox",
+      "text": "Type: Private",
+      "reference_ids": [
+        "ref-https-www-cnbc-com-2021-11-09-co-b492b371"
+      ],
+      "coverage_health": {
+        "score": 75,
+        "band": "strong",
+        "reasons": [
+          "Base support score for a cited claim line.",
+          "At least one reference is attached to the claim.",
+          "The claim has independent source support.",
+          "At least one supporting reference is from a stronger known publisher class."
+        ]
+      }
+    },
+    {
+      "id": "claim-002",
+      "section": "Lead",
+      "line_number": 2,
+      "claim_type": "infobox",
+      "text": "Industry: Software",
+      "reference_ids": [
+        "ref-https-techtransfer-research-vub--96b17a97"
+      ],
+      "coverage_health": {
+        "score": 45,
+        "band": "weak",
+        "reasons": [
+          "Base support score for a cited claim line.",
+          "At least one reference is attached to the claim."
+        ]
+      }
+    },
+    {
+      "id": "claim-003",
+      "section": "Lead",
+      "line_number": 3,
+      "claim_type": "infobox",
+      "text": "Founded: 2008 in Belgium",
+      "reference_ids": [
+        "ref-https-www-cnbc-com-2021-11-09-co-b492b371",
+        "ref-https-techtransfer-research-vub--96b17a97"
+      ],
+      "coverage_health": {
+        "score": 75,
+        "band": "strong",
+        "reasons": [
+          "Base support score for a cited claim line.",
+          "At least one reference is attached to the claim.",
+          "The claim has independent source support.",
+          "At least one supporting reference is from a stronger known publisher class."
+        ]
+      }
+    },
+    {
+      "id": "claim-004",
+      "section": "Lead",
+      "line_number": 4,
+      "claim_type": "infobox",
+      "text": "Founders: Felix Van de Maele<br />Stijn Christiaens<br />Pieter De Leenheer<br />Benny Verhaeghe / Damien Trog",
+      "reference_ids": [
+        "ref-https-techtransfer-research-vub--96b17a97"
+      ],
+      "coverage_health": {
+        "score": 45,
+        "band": "weak",
+        "reasons": [
+          "Base support score for a cited claim line.",
+          "At least one reference is attached to the claim."
+        ]
+      }
+    },
+    {
+      "id": "claim-005",
+      "section": "Lead",
+      "line_number": 5,
+      "claim_type": "infobox",
+      "text": "Headquarters: New York City, United States<br />Brussels, Belgium",
+      "reference_ids": [],
+      "coverage_health": {
+        "score": 35,
+        "band": "weak",
+        "reasons": [
+          "Base support score for a cited claim line."
+        ]
+      }
+    },
+    {
+      "id": "claim-006",
+      "section": "Lead",
+      "line_number": 6,
+      "claim_type": "infobox",
+      "text": "Key People: Felix Van de Maele<br />Stijn Christiaens<br />Tom Dejonghe<br />Dieter Wachters<br/ >Tony Mary<br/>Patrick Polak",
+      "reference_ids": [],
+      "coverage_health": {
+        "score": 35,
+        "band": "weak",
+        "reasons": [
+          "Base support score for a cited claim line."
+        ]
+      }
+    },
+    {
+      "id": "claim-007",
+      "section": "Lead",
+      "line_number": 7,
+      "claim_type": "infobox",
+      "text": "Website: [https://www.collibra.com collibra.com]",
+      "reference_ids": [],
+      "coverage_health": {
+        "score": 35,
+        "band": "weak",
+        "reasons": [
+          "Base support score for a cited claim line."
+        ]
+      }
+    },
+    {
+      "id": "claim-008",
+      "section": "Lead",
+      "line_number": 8,
+      "claim_type": "article",
+      "text": "'''Collibra''' ({{IPAc-en|k|\u0259|\u02c8|l|i\u02d0|b|r|\u0259}}) is a software company founded in Belgium in 2008 that develops software for data governance, data cataloging, data quality, and related enterprise data-management functions. The company originated as a spin-off from the Vrije Universiteit Brussel's STARLab research group. Coverage of the company has described it variously as a data governance, data management, or data intelligence vendor, reflecting product expansion and changing market vocabulary. By 2021, Collibra had reached a valuation of $5.25 billion and coverage increasingly placed it in the broader enterprise market for trusted data access, compliance, analytics enablement, and AI governance.",
+      "reference_ids": [
+        "ref-https-techcrunch-com-2017-01-18--f9aafb60",
+        "ref-https-techcrunch-com-2019-01-29--d66521fb",
+        "ref-https-techtransfer-research-vub--96b17a97",
+        "ref-https-www-vub-be-en-news-from-st-65a7345d",
+        "ref-https-techcrunch-com-2021-11-09--b651224f",
+        "ref-https-www-cnbc-com-2021-11-09-co-b492b371"
+      ],
+      "coverage_health": {
+        "score": 85,
+        "band": "strong",
+        "reasons": [
+          "Base support score for a cited claim line.",
+          "At least one reference is attached to the claim.",
+          "The claim has independent source support.",
+          "The claim has multiple independent supporting references.",
+          "At least one supporting reference is from a stronger known publisher class."
+        ]
+      }
+    },
+    {
+      "id": "claim-009",
+      "section": "History",
+      "line_number": 9,
+      "claim_type": "article",
+      "text": "Collibra was founded in 2008 as a Belgian software company focused on helping organizations govern and use enterprise data more effectively. VUB sources describe it as a spin-off from the university's STARLab, and identify Felix Van de Maele, Stijn Christiaens, Pieter De Leenheer, and Damien Trog as founders. Early coverage framed the company around data-governance problems inside large organizations, particularly the difficulty of finding, understanding, and controlling data spread across multiple systems.",
+      "reference_ids": [
+        "ref-https-techcrunch-com-2018-01-08--e4bf7bad",
+        "ref-https-techcrunch-com-2019-01-29--d66521fb",
+        "ref-https-techtransfer-research-vub--96b17a97",
+        "ref-https-www-vub-be-en-news-from-st-65a7345d"
+      ],
+      "coverage_health": {
+        "score": 75,
+        "band": "strong",
+        "reasons": [
+          "Base support score for a cited claim line.",
+          "At least one reference is attached to the claim.",
+          "The claim has independent source support.",
+          "The claim has multiple independent supporting references."
+        ]
+      }
+    },
+    {
+      "id": "claim-010",
+      "section": "History",
+      "line_number": 10,
+      "claim_type": "article",
+      "text": "As regulatory scrutiny and enterprise data volumes grew, Collibra raised a succession of funding rounds that tracked its rise from a venture-backed governance vendor to a company valued above $1 billion in January 2019, $2.3 billion in April 2020, and $5.25 billion in November 2021. Coverage of the 2020 and 2021 rounds connected that growth to governance, cataloging, data protection, and the increasing operational importance of enterprise data.",
+      "reference_ids": [
+        "ref-https-techcrunch-com-2019-01-29--d66521fb",
+        "ref-https-techcrunch-com-2020-04-02--9b72eaaf",
+        "ref-https-techcrunch-com-2021-11-09--b651224f",
+        "ref-https-www-cnbc-com-2021-11-09-co-b492b371"
+      ],
+      "coverage_health": {
+        "score": 85,
+        "band": "strong",
+        "reasons": [
+          "Base support score for a cited claim line.",
+          "At least one reference is attached to the claim.",
+          "The claim has independent source support.",
+          "The claim has multiple independent supporting references.",
+          "At least one supporting reference is from a stronger known publisher class."
+        ]
+      }
+    },
+    {
+      "id": "claim-011",
+      "section": "Products",
+      "line_number": 11,
+      "claim_type": "article",
+      "text": "Independent coverage has generally described Collibra's products as a set of enterprise tools for finding, understanding, governing, and controlling data across distributed environments. While the company's early identity was closely tied to governance and catalog functions, later coverage emphasized a broader product set that combined governance with data quality, analytics-adjacent tooling, policy controls, and AI-governance capabilities.",
+      "reference_ids": [
+        "ref-https-siliconangle-com-2021-02-0-e4ee54cf",
+        "ref-https-venturebeat-com-ai-collibr-50c93f06",
+        "ref-https-www-techtarget-com-searchd-68ca764c",
+        "ref-https-www-techtarget-com-searchb-3d40d4a7"
+      ],
+      "coverage_health": {
+        "score": 75,
+        "band": "strong",
+        "reasons": [
+          "Base support score for a cited claim line.",
+          "At least one reference is attached to the claim.",
+          "The claim has independent source support.",
+          "The claim has multiple independent supporting references."
+        ]
+      }
+    },
+    {
+      "id": "claim-012",
+      "section": "Products",
+      "line_number": 12,
+      "claim_type": "article",
+      "text": "At a high level, Collibra's product coverage in independent reporting spans data catalog and governance, data quality, analytics-oriented notebook tooling, data lineage and metadata management through acquired capabilities, and AI governance.",
+      "reference_ids": [
+        "ref-https-www-techtarget-com-searchd-68ca764c",
+        "ref-https-siliconangle-com-2021-02-0-e4ee54cf",
+        "ref-https-www-techtarget-com-searchb-3d40d4a7",
+        "ref-https-venturebeat-com-ai-collibr-50c93f06"
+      ],
+      "coverage_health": {
+        "score": 75,
+        "band": "strong",
+        "reasons": [
+          "Base support score for a cited claim line.",
+          "At least one reference is attached to the claim.",
+          "The claim has independent source support.",
+          "The claim has multiple independent supporting references."
+        ]
+      }
+    },
+    {
+      "id": "claim-013",
+      "section": "Products",
+      "line_number": 13,
+      "claim_type": "table",
+      "text": "Data catalog and governance: Organizing, governing, and controlling enterprise data assets.",
+      "reference_ids": [
+        "ref-https-siliconangle-com-2021-02-0-e4ee54cf",
+        "ref-https-venturebeat-com-ai-collibr-50c93f06"
+      ],
+      "coverage_health": {
+        "score": 75,
+        "band": "strong",
+        "reasons": [
+          "Base support score for a cited claim line.",
+          "At least one reference is attached to the claim.",
+          "The claim has independent source support.",
+          "The claim has multiple independent supporting references."
+        ]
+      }
+    },
+    {
+      "id": "claim-014",
+      "section": "Products",
+      "line_number": 14,
+      "claim_type": "table",
+      "text": "Data quality: Adding predictive or automated quality capabilities to governed data workflows.",
+      "reference_ids": [
+        "ref-https-www-techtarget-com-searchd-68ca764c",
+        "ref-https-siliconangle-com-2021-02-0-e4ee54cf"
+      ],
+      "coverage_health": {
+        "score": 75,
+        "band": "strong",
+        "reasons": [
+          "Base support score for a cited claim line.",
+          "At least one reference is attached to the claim.",
+          "The claim has independent source support.",
+          "The claim has multiple independent supporting references."
+        ]
+      }
+    },
+    {
+      "id": "claim-015",
+      "section": "Products",
+      "line_number": 15,
+      "claim_type": "table",
+      "text": "Data lineage and metadata: Extending traceability and metadata-management capabilities through acquisition.",
+      "reference_ids": [
+        "ref-https-siliconangle-com-2021-02-0-e4ee54cf"
+      ],
+      "coverage_health": {
+        "score": 65,
+        "band": "moderate",
+        "reasons": [
+          "Base support score for a cited claim line.",
+          "At least one reference is attached to the claim.",
+          "The claim has independent source support."
+        ]
+      }
+    },
+    {
+      "id": "claim-016",
+      "section": "Products",
+      "line_number": 16,
+      "claim_type": "table",
+      "text": "Analytics tooling: Adding notebook-oriented functionality for analytics workflows.",
+      "reference_ids": [
+        "ref-https-siliconangle-com-2021-02-0-e4ee54cf"
+      ],
+      "coverage_health": {
+        "score": 65,
+        "band": "moderate",
+        "reasons": [
+          "Base support score for a cited claim line.",
+          "At least one reference is attached to the claim.",
+          "The claim has independent source support."
+        ]
+      }
+    },
+    {
+      "id": "claim-017",
+      "section": "Products",
+      "line_number": 17,
+      "claim_type": "table",
+      "text": "AI governance: Applying governance controls to AI models and applications in relation to enterprise data.",
+      "reference_ids": [
+        "ref-https-www-techtarget-com-searchd-2d386cbd",
+        "ref-https-venturebeat-com-ai-collibr-50c93f06"
+      ],
+      "coverage_health": {
+        "score": 75,
+        "band": "strong",
+        "reasons": [
+          "Base support score for a cited claim line.",
+          "At least one reference is attached to the claim.",
+          "The claim has independent source support.",
+          "The claim has multiple independent supporting references."
+        ]
+      }
+    },
+    {
+      "id": "claim-018",
+      "section": "Acquisitions",
+      "line_number": 18,
+      "claim_type": "article",
+      "text": "Collibra has used acquisitions to broaden its platform beyond catalog and governance workflows. Reported acquisitions have centered on data lineage, data quality, analytics workflows, data access, and unstructured data governance.",
+      "reference_ids": [
+        "ref-https-www-techtarget-com-searchd-68ca764c",
+        "ref-https-www-techtarget-com-searchb-3d40d4a7",
+        "ref-https-techcrunch-com-2025-06-05--55f793ee",
+        "ref-https-www-techtarget-com-searchd-30dd15da"
+      ],
+      "coverage_health": {
+        "score": 75,
+        "band": "strong",
+        "reasons": [
+          "Base support score for a cited claim line.",
+          "At least one reference is attached to the claim.",
+          "The claim has independent source support.",
+          "The claim has multiple independent supporting references."
+        ]
+      }
+    },
+    {
+      "id": "claim-019",
+      "section": "Acquisitions",
+      "line_number": 19,
+      "claim_type": "table",
+      "text": "2019 | SQLdep | Data lineage and metadata management | A [[Brno]]-based software company, focused on reverse engineering data lineage from BI Tools and SQL code.",
+      "reference_ids": [
+        "ref-https-www-techtarget-com-searchb-3d40d4a7"
+      ],
+      "coverage_health": {
+        "score": 65,
+        "band": "moderate",
+        "reasons": [
+          "Base support score for a cited claim line.",
+          "At least one reference is attached to the claim.",
+          "The claim has independent source support."
+        ]
+      }
+    },
+    {
+      "id": "claim-020",
+      "section": "Acquisitions",
+      "line_number": 20,
+      "claim_type": "table",
+      "text": "2021 | OwlDQ | Data quality | A US-based predictive data quality platform focused on automated data anomaly detection.",
+      "reference_ids": [
+        "ref-https-www-techtarget-com-searchd-68ca764c"
+      ],
+      "coverage_health": {
+        "score": 65,
+        "band": "moderate",
+        "reasons": [
+          "Base support score for a cited claim line.",
+          "At least one reference is attached to the claim.",
+          "The claim has independent source support."
+        ]
+      }
+    },
+    {
+      "id": "claim-021",
+      "section": "Acquisitions",
+      "line_number": 21,
+      "claim_type": "table",
+      "text": "2023 | Husprey | SQL notebooks and analytics workflows | A French startup focusing on data notebook acquisition for analytics tools and workflows.",
+      "reference_ids": [
+        "ref-https-www-techtarget-com-searchb-3d40d4a7"
+      ],
+      "coverage_health": {
+        "score": 65,
+        "band": "moderate",
+        "reasons": [
+          "Base support score for a cited claim line.",
+          "At least one reference is attached to the claim.",
+          "The claim has independent source support."
+        ]
+      }
+    },
+    {
+      "id": "claim-022",
+      "section": "Acquisitions",
+      "line_number": 22,
+      "claim_type": "table",
+      "text": "2025 | Raito | Data access governance | A Belgian startup whose founders had worked at Collibra previously. Dieter Wachters had led Collibra's engineering team for about a decade.",
+      "reference_ids": [
+        "ref-https-techcrunch-com-2025-06-05--55f793ee"
+      ],
+      "coverage_health": {
+        "score": 65,
+        "band": "moderate",
+        "reasons": [
+          "Base support score for a cited claim line.",
+          "At least one reference is attached to the claim.",
+          "The claim has independent source support."
+        ]
+      }
+    },
+    {
+      "id": "claim-023",
+      "section": "Acquisitions",
+      "line_number": 23,
+      "claim_type": "table",
+      "text": "2025 | Deasy Labs | Unstructured data governance | Reported as an acquisition aimed at unstructured data.",
+      "reference_ids": [
+        "ref-https-www-techtarget-com-searchd-30dd15da"
+      ],
+      "coverage_health": {
+        "score": 65,
+        "band": "moderate",
+        "reasons": [
+          "Base support score for a cited claim line.",
+          "At least one reference is attached to the claim.",
+          "The claim has independent source support."
+        ]
+      }
+    },
+    {
+      "id": "claim-024",
+      "section": "Market position and reception",
+      "line_number": 24,
+      "claim_type": "article",
+      "text": "Coverage of Collibra has often treated the company as part of a wider enterprise shift toward making data more discoverable, reliable, and governable across large organizations. Publications have described the company in varying terms, including data governance, data management, and data intelligence, while consistently placing it in the market for enterprise software used to control and operationalize data. Later coverage connected that position to AI governance and data-access controls as those topics became more prominent in enterprise software.",
+      "reference_ids": [
+        "ref-https-techcrunch-com-2020-04-02--9b72eaaf",
+        "ref-https-techcrunch-com-2021-11-09--b651224f",
+        "ref-https-www-techtarget-com-searchd-cf67b7bb"
+      ],
+      "coverage_health": {
+        "score": 75,
+        "band": "strong",
+        "reasons": [
+          "Base support score for a cited claim line.",
+          "At least one reference is attached to the claim.",
+          "The claim has independent source support.",
+          "The claim has multiple independent supporting references."
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-https-siliconangle-com-2021-02-0-e4ee54cf",
+      "url": "https://siliconangle.com/2021/02/03/collibra-acquires-owldq-make-enterprises-data-reliable-ai/",
+      "title": "Collibra acquires OwlDQ to make enterprises' data more reliable for AI",
+      "website": "SiliconANGLE",
+      "issued": [
+        2021,
+        2,
+        3
+      ],
+      "accessed": [
+        2026,
+        3,
+        27
+      ],
+      "credibility": {
+        "domain": "siliconangle.com",
+        "publisher_class": "trade-press",
+        "publisher_label": "SiliconANGLE",
+        "independence": "independent",
+        "score": 67,
+        "band": "medium",
+        "method": {
+          "id": "heuristic-web-credibility-v1",
+          "lineage": [
+            "base score",
+            "transport security",
+            "known publisher class mapping",
+            "institutional domain heuristic",
+            "promotional-path penalty"
+          ],
+          "factors": [
+            {
+              "label": "Base score",
+              "delta": 50,
+              "reason": "Neutral starting point for a published web source."
+            },
+            {
+              "label": "HTTPS",
+              "delta": 5,
+              "reason": "Transport security is present."
+            },
+            {
+              "label": "Publisher class: trade-press",
+              "delta": 12,
+              "reason": "Domain matched known source profile for SiliconANGLE."
+            }
+          ],
+          "note": "This is a local editorial support metric, not a public truth score."
+        }
+      },
+      "supported_claim_ids": [
+        "claim-009",
+        "claim-010",
+        "claim-011",
+        "claim-012",
+        "claim-013",
+        "claim-014",
+        "claim-011",
+        "claim-012",
+        "claim-013",
+        "claim-014",
+        "claim-015",
+        "claim-016"
+      ],
+      "supported_sections": [
+        "Products"
+      ],
+      "use_count": 12
+    },
+    {
+      "id": "ref-https-techtransfer-research-vub--96b17a97",
+      "url": "https://techtransfer.research.vub.be/collibra",
+      "title": "COLLIBRA",
+      "website": "VUB TechTransfer",
+      "issued": [],
+      "accessed": [
+        2026,
+        3,
+        27
+      ],
+      "credibility": {
+        "domain": "techtransfer.research.vub.be",
+        "publisher_class": "institution",
+        "publisher_label": "VUB TechTransfer",
+        "independence": "contextual",
+        "score": 65,
+        "band": "medium",
+        "method": {
+          "id": "heuristic-web-credibility-v1",
+          "lineage": [
+            "base score",
+            "transport security",
+            "known publisher class mapping",
+            "institutional domain heuristic",
+            "promotional-path penalty"
+          ],
+          "factors": [
+            {
+              "label": "Base score",
+              "delta": 50,
+              "reason": "Neutral starting point for a published web source."
+            },
+            {
+              "label": "HTTPS",
+              "delta": 5,
+              "reason": "Transport security is present."
+            },
+            {
+              "label": "Publisher class: institution",
+              "delta": 10,
+              "reason": "Domain matched known source profile for VUB TechTransfer."
+            }
+          ],
+          "note": "This is a local editorial support metric, not a public truth score."
+        }
+      },
+      "supported_claim_ids": [
+        "claim-002",
+        "claim-003",
+        "claim-004",
+        "claim-006",
+        "claim-007",
+        "claim-002",
+        "claim-003",
+        "claim-004",
+        "claim-008",
+        "claim-009"
+      ],
+      "supported_sections": [
+        "History",
+        "Lead"
+      ],
+      "use_count": 10
+    },
+    {
+      "id": "ref-https-www-techtarget-com-searchb-3d40d4a7",
+      "url": "https://www.techtarget.com/searchbusinessanalytics/news/366551315/Collibra-acquires-data-notebook-vendor-for-analytics-tools",
+      "title": "Collibra acquires data notebook vendor for analytics tools",
+      "website": "TechTarget",
+      "issued": [
+        2023,
+        9,
+        7
+      ],
+      "accessed": [
+        2026,
+        3,
+        27
+      ],
+      "credibility": {
+        "domain": "techtarget.com",
+        "publisher_class": "trade-press",
+        "publisher_label": "TechTarget",
+        "independence": "independent",
+        "score": 73,
+        "band": "medium",
+        "method": {
+          "id": "heuristic-web-credibility-v1",
+          "lineage": [
+            "base score",
+            "transport security",
+            "known publisher class mapping",
+            "institutional domain heuristic",
+            "promotional-path penalty"
+          ],
+          "factors": [
+            {
+              "label": "Base score",
+              "delta": 50,
+              "reason": "Neutral starting point for a published web source."
+            },
+            {
+              "label": "HTTPS",
+              "delta": 5,
+              "reason": "Transport security is present."
+            },
+            {
+              "label": "Publisher class: trade-press",
+              "delta": 18,
+              "reason": "Domain matched known source profile for TechTarget."
+            }
+          ],
+          "note": "This is a local editorial support metric, not a public truth score."
+        }
+      },
+      "supported_claim_ids": [
+        "claim-009",
+        "claim-010",
+        "claim-016",
+        "claim-017",
+        "claim-019",
+        "claim-011",
+        "claim-012",
+        "claim-018",
+        "claim-019",
+        "claim-021"
+      ],
+      "supported_sections": [
+        "Acquisitions",
+        "Products"
+      ],
+      "use_count": 10
+    },
+    {
+      "id": "ref-https-www-techtarget-com-searchd-68ca764c",
+      "url": "https://www.techtarget.com/searchdatamanagement/news/252495815/Collibra-acquires-predictive-data-quality-vendor-OwlDQ",
+      "title": "Collibra acquires predictive data quality vendor OwlDQ",
+      "website": "TechTarget",
+      "issued": [
+        2021,
+        2,
+        3
+      ],
+      "accessed": [
+        2026,
+        3,
+        27
+      ],
+      "credibility": {
+        "domain": "techtarget.com",
+        "publisher_class": "trade-press",
+        "publisher_label": "TechTarget",
+        "independence": "independent",
+        "score": 73,
+        "band": "medium",
+        "method": {
+          "id": "heuristic-web-credibility-v1",
+          "lineage": [
+            "base score",
+            "transport security",
+            "known publisher class mapping",
+            "institutional domain heuristic",
+            "promotional-path penalty"
+          ],
+          "factors": [
+            {
+              "label": "Base score",
+              "delta": 50,
+              "reason": "Neutral starting point for a published web source."
+            },
+            {
+              "label": "HTTPS",
+              "delta": 5,
+              "reason": "Transport security is present."
+            },
+            {
+              "label": "Publisher class: trade-press",
+              "delta": 18,
+              "reason": "Domain matched known source profile for TechTarget."
+            }
+          ],
+          "note": "This is a local editorial support metric, not a public truth score."
+        }
+      },
+      "supported_claim_ids": [
+        "claim-009",
+        "claim-010",
+        "claim-012",
+        "claim-016",
+        "claim-018",
+        "claim-011",
+        "claim-012",
+        "claim-014",
+        "claim-018",
+        "claim-020"
+      ],
+      "supported_sections": [
+        "Acquisitions",
+        "Products"
+      ],
+      "use_count": 10
+    },
+    {
+      "id": "ref-https-www-cnbc-com-2021-11-09-co-b492b371",
+      "url": "https://www.cnbc.com/2021/11/09/collibra-doubles-valuation-as-investors-chase-next-cloud-winner.html",
+      "title": "Collibra doubles valuation as investors chase next cloud winner",
+      "website": "CNBC",
+      "issued": [
+        2021,
+        11,
+        9
+      ],
+      "accessed": [
+        2026,
+        3,
+        27
+      ],
+      "credibility": {
+        "domain": "cnbc.com",
+        "publisher_class": "news",
+        "publisher_label": "CNBC",
+        "independence": "independent",
+        "score": 77,
+        "band": "high",
+        "method": {
+          "id": "heuristic-web-credibility-v1",
+          "lineage": [
+            "base score",
+            "transport security",
+            "known publisher class mapping",
+            "institutional domain heuristic",
+            "promotional-path penalty"
+          ],
+          "factors": [
+            {
+              "label": "Base score",
+              "delta": 50,
+              "reason": "Neutral starting point for a published web source."
+            },
+            {
+              "label": "HTTPS",
+              "delta": 5,
+              "reason": "Transport security is present."
+            },
+            {
+              "label": "Publisher class: news",
+              "delta": 22,
+              "reason": "Domain matched known source profile for CNBC."
+            }
+          ],
+          "note": "This is a local editorial support metric, not a public truth score."
+        }
+      },
+      "supported_claim_ids": [
+        "claim-001",
+        "claim-003",
+        "claim-006",
+        "claim-008",
+        "claim-001",
+        "claim-003",
+        "claim-008",
+        "claim-010"
+      ],
+      "supported_sections": [
+        "History",
+        "Lead"
+      ],
+      "use_count": 8
+    },
+    {
+      "id": "ref-https-venturebeat-com-ai-collibr-50c93f06",
+      "url": "https://venturebeat.com/ai/collibra-tackles-the-shadow-ai-problem-with-new-governance-application/",
+      "title": "Collibra tackles the shadow AI problem with new governance application",
+      "website": "VentureBeat",
+      "issued": [
+        2024,
+        4,
+        10
+      ],
+      "accessed": [
+        2026,
+        3,
+        27
+      ],
+      "credibility": {
+        "domain": "venturebeat.com",
+        "publisher_class": "trade-press",
+        "publisher_label": "VentureBeat",
+        "independence": "independent",
+        "score": 71,
+        "band": "medium",
+        "method": {
+          "id": "heuristic-web-credibility-v1",
+          "lineage": [
+            "base score",
+            "transport security",
+            "known publisher class mapping",
+            "institutional domain heuristic",
+            "promotional-path penalty"
+          ],
+          "factors": [
+            {
+              "label": "Base score",
+              "delta": 50,
+              "reason": "Neutral starting point for a published web source."
+            },
+            {
+              "label": "HTTPS",
+              "delta": 5,
+              "reason": "Transport security is present."
+            },
+            {
+              "label": "Publisher class: trade-press",
+              "delta": 16,
+              "reason": "Domain matched known source profile for VentureBeat."
+            }
+          ],
+          "note": "This is a local editorial support metric, not a public truth score."
+        }
+      },
+      "supported_claim_ids": [
+        "claim-009",
+        "claim-010",
+        "claim-011",
+        "claim-015",
+        "claim-011",
+        "claim-012",
+        "claim-013",
+        "claim-017"
+      ],
+      "supported_sections": [
+        "Products"
+      ],
+      "use_count": 8
+    },
+    {
+      "id": "ref-https-techcrunch-com-2021-11-09--b651224f",
+      "url": "https://techcrunch.com/2021/11/09/data-intelligence-company-collibra-brings-in-another-250m-to-more-than-double-its-valuation/",
+      "title": "Data intelligence company Collibra brings in another $250M to more than double its valuation",
+      "website": "TechCrunch",
+      "issued": [
+        2021,
+        11,
+        9
+      ],
+      "accessed": [
+        2026,
+        3,
+        27
+      ],
+      "credibility": {
+        "domain": "techcrunch.com",
+        "publisher_class": "trade-press",
+        "publisher_label": "TechCrunch",
+        "independence": "independent",
+        "score": 73,
+        "band": "medium",
+        "method": {
+          "id": "heuristic-web-credibility-v1",
+          "lineage": [
+            "base score",
+            "transport security",
+            "known publisher class mapping",
+            "institutional domain heuristic",
+            "promotional-path penalty"
+          ],
+          "factors": [
+            {
+              "label": "Base score",
+              "delta": 50,
+              "reason": "Neutral starting point for a published web source."
+            },
+            {
+              "label": "HTTPS",
+              "delta": 5,
+              "reason": "Transport security is present."
+            },
+            {
+              "label": "Publisher class: trade-press",
+              "delta": 18,
+              "reason": "Domain matched known source profile for TechCrunch."
+            }
+          ],
+          "note": "This is a local editorial support metric, not a public truth score."
+        }
+      },
+      "supported_claim_ids": [
+        "claim-006",
+        "claim-008",
+        "claim-022",
+        "claim-008",
+        "claim-010",
+        "claim-024"
+      ],
+      "supported_sections": [
+        "History",
+        "Lead",
+        "Market position and reception"
+      ],
+      "use_count": 6
+    },
+    {
+      "id": "ref-https-techcrunch-com-2019-01-29--d66521fb",
+      "url": "https://techcrunch.com/2019/01/29/regulatory-demands-for-better-data-governance-push-collibras-valuation-above-1-billion/",
+      "title": "Regulatory demands for better data governance push Collibra's valuation above $1 billion",
+      "website": "TechCrunch",
+      "issued": [
+        2019,
+        1,
+        29
+      ],
+      "accessed": [
+        2026,
+        3,
+        27
+      ],
+      "credibility": {
+        "domain": "techcrunch.com",
+        "publisher_class": "trade-press",
+        "publisher_label": "TechCrunch",
+        "independence": "independent",
+        "score": 73,
+        "band": "medium",
+        "method": {
+          "id": "heuristic-web-credibility-v1",
+          "lineage": [
+            "base score",
+            "transport security",
+            "known publisher class mapping",
+            "institutional domain heuristic",
+            "promotional-path penalty"
+          ],
+          "factors": [
+            {
+              "label": "Base score",
+              "delta": 50,
+              "reason": "Neutral starting point for a published web source."
+            },
+            {
+              "label": "HTTPS",
+              "delta": 5,
+              "reason": "Transport security is present."
+            },
+            {
+              "label": "Publisher class: trade-press",
+              "delta": 18,
+              "reason": "Domain matched known source profile for TechCrunch."
+            }
+          ],
+          "note": "This is a local editorial support metric, not a public truth score."
+        }
+      },
+      "supported_claim_ids": [
+        "claim-006",
+        "claim-007",
+        "claim-008",
+        "claim-008",
+        "claim-009",
+        "claim-010"
+      ],
+      "supported_sections": [
+        "History",
+        "Lead"
+      ],
+      "use_count": 6
+    },
+    {
+      "id": "ref-https-techcrunch-com-2025-06-05--55f793ee",
+      "url": "https://techcrunch.com/2025/06/05/collibra-acquires-data-access-startup-raito/",
+      "title": "Collibra acquires data access startup Raito",
+      "website": "TechCrunch",
+      "issued": [
+        2025,
+        6,
+        5
+      ],
+      "accessed": [
+        2026,
+        3,
+        27
+      ],
+      "credibility": {
+        "domain": "techcrunch.com",
+        "publisher_class": "trade-press",
+        "publisher_label": "TechCrunch",
+        "independence": "independent",
+        "score": 73,
+        "band": "medium",
+        "method": {
+          "id": "heuristic-web-credibility-v1",
+          "lineage": [
+            "base score",
+            "transport security",
+            "known publisher class mapping",
+            "institutional domain heuristic",
+            "promotional-path penalty"
+          ],
+          "factors": [
+            {
+              "label": "Base score",
+              "delta": 50,
+              "reason": "Neutral starting point for a published web source."
+            },
+            {
+              "label": "HTTPS",
+              "delta": 5,
+              "reason": "Transport security is present."
+            },
+            {
+              "label": "Publisher class: trade-press",
+              "delta": 18,
+              "reason": "Domain matched known source profile for TechCrunch."
+            }
+          ],
+          "note": "This is a local editorial support metric, not a public truth score."
+        }
+      },
+      "supported_claim_ids": [
+        "claim-016",
+        "claim-020",
+        "claim-018",
+        "claim-022"
+      ],
+      "supported_sections": [
+        "Acquisitions"
+      ],
+      "use_count": 4
+    },
+    {
+      "id": "ref-https-techcrunch-com-2020-04-02--9b72eaaf",
+      "url": "https://techcrunch.com/2020/04/02/collibra-nabs-another-112-5m-at-a-2-3b-valuation-for-its-big-data-management-platform/",
+      "title": "Collibra nabs another $112.5M at a $2.3B valuation for its big data management platform",
+      "website": "TechCrunch",
+      "issued": [
+        2020,
+        4,
+        2
+      ],
+      "accessed": [
+        2026,
+        3,
+        27
+      ],
+      "credibility": {
+        "domain": "techcrunch.com",
+        "publisher_class": "trade-press",
+        "publisher_label": "TechCrunch",
+        "independence": "independent",
+        "score": 73,
+        "band": "medium",
+        "method": {
+          "id": "heuristic-web-credibility-v1",
+          "lineage": [
+            "base score",
+            "transport security",
+            "known publisher class mapping",
+            "institutional domain heuristic",
+            "promotional-path penalty"
+          ],
+          "factors": [
+            {
+              "label": "Base score",
+              "delta": 50,
+              "reason": "Neutral starting point for a published web source."
+            },
+            {
+              "label": "HTTPS",
+              "delta": 5,
+              "reason": "Transport security is present."
+            },
+            {
+              "label": "Publisher class: trade-press",
+              "delta": 18,
+              "reason": "Domain matched known source profile for TechCrunch."
+            }
+          ],
+          "note": "This is a local editorial support metric, not a public truth score."
+        }
+      },
+      "supported_claim_ids": [
+        "claim-008",
+        "claim-022",
+        "claim-010",
+        "claim-024"
+      ],
+      "supported_sections": [
+        "History",
+        "Market position and reception"
+      ],
+      "use_count": 4
+    },
+    {
+      "id": "ref-https-www-techtarget-com-searchd-30dd15da",
+      "url": "https://www.techtarget.com/searchdatamanagement/news/366627998/Collibras-acquisition-of-Deasy-targets-unstructured-data",
+      "title": "Collibra's acquisition of Deasy targets unstructured data",
+      "website": "TechTarget",
+      "issued": [
+        2025,
+        7,
+        24
+      ],
+      "accessed": [
+        2026,
+        3,
+        27
+      ],
+      "credibility": {
+        "domain": "techtarget.com",
+        "publisher_class": "trade-press",
+        "publisher_label": "TechTarget",
+        "independence": "independent",
+        "score": 73,
+        "band": "medium",
+        "method": {
+          "id": "heuristic-web-credibility-v1",
+          "lineage": [
+            "base score",
+            "transport security",
+            "known publisher class mapping",
+            "institutional domain heuristic",
+            "promotional-path penalty"
+          ],
+          "factors": [
+            {
+              "label": "Base score",
+              "delta": 50,
+              "reason": "Neutral starting point for a published web source."
+            },
+            {
+              "label": "HTTPS",
+              "delta": 5,
+              "reason": "Transport security is present."
+            },
+            {
+              "label": "Publisher class: trade-press",
+              "delta": 18,
+              "reason": "Domain matched known source profile for TechTarget."
+            }
+          ],
+          "note": "This is a local editorial support metric, not a public truth score."
+        }
+      },
+      "supported_claim_ids": [
+        "claim-016",
+        "claim-021",
+        "claim-018",
+        "claim-023"
+      ],
+      "supported_sections": [
+        "Acquisitions"
+      ],
+      "use_count": 4
+    },
+    {
+      "id": "ref-https-www-vub-be-en-news-from-st-65a7345d",
+      "url": "https://www.vub.be/en/news/from-student-spin-how-does-that-happen",
+      "title": "From student to spin-off: how does that happen",
+      "website": "Vrije Universiteit Brussel",
+      "issued": [],
+      "accessed": [
+        2026,
+        3,
+        27
+      ],
+      "credibility": {
+        "domain": "vub.be",
+        "publisher_class": "institution",
+        "publisher_label": "Vrije Universiteit Brussel",
+        "independence": "contextual",
+        "score": 65,
+        "band": "medium",
+        "method": {
+          "id": "heuristic-web-credibility-v1",
+          "lineage": [
+            "base score",
+            "transport security",
+            "known publisher class mapping",
+            "institutional domain heuristic",
+            "promotional-path penalty"
+          ],
+          "factors": [
+            {
+              "label": "Base score",
+              "delta": 50,
+              "reason": "Neutral starting point for a published web source."
+            },
+            {
+              "label": "HTTPS",
+              "delta": 5,
+              "reason": "Transport security is present."
+            },
+            {
+              "label": "Publisher class: institution",
+              "delta": 10,
+              "reason": "Domain matched known source profile for Vrije Universiteit Brussel."
+            }
+          ],
+          "note": "This is a local editorial support metric, not a public truth score."
+        }
+      },
+      "supported_claim_ids": [
+        "claim-006",
+        "claim-007",
+        "claim-008",
+        "claim-009"
+      ],
+      "supported_sections": [
+        "History",
+        "Lead"
+      ],
+      "use_count": 4
+    },
+    {
+      "id": "ref-https-www-techtarget-com-searchd-2d386cbd",
+      "url": "https://www.techtarget.com/searchDataManagement/news/366571614/Collibra-adds-AI-governance-to-data-management-platform",
+      "title": "Collibra adds AI governance to data management platform",
+      "website": "TechTarget",
+      "issued": [
+        2024,
+        2,
+        29
+      ],
+      "accessed": [
+        2026,
+        3,
+        27
+      ],
+      "credibility": {
+        "domain": "techtarget.com",
+        "publisher_class": "trade-press",
+        "publisher_label": "TechTarget",
+        "independence": "independent",
+        "score": 73,
+        "band": "medium",
+        "method": {
+          "id": "heuristic-web-credibility-v1",
+          "lineage": [
+            "base score",
+            "transport security",
+            "known publisher class mapping",
+            "institutional domain heuristic",
+            "promotional-path penalty"
+          ],
+          "factors": [
+            {
+              "label": "Base score",
+              "delta": 50,
+              "reason": "Neutral starting point for a published web source."
+            },
+            {
+              "label": "HTTPS",
+              "delta": 5,
+              "reason": "Transport security is present."
+            },
+            {
+              "label": "Publisher class: trade-press",
+              "delta": 18,
+              "reason": "Domain matched known source profile for TechTarget."
+            }
+          ],
+          "note": "This is a local editorial support metric, not a public truth score."
+        }
+      },
+      "supported_claim_ids": [
+        "claim-015",
+        "claim-017"
+      ],
+      "supported_sections": [
+        "Products"
+      ],
+      "use_count": 2
+    },
+    {
+      "id": "ref-https-www-techtarget-com-searchd-cf67b7bb",
+      "url": "https://www.techtarget.com/searchdatamanagement/news/366580432/Collibra-launches-AI-Governance-unveils-GenAI-capabilities",
+      "title": "Collibra launches AI Governance, unveils GenAI capabilities",
+      "website": "TechTarget",
+      "issued": [
+        2024,
+        4,
+        10
+      ],
+      "accessed": [
+        2026,
+        3,
+        27
+      ],
+      "credibility": {
+        "domain": "techtarget.com",
+        "publisher_class": "trade-press",
+        "publisher_label": "TechTarget",
+        "independence": "independent",
+        "score": 73,
+        "band": "medium",
+        "method": {
+          "id": "heuristic-web-credibility-v1",
+          "lineage": [
+            "base score",
+            "transport security",
+            "known publisher class mapping",
+            "institutional domain heuristic",
+            "promotional-path penalty"
+          ],
+          "factors": [
+            {
+              "label": "Base score",
+              "delta": 50,
+              "reason": "Neutral starting point for a published web source."
+            },
+            {
+              "label": "HTTPS",
+              "delta": 5,
+              "reason": "Transport security is present."
+            },
+            {
+              "label": "Publisher class: trade-press",
+              "delta": 18,
+              "reason": "Domain matched known source profile for TechTarget."
+            }
+          ],
+          "note": "This is a local editorial support metric, not a public truth score."
+        }
+      },
+      "supported_claim_ids": [
+        "claim-022",
+        "claim-024"
+      ],
+      "supported_sections": [
+        "Market position and reception"
+      ],
+      "use_count": 2
+    },
+    {
+      "id": "ref-https-techcrunch-com-2017-01-18--f9aafb60",
+      "url": "https://techcrunch.com/2017/01/18/collibra/",
+      "title": "Collibra nabs $50M led by ICONIQ to fix companies' data governance",
+      "website": "TechCrunch",
+      "issued": [
+        2017,
+        1,
+        18
+      ],
+      "accessed": [
+        2026,
+        3,
+        27
+      ],
+      "credibility": {
+        "domain": "techcrunch.com",
+        "publisher_class": "trade-press",
+        "publisher_label": "TechCrunch",
+        "independence": "independent",
+        "score": 73,
+        "band": "medium",
+        "method": {
+          "id": "heuristic-web-credibility-v1",
+          "lineage": [
+            "base score",
+            "transport security",
+            "known publisher class mapping",
+            "institutional domain heuristic",
+            "promotional-path penalty"
+          ],
+          "factors": [
+            {
+              "label": "Base score",
+              "delta": 50,
+              "reason": "Neutral starting point for a published web source."
+            },
+            {
+              "label": "HTTPS",
+              "delta": 5,
+              "reason": "Transport security is present."
+            },
+            {
+              "label": "Publisher class: trade-press",
+              "delta": 18,
+              "reason": "Domain matched known source profile for TechCrunch."
+            }
+          ],
+          "note": "This is a local editorial support metric, not a public truth score."
+        }
+      },
+      "supported_claim_ids": [
+        "claim-006",
+        "claim-008"
+      ],
+      "supported_sections": [
+        "Lead"
+      ],
+      "use_count": 2
+    },
+    {
+      "id": "ref-https-techcrunch-com-2018-01-08--e4bf7bad",
+      "url": "https://techcrunch.com/2018/01/08/collibra-snags-58-m-series-d-led-by-iconiq-and-battery-ventures-to-simplify-data-governance/",
+      "title": "Collibra snags $58M Series D led by Iconiq and Battery Ventures to simplify data governance",
+      "website": "TechCrunch",
+      "issued": [
+        2018,
+        1,
+        8
+      ],
+      "accessed": [
+        2026,
+        3,
+        27
+      ],
+      "credibility": {
+        "domain": "techcrunch.com",
+        "publisher_class": "trade-press",
+        "publisher_label": "TechCrunch",
+        "independence": "independent",
+        "score": 73,
+        "band": "medium",
+        "method": {
+          "id": "heuristic-web-credibility-v1",
+          "lineage": [
+            "base score",
+            "transport security",
+            "known publisher class mapping",
+            "institutional domain heuristic",
+            "promotional-path penalty"
+          ],
+          "factors": [
+            {
+              "label": "Base score",
+              "delta": 50,
+              "reason": "Neutral starting point for a published web source."
+            },
+            {
+              "label": "HTTPS",
+              "delta": 5,
+              "reason": "Transport security is present."
+            },
+            {
+              "label": "Publisher class: trade-press",
+              "delta": 18,
+              "reason": "Domain matched known source profile for TechCrunch."
+            }
+          ],
+          "note": "This is a local editorial support metric, not a public truth score."
+        }
+      },
+      "supported_claim_ids": [
+        "claim-007",
+        "claim-009"
+      ],
+      "supported_sections": [
+        "History"
+      ],
+      "use_count": 2
+    },
+    {
+      "id": "ref-https-www-collibra-com-company-w-eebd72f6",
+      "url": "https://www.collibra.com/company/who-we-are",
+      "title": "Discover unified governance for data and AI",
+      "website": "Collibra",
+      "issued": [],
+      "accessed": [
+        2026,
+        3,
+        27
+      ],
+      "credibility": {
+        "domain": "collibra.com",
+        "publisher_class": "company",
+        "publisher_label": "Collibra",
+        "independence": "primary",
+        "score": 21,
+        "band": "low",
+        "method": {
+          "id": "heuristic-web-credibility-v1",
+          "lineage": [
+            "base score",
+            "transport security",
+            "known publisher class mapping",
+            "institutional domain heuristic",
+            "promotional-path penalty"
+          ],
+          "factors": [
+            {
+              "label": "Base score",
+              "delta": 50,
+              "reason": "Neutral starting point for a published web source."
+            },
+            {
+              "label": "HTTPS",
+              "delta": 5,
+              "reason": "Transport security is present."
+            },
+            {
+              "label": "Publisher class: company",
+              "delta": -28,
+              "reason": "Domain matched known source profile for Collibra."
+            },
+            {
+              "label": "Promotional path heuristic",
+              "delta": -6,
+              "reason": "URL path suggests a publisher-owned or promotional context."
+            }
+          ],
+          "note": "This is a local editorial support metric, not a public truth score."
+        }
+      },
+      "supported_claim_ids": [
+        "claim-005"
+      ],
+      "supported_sections": [
+        "Lead"
+      ],
+      "use_count": 1
+    },
+    {
+      "id": "ref-https-www-collibra-com-company-l-abfd942e",
+      "url": "https://www.collibra.com/company/leadership",
+      "title": "Meet the Collibra leadership team",
+      "website": "Collibra",
+      "issued": [],
+      "accessed": [
+        2026,
+        3,
+        27
+      ],
+      "credibility": {
+        "domain": "collibra.com",
+        "publisher_class": "company",
+        "publisher_label": "Collibra",
+        "independence": "primary",
+        "score": 21,
+        "band": "low",
+        "method": {
+          "id": "heuristic-web-credibility-v1",
+          "lineage": [
+            "base score",
+            "transport security",
+            "known publisher class mapping",
+            "institutional domain heuristic",
+            "promotional-path penalty"
+          ],
+          "factors": [
+            {
+              "label": "Base score",
+              "delta": 50,
+              "reason": "Neutral starting point for a published web source."
+            },
+            {
+              "label": "HTTPS",
+              "delta": 5,
+              "reason": "Transport security is present."
+            },
+            {
+              "label": "Publisher class: company",
+              "delta": -28,
+              "reason": "Domain matched known source profile for Collibra."
+            },
+            {
+              "label": "Promotional path heuristic",
+              "delta": -6,
+              "reason": "URL path suggests a publisher-owned or promotional context."
+            }
+          ],
+          "note": "This is a local editorial support metric, not a public truth score."
+        }
+      },
+      "supported_claim_ids": [],
+      "supported_sections": [],
+      "use_count": 0
+    }
+  ]
+}

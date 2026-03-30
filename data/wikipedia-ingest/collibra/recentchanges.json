@@ -1,0 +1,134 @@
+[
+  {
+    "type": "log",
+    "ns": 0,
+    "title": "Collibra",
+    "pageid": 82801076,
+    "revid": 0,
+    "old_revid": 0,
+    "rcid": 2010391764,
+    "user": "SunloungerFrog",
+    "bot": false,
+    "new": false,
+    "minor": false,
+    "oldlen": 0,
+    "newlen": 0,
+    "timestamp": "2026-03-28T07:46:01Z",
+    "comment": "",
+    "logid": 179080877,
+    "logtype": "pagetriage-curation",
+    "logaction": "reviewed-article",
+    "logparams": {},
+    "tags": [
+      "pagetriage"
+    ]
+  },
+  {
+    "type": "edit",
+    "ns": 0,
+    "title": "Collibra",
+    "pageid": 82801076,
+    "revid": 1345860103,
+    "old_revid": 1345751974,
+    "rcid": 2010558978,
+    "user": "Finngall",
+    "bot": false,
+    "new": false,
+    "minor": false,
+    "oldlen": 14627,
+    "newlen": 13980,
+    "timestamp": "2026-03-28T16:24:03Z",
+    "comment": "rv AfD tag placed by TA without followup and linking to previous discussion from 2024, but tagging for a G4 check as the sources here are largely primary and/or run of the mill coverage, which is in line with how the sources were described in the 2024 version",
+    "tags": [
+      "mw-reverted",
+      "wikieditor"
+    ]
+  },
+  {
+    "type": "log",
+    "ns": 0,
+    "title": "Collibra",
+    "pageid": 82801076,
+    "revid": 0,
+    "old_revid": 0,
+    "rcid": 2010636459,
+    "user": "Pppery",
+    "bot": false,
+    "new": false,
+    "minor": false,
+    "oldlen": 0,
+    "newlen": 0,
+    "timestamp": "2026-03-28T21:27:03Z",
+    "comment": "",
+    "logid": 179104243,
+    "logtype": "pagetriage-curation",
+    "logaction": "unreviewed-article",
+    "logparams": {},
+    "tags": [
+      "pagetriage"
+    ]
+  },
+  {
+    "type": "edit",
+    "ns": 0,
+    "title": "Collibra",
+    "pageid": 82801076,
+    "revid": 1346044629,
+    "old_revid": 1345860103,
+    "rcid": 2010958616,
+    "user": "SouthernNights",
+    "bot": false,
+    "new": false,
+    "minor": false,
+    "oldlen": 13980,
+    "newlen": 13920,
+    "timestamp": "2026-03-29T16:46:42Z",
+    "comment": "Not eligible for speedy delete under [[WP:G4]] b/c article is not substantially identical to the deleted version. Bring up for [[WP:AFD]] if desired.",
+    "tags": [
+      "mw-manual-revert",
+      "wikieditor"
+    ]
+  },
+  {
+    "type": "edit",
+    "ns": 0,
+    "title": "Collibra",
+    "pageid": 82801076,
+    "revid": 1346167097,
+    "old_revid": 1346044629,
+    "rcid": 2011179727,
+    "user": "~2026-19334-47",
+    "temp": true,
+    "bot": false,
+    "new": false,
+    "minor": false,
+    "oldlen": 13920,
+    "newlen": 13840,
+    "timestamp": "2026-03-30T09:00:58Z",
+    "comment": "Further edited the key people section",
+    "tags": [
+      "wikieditor"
+    ]
+  },
+  {
+    "type": "edit",
+    "ns": 0,
+    "title": "Collibra",
+    "pageid": 82801076,
+    "revid": 1346185994,
+    "old_revid": 1346167097,
+    "rcid": 2011213684,
+    "user": "~2026-19694-64",
+    "temp": true,
+    "bot": false,
+    "new": false,
+    "minor": false,
+    "oldlen": 13840,
+    "newlen": 13993,
+    "timestamp": "2026-03-30T12:03:16Z",
+    "comment": "Added some details about Collibra's first three acquisitions",
+    "tags": [
+      "visualeditor"
+    ]
+  }
+]

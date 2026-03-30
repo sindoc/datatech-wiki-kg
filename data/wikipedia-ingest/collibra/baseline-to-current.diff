@@ -1,0 +1,45 @@
+<tr><td colspan="4"><pre>@@ -1,8 +1,3 @@
+ &lt;!-- generated from content/markdown/Collibra.md -->
+-&lt;!-- Please do not remove or change this AfD message until the discussion has been closed. -->
+-&lt;!-- The nomination page for this article already existed when this tag was added.  If this was because the article had been nominated for deletion before, and you wish to renominate it, please replace "page=Collibra" with "page=Collibra (2nd nomination)" below before proceeding with the nomination.
+--->{{Article for deletion/dated|page=Collibra|timestamp=20260327234826|year=2026|month=March|day=27|substed=yes}}
+-&lt;!-- Once discussion is closed, please place on talk page: {{Old AfD multi|page=Collibra|date=27 March 2026|result='''keep'''}} -->
+-&lt;!-- End of AfD message, feel free to edit beyond this point -->
+ {{short description|Software company focused on data governance and data intelligence}}
+ 
+@@ -12,7 +7,7 @@
+ | industry = Software &lt;ref name="ref-https-techtransfer-research-vub--96b17a97"/>
+ | founded = 2008 in Belgium &lt;ref name="ref-https-www-cnbc-com-2021-11-09-co-b492b371"/>&lt;ref name="ref-https-techtransfer-research-vub--96b17a97"/>
+-| founders = Felix Van de Maele&lt;br />Stijn Christiaens&lt;br />Pieter De Leenheer&lt;br />Damien Trog / Benny Verhaeghe &lt;ref name="ref-https-techtransfer-research-vub--96b17a97"/>
++| founders = Felix Van de Maele&lt;br />Stijn Christiaens&lt;br />Pieter De Leenheer&lt;br />Benny Verhaeghe / Damien Trog &lt;ref name="ref-https-techtransfer-research-vub--96b17a97"/>
+ | hq_location = New York City, United States&lt;br />Brussels, Belgium &lt;ref name="ref-https-www-collibra-com-company-w-eebd72f6"/>
+-| key_people = Felix Van de Maele&lt;br />Tony Mary&lt;br />Stijn Christiaens&lt;br />Tom Dejonghe &lt;ref name="ref-https-www-collibra-com-company-w-eebd72f6"/>&lt;ref name="ref-https-www-collibra-com-company-l-abfd942e"/>
++| key_people = Felix Van de Maele&lt;br />Stijn Christiaens&lt;br />Tom Dejonghe&lt;br />Dieter Wachters&lt;br/ >Tony Mary&lt;br/>Patrick Polak
+ | website = [https://www.collibra.com collibra.com]
+ }}
+@@ -67,20 +62,20 @@
+ | SQLdep
+ | Data lineage and metadata management
+-| Described by TechTarget in later coverage as an earlier acquisition that added lineage and metadata capabilities. &lt;ref name="ref-https-www-techtarget-com-searchb-3d40d4a7"/>
++| A [[Brno]]-based software company, focused on reverse engineering data lineage from BI Tools and SQL code. &lt;ref name="ref-https-www-techtarget-com-searchb-3d40d4a7"/>
+ |-
+ | 2021
+ | OwlDQ
+ | Data quality
+-| Reported as a predictive data-quality acquisition. &lt;ref name="ref-https-www-techtarget-com-searchd-68ca764c"/>
++| A US-based predictive data quality platform focused on automated data anomaly detection. &lt;ref name="ref-https-www-techtarget-com-searchd-68ca764c"/>
+ |-
+ | 2023
+ | Husprey
+ | SQL notebooks and analytics workflows
+-| Reported as a data notebook acquisition for analytics tools. &lt;ref name="ref-https-www-techtarget-com-searchb-3d40d4a7"/>
++| A French startup focusing on data notebook acquisition for analytics tools and workflows. &lt;ref name="ref-https-www-techtarget-com-searchb-3d40d4a7"/>
+ |-
+ | 2025
+ | Raito
+ | Data access governance
+-| Reported as a data access startup acquisition. &lt;ref name="ref-https-techcrunch-com-2025-06-05--55f793ee"/>
++| A Belgian startup whose founders had worked at Collibra previously. Dieter Wachters had led Collibra's engineering team for about a decade. &lt;ref name="ref-https-techcrunch-com-2025-06-05--55f793ee"/>
+ |-
+ | 2025
+</pre></td></tr>

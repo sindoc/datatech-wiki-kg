@@ -229,6 +229,13 @@ Use these only for basic factual fields such as headquarters, website, and curre
 
 Use these for Collibra's origin as a Vrije Universiteit Brussel spin-off, Belgian context, and carefully attributed statements about the founding team and board chair. Founder lists vary across sources and should be presented cautiously.
 
+## Verification backlog as of 2026-03-28
+
+- Forbes Cloud 100 appearances are promising notability evidence, but the article should not claim specific years or rankings until the direct Forbes list pages are captured and checked.
+- Gartner and Forrester recognition may support market-position coverage, but only if tied to the original analyst material or genuinely independent reporting rather than Collibra or partner marketing.
+- Partner pages, reseller pages, and consulting-firm solution pages should be treated as research leads only, not as article sources.
+- If a future revision adds analyst-recognition material, it should be introduced in attributed prose and paired with precise citations rather than broad market-language claims.
+
 ### Regulation and trust context
 
 - Basel Committee on Banking Supervision, "Principles for effective risk data aggregation and risk reporting": https://www.bis.org/publ/bcbs239.htm
@@ -262,9 +269,9 @@ The following text is a working encyclopedia-style draft based on the current so
 - type: Private [[ref:1]]
 - industry: Software [[ref:2]]
 - founded: 2008 in Belgium [[ref:1]][[ref:2]]
-- founders: Felix Van de Maele<br />Stijn Christiaens<br />Pieter De Leenheer<br />Damien Trog / Benny Verhaeghe [[ref:2]]
+- founders: Felix Van de Maele<br />Stijn Christiaens<br />Pieter De Leenheer<br />Benny Verhaeghe / Damien Trog [[ref:2]]
 - headquarters: New York City, United States<br />Brussels, Belgium [[ref:3]]
-- key_people: Felix Van de Maele<br />Tony Mary<br />Stijn Christiaens<br />Tom Dejonghe [[ref:3]][[ref:4]]
+- key_people: Felix Van de Maele<br />Stijn Christiaens<br />Tom Dejonghe<br />Dieter Wachters<br/ >Tony Mary<br/>Patrick Polak
 - website: [https://www.collibra.com collibra.com]
 
 Sources:
@@ -275,7 +282,7 @@ Sources:
 
 ### Lead
 
-Collibra is a software company founded in Belgium in 2008 that develops software for data governance, data cataloging, data quality, and related enterprise data-management functions.[[ref:1]][[ref:2]] The company originated as a spin-off from the Vrije Universiteit Brussel's STARLab research group.[[ref:5]][[ref:6]] Coverage of the company has described it variously as a data governance, data management, or data intelligence vendor, reflecting product expansion and changing market vocabulary.[[ref:1]][[ref:3]] By 2021, Collibra had reached a valuation of $5.25 billion and coverage increasingly placed it in the broader enterprise market for trusted data access, compliance, analytics enablement, and AI governance.[[ref:3]][[ref:4]]
+'''Collibra''' ({{IPAc-en|k|ə|ˈ|l|iː|b|r|ə}}) is a software company founded in Belgium in 2008 that develops software for data governance, data cataloging, data quality, and related enterprise data-management functions.[[ref:1]][[ref:2]] The company originated as a spin-off from the Vrije Universiteit Brussel's STARLab research group.[[ref:5]][[ref:6]] Coverage of the company has described it variously as a data governance, data management, or data intelligence vendor, reflecting product expansion and changing market vocabulary.[[ref:1]][[ref:3]] By 2021, Collibra had reached a valuation of $5.25 billion and coverage increasingly placed it in the broader enterprise market for trusted data access, compliance, analytics enablement, and AI governance.[[ref:3]][[ref:4]]
 
 Sources:
 - TechCrunch, 2017-01-18: https://techcrunch.com/2017/01/18/collibra/
@@ -326,10 +333,10 @@ Sources:
 Collibra has used acquisitions to broaden its platform beyond catalog and governance workflows.[[ref:1]][[ref:2]][[ref:3]][[ref:4]] Reported acquisitions have centered on data lineage, data quality, analytics workflows, data access, and unstructured data governance.[[ref:1]][[ref:2]][[ref:3]][[ref:4]]
 
 | Year | Company | Area | Notes |
-| 2019 | SQLdep | Data lineage and metadata management | Described by TechTarget in later coverage as an earlier acquisition that added lineage and metadata capabilities. [[ref:2]] |
-| 2021 | OwlDQ | Data quality | Reported as a predictive data-quality acquisition. [[ref:1]] |
-| 2023 | Husprey | SQL notebooks and analytics workflows | Reported as a data notebook acquisition for analytics tools. [[ref:2]] |
-| 2025 | Raito | Data access governance | Reported as a data access startup acquisition. [[ref:3]] |
+| 2019 | SQLdep | Data lineage and metadata management | A [[Brno]]-based software company, focused on reverse engineering data lineage from BI Tools and SQL code. [[ref:2]] |
+| 2021 | OwlDQ | Data quality | A US-based predictive data quality platform focused on automated data anomaly detection. [[ref:1]] |
+| 2023 | Husprey | SQL notebooks and analytics workflows | A French startup focusing on data notebook acquisition for analytics tools and workflows. [[ref:2]] |
+| 2025 | Raito | Data access governance | A Belgian startup whose founders had worked at Collibra previously. Dieter Wachters had led Collibra's engineering team for about a decade. [[ref:3]] |
 | 2025 | Deasy Labs | Unstructured data governance | Reported as an acquisition aimed at unstructured data. [[ref:4]] |
 
 Sources:

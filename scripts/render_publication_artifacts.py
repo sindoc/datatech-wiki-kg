@@ -382,8 +382,11 @@ def render_wikitext(
             rendered = render_inline_citations(str(paragraph), section["sources"], catalog, defined_refs)
             suffix = refs if INLINE_REF_RE.search(str(paragraph)) is None and p_index == len(paragraphs) - 1 else ""
             clean = strip_inline_markers(rendered)
-            if index == 0 and p_index == 0 and pronunciation and clean.startswith("Collibra "):
-                clean = clean.replace("Collibra ", f"Collibra ({pronunciation}) ", 1)
+            if index == 0 and p_index == 0 and pronunciation and pronunciation not in clean:
+                if clean.startswith("Collibra "):
+                    clean = clean.replace("Collibra ", f"Collibra ({pronunciation}) ", 1)
+                elif clean.startswith("'''Collibra''' "):
+                    clean = clean.replace("'''Collibra''' ", f"'''Collibra''' ({pronunciation}) ", 1)
             parts.append(f"{clean}{suffix}")
             parts.append("")
         if section.get("table"):
@@ -407,8 +410,6 @@ def render_wikitext(
     parts.append("")
     for category in topic_meta.get("draft_categories", []):
         parts.append(f"[[Category:{category}]]")
-    if topic_meta.get("draft_categories"):
-        parts.append("")
     return "\n".join(parts)
 
 

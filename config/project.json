@@ -1,8 +1,14 @@
 {
   "project_name": "datatech-wiki-kg",
+  "project_archetype": "wikipedia-content",
   "canonical_repo_root": "/Users/skh/ws/git/github/sindoc/datatech-wiki-kg",
   "site_url": "https://foss.lutino.io/wikipedia/",
   "mailing_list_name": "singineers-datatech",
+  "metamodel": {
+    "primary_context": "wikipedia-support",
+    "integration_modes": ["api", "cli", "file-exchange"],
+    "context_engineering": "repo-backed public knowledge-work workflow"
+  },
   "dependencies": {
     "singine_root": "/Users/skh/ws/git/github/sindoc/singine",
     "silkpage_root": "/Users/skh/ws/git/github/sindoc/silkpage",

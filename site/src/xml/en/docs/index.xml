@@ -5,4 +5,12 @@
     This section exposes the public process and operating documents behind the
     repository.
   </para>
+  <section>
+    <title>Workbenches</title>
+    <para>
+      The reference workbench is a SilkPage-facing semantic page generated from
+      the current article build. It shows how claims connect to sources and how
+      local support metrics are calculated.
+    </para>
+  </section>
 </article>

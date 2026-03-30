@@ -7,7 +7,7 @@
     <rss:title>DataTech Wikipedia Support Knowledge Graph</rss:title>
     <rss:link>https://foss.lutino.io/wikipedia</rss:link>
     <rss:description>Neutral, source-driven support material for Wikipedia contributions about Collibra as a company and platform.</rss:description>
-    <dc:date>2026-03-27T21:29:59Z</dc:date>
+    <dc:date>2026-03-28T15:45:02Z</dc:date>
     <rss:items>
       <rdf:Seq>
         <rss:item rdf:resource="https://foss.lutino.io/wikipedia/updates/launch"/>

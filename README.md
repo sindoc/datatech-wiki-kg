@@ -7,6 +7,7 @@ The operating model is:
 - standalone git repo for public knowledge work
 - `singine` for orchestration, feeds, SMTP, and human-led automation
 - `silkpage` for publishing paths and site rendering alignment
+- project archetype `wikipedia-content` declared in `config/project.json`
 - canonical Markdown in git, with generated Org and Logseq mirrors
 - Zotero as the maintained reference source of truth for the Collibra topic
 - generated publication artifacts for Wikipedia, DocBook XML, and RDF/XML
@@ -73,6 +74,7 @@ This repository is also intended to make the editorial process visible. Source s
 - `scripts/render_user_pages.py`: renders simple Wikipedia user pages from canonical XML sources
 - `scripts/render_navboxes.py`: renders Wikipedia navbox drafts from canonical XML sources
 - `scripts/analyze_wikipedia_language_drift.py`: compares the `en`, `nl`, and `no` Collibra entries using sections, categories, references, and named fact atoms without an LLM
+- `scripts/ingest_wikipedia_changes.py`: ingests live MediaWiki revisions, diffs, and talk-page activity into tracked repo artifacts
 - `scripts/check_wikipedia_quality.py`: runs categorized article checks against the generated Wikipedia draft
 - `xml/wikipedia/collibra/`: version-managed modular article source and editorial apparatus
 - `scripts/refresh_repo.py`: run all refresh steps and prepare a pending notification manifest
@@ -121,6 +123,8 @@ If collaborative source curation is needed, the same tracked `Collibra.json` art
 
 Topic-specific people and editorial terms are tracked separately from the article draft in `data/topics/`. That model is intended to be consumable by Singine, SilkPage, and this repository without forcing every tracked person or term directly into the outward-facing Wikipedia article.
 
+The repository also declares an explicit archetype and lightweight metamodel in `config/project.json` so wrappers can verify they are operating inside a `wikipedia-content` project before mutating files or calling external APIs.
+
 The same pattern applies to timeline and media metadata: the repository keeps deeper provenance, confidence, and rights context locally even when the outward article remains short.
 
 Media handling is explicit rather than implicit. Local files, upload targets, non-free rationales, and publication status are tracked before media is referenced in article-facing outputs.
@@ -148,6 +152,37 @@ make refs
 ```
 
 That renders tracked derivatives from `references/zotero/Collibra.json`, including BibTeX and Wikipedia citation-template output.
+
+## Generate reference workbench artifacts
+
+```bash
+make publish
+make ref-workbench
+```
+
+That renders:
+
+- `build/reference-workbench/collibra-reference-map.json`
+- `build/reference-workbench/reference-workbench.xml`
+- `build/reference-workbench/index.html`
+- `site/src/xml/en/docs/reference-workbench.xml`
+
+The split is intentional:
+
+- this repository emits semantic content and support metadata
+- SilkPage is the intended HTML rendering layer for the semantic XML page
+- Singine is the intended execution and serving layer
+
+The generated workbench includes:
+
+- claim-to-source links from the built article
+- reference reuse across multiple claim lines
+- a local coverage-health metric for claim support
+- a local credibility metric for sources
+- factor lineage for both metrics on the same page
+
+These metrics are editorial support heuristics only. They do not replace source
+ review, publication judgment, or Wikipedia policy analysis.
 
 ## Generate media manifest
 
@@ -194,6 +229,112 @@ make drift
 ```
 
 That compares the configured `Collibra` entries across `en.wikipedia.org`, `nl.wikipedia.org`, and `no.wikipedia.org` without an LLM. The current implementation uses deterministic signals only: section structure, category overlap, reference counts, Wikidata linkage presence, and coverage of named fact atoms such as founders and acquisition names.
+
+## Ingest live Wikipedia changes
+
+```bash
+make wiki-ingest
+```
+
+That fetches live MediaWiki state for `Collibra`, `Talk:Collibra`, and `Template:Data` using the official Action API and stores the results under `data/wikipedia-ingest/`.
+
+The ingest includes:
+
+- latest wikitext snapshots
+- revision history since the configured timestamp
+- page-scoped recent-changes entries
+- baseline-to-current compare output when a prior revision exists
+- a repo-local diff between live article/template text and the corresponding local draft when configured
+
+The default start timestamp is conservative and can be overridden:
+
+```bash
+python3 scripts/ingest_wikipedia_changes.py --since 2026-03-29T00:00:00Z
+```
+
+You can also target specific pages and override local comparisons:
+
+```bash
+python3 scripts/ingest_wikipedia_changes.py \
+  --page Collibra \
+  --page Talk:Collibra \
+  --page Template:Data \
+  --compare-local "Collibra=build/wikipedia/Collibra.wikitext" \
+  --compare-local "Template:Data=build/wikipedia/templates/Template-Data-technology.wikitext"
+```
+
+This workflow uses `prop=revisions`, `list=recentchanges`, and `action=compare` from the MediaWiki Action API rather than screen-scraping with `curl` or `wget`.
+
+By default, the ingest cutoff is derived from Singine's time surface:
+
+```bash
+python3 -m singine.command time date --offset-days -2 --json
+```
+
+That value is then normalized to a UTC day boundary for the MediaWiki fetch.
+
+The same workflow is available through the documented Singine wrapper:
+
+```bash
+python3 -m singine.command wikipedia contrib collibra --action ingest-live --json
+```
+
+## Pull live changes into local working copies
+
+```bash
+make wiki-pull
+```
+
+That does the next step after ingest:
+
+- copies the current live article snapshot into `build/wikipedia/live/Collibra.current.wikitext`
+- copies the current live template snapshot into `build/wikipedia/live/Template-Data.current.wikitext`
+- creates local editable working baselines under `build/wikipedia/working/`
+- writes draft-vs-live diffs and a pull report for manual reconciliation
+
+The intended cycle is:
+
+```bash
+make wiki-ingest
+make wiki-pull
+```
+
+Then review and edit:
+
+- `build/wikipedia/working/Collibra.working.wikitext`
+- `build/wikipedia/working/Template-Data.working.wikitext`
+- `build/wikipedia/working/pull-report.md`
+
+Those working copies represent the latest on-wiki baseline pulled back into the repo. Once you decide which live edits should become durable local truth, fold them back into the canonical Markdown or XML/navbox sources and regenerate derived artifacts.
+
+## Keep an audit trail
+
+```bash
+make wiki-audit
+```
+
+The live-ingest flow also runs this automatically. It writes a registry under `data/wikipedia-audit/`:
+
+- `registry.json`: structured audit payload with metadata and rows
+- `registry.jsonl`: append-friendly row format for downstream tooling
+- `registry.csv`: spreadsheet-friendly export
+- `registry.md`: concise summary
+
+This audit registry stores change metadata only:
+
+- title
+- timestamp
+- user
+- temporary-account flag
+- revision id
+- parent revision id
+- recent-change id
+- change type
+- size delta
+- edit summary / log comment
+- tags
+
+It does not duplicate the full textual page content or compare bodies. Those remain under `data/wikipedia-ingest/`.
 
 ## Install Commit Hook
 

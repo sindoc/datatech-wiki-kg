@@ -15,26 +15,38 @@ flowchart TD
     S2 --> A5
     A6["rss: feeds/datatech-collibra.rss"]
     S2 --> A6
-    S3["Project into visual surfaces"]
-    C2["python3 scripts/sync_kernel_views.py"]
+    S3["Ingest live MediaWiki changes"]
+    C2["python3 -m singine.command time date --offset-days -2 --json"]
     S3 --> C2
-    C3["python3 scripts/render_process_visual.py"]
+    C3["python3 scripts/ingest_wikipedia_changes.py"]
     S3 --> C3
-    A7["logseq: content/logseq/pages/Wikipedia___Index.md"]
+    C4["python3 -m singine.command wikipedia contrib collibra --action ingest-live --json"]
+    S3 --> C4
+    A7["json: data/wikipedia-ingest/manifest.json"]
     S3 --> A7
-    A8["mermaid: visuals/wikipedia-contrib-process.mmd"]
+    A8["markdown: build/wikipedia/live-sync-report.md"]
     S3 --> A8
-    S4["Prepare publication source"]
-    A9["xml: site/src/xml/en/layout.xml"]
+    S4["Project into visual surfaces"]
+    C5["python3 scripts/sync_kernel_views.py"]
+    S4 --> C5
+    C6["python3 scripts/render_process_visual.py"]
+    S4 --> C6
+    A9["logseq: content/logseq/pages/Wikipedia___Index.md"]
     S4 --> A9
-    A10["xml: site/src/xml/en/docs/process.xml"]
+    A10["mermaid: visuals/wikipedia-contrib-process.mmd"]
     S4 --> A10
-    S5["Run one end-to-end test case"]
-    C4["python3 scripts/test_case.py"]
-    S5 --> C4
-    C5["python3 -m singine.command wikipedia contrib collibra --action test-case --json"]
-    S5 --> C5
+    S5["Prepare publication source"]
+    A11["xml: site/src/xml/en/layout.xml"]
+    S5 --> A11
+    A12["xml: site/src/xml/en/docs/process.xml"]
+    S5 --> A12
+    S6["Run one end-to-end test case"]
+    C7["python3 scripts/test_case.py"]
+    S6 --> C7
+    C8["python3 -m singine.command wikipedia contrib collibra --action test-case --json"]
+    S6 --> C8
     S1 --> S2
     S2 --> S3
     S3 --> S4
     S4 --> S5
+    S5 --> S6

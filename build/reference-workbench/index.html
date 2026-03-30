@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Collibra Reference Workbench</title>
+  <style>
+    :root {
+      --bg: #f6f1e8;
+      --paper: #fffdf8;
+      --ink: #1d2a30;
+      --muted: #5d6b73;
+      --line: #d5c8b6;
+      --accent: #0f6c81;
+      --accent-soft: #dff1f4;
+      --low: #9e2a2b;
+      --mid: #9a6b00;
+      --high: #216e39;
+      --shadow: 0 12px 30px rgba(52, 39, 20, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
+      background:
+        radial-gradient(circle at top left, rgba(15,108,129,0.08), transparent 28%),
+        linear-gradient(180deg, #f8f4ec 0%, var(--bg) 100%);
+      color: var(--ink);
+    }
+    header {
+      padding: 24px 28px 12px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,253,248,0.86);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 5;
+    }
+    h1 { margin: 0 0 6px; font-size: 2rem; }
+    .subtitle { color: var(--muted); max-width: 70rem; }
+    .stats { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 14px; }
+    .stat {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 12px;
+      box-shadow: var(--shadow);
+      font-size: 0.95rem;
+    }
+    main {
+      display: grid;
+      grid-template-columns: 1.2fr 0.9fr 1fr;
+      gap: 18px;
+      padding: 20px 22px 24px;
+      min-height: calc(100vh - 120px);
+    }
+    .panel {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      min-height: 40rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .panel-head {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(15,108,129,0.08), rgba(15,108,129,0.02));
+    }
+    .panel-head h2 { margin: 0 0 6px; font-size: 1.1rem; }
+    .panel-head p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+    .panel-body { padding: 12px; overflow: auto; flex: 1; }
+    .claim, .ref {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 12px;
+      margin-bottom: 10px;
+      background: #fffdfa;
+      transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
+      cursor: pointer;
+    }
+    .claim:hover, .ref:hover, .claim.active, .ref.active {
+      transform: translateY(-1px);
+      border-color: var(--accent);
+      background: var(--accent-soft);
+    }
+    .meta { color: var(--muted); font-size: 0.88rem; margin-bottom: 8px; }
+    .claim-text { line-height: 1.45; }
+    .chips { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+    .chip {
+      border-radius: 999px;
+      padding: 5px 9px;
+      font-size: 0.8rem;
+      border: 1px solid var(--line);
+      background: #f5efe5;
+    }
+    .score-high { color: var(--high); }
+    .score-medium { color: var(--mid); }
+    .score-low { color: var(--low); }
+    .support-list {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px dashed var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .detail-block { padding: 14px 16px; border-bottom: 1px solid var(--line); }
+    .detail-block:last-child { border-bottom: 0; }
+    .detail-block h3 { margin: 0 0 8px; font-size: 1rem; }
+    .detail-block p, .detail-block li { line-height: 1.45; }
+    .detail-block ul { margin: 8px 0 0 18px; padding: 0; }
+    iframe { width: 100%; min-height: 24rem; border: 0; background: white; }
+    input[type="search"] {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      font: inherit;
+      background: #fffdfa;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    @media (max-width: 1100px) {
+      main { grid-template-columns: 1fr; }
+      .panel { min-height: auto; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Collibra Reference Workbench</h1>
+    <div class="subtitle">Visual claim-to-source workspace generated from the article build. It shows which statements each reference supports, lets you inspect likely replacement candidates, and explains the lineage of the local credibility heuristic on the same page.</div>
+    <div class="stats" id="stats"></div>
+  </header>
+  <main>
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Claims</h2>
+        <p>Article lines backed by references in the current built wikitext.</p>
+      </div>
+      <div class="panel-body">
+        <input id="claim-search" type="search" placeholder="Filter claims by text or section" />
+        <div id="claims"></div>
+      </div>
+    </section>
+    <section class="panel">
+      <div class="panel-head">
+        <h2>References</h2>
+        <p>Reusable source nodes with support counts and editorial credibility breakdown.</p>
+      </div>
+      <div class="panel-body">
+        <input id="ref-search" type="search" placeholder="Filter references by title, domain, or section" />
+        <div id="refs"></div>
+      </div>
+    </section>
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Inspector</h2>
+        <p>Selection details, credibility lineage, and optional source preview iframe.</p>
+      </div>
+      <div class="panel-body" id="inspector"></div>
+    </section>
+  </main>
+  <script>
+    const payload = {"article": {"title": "Collibra", "source_wikitext": "build/wikipedia/Collibra.wikitext", "source_xml": "xml/wikipedia/collibra/article.xml"}, "summary": {"claim_count": 24, "reference_count": 18, "multi_use_reference_count": 16}, "credibility_method": {"id": "heuristic-web-credibility-v1", "description": "Local weighted heuristic for editorial triage. It rewards recognized independent publications and penalizes publisher-owned company sources.", "lineage": [{"factor": "Base score", "effect": "+50"}, {"factor": "HTTPS", "effect": "+5"}, {"factor": "Known publisher mapping", "effect": "variable"}, {"factor": "Academic domain heuristic", "effect": "+12"}, {"factor": "Promotional path heuristic", "effect": "-6"}], "warning": "The score is for support tooling inside this repo. It is not a substitute for editorial judgment or Wikipedia sourcing policy."}, "claims": [{"id": "claim-001", "section": "Lead", "line_number": 1, "claim_type": "infobox", "text": "Type: Private", "reference_ids": ["ref-https-www-cnbc-com-2021-11-09-co-b492b371"], "coverage_health": {"score": 75, "band": "strong", "reasons": ["Base support score for a cited claim line.", "At least one reference is attached to the claim.", "The claim has independent source support.", "At least one supporting reference is from a stronger known publisher class."]}}, {"id": "claim-002", "section": "Lead", "line_number": 2, "claim_type": "infobox", "text": "Industry: Software", "reference_ids": ["ref-https-techtransfer-research-vub--96b17a97"], "coverage_health": {"score": 45, "band": "weak", "reasons": ["Base support score for a cited claim line.", "At least one reference is attached to the claim."]}}, {"id": "claim-003", "section": "Lead", "line_number": 3, "claim_type": "infobox", "text": "Founded: 2008 in Belgium", "reference_ids": ["ref-https-www-cnbc-com-2021-11-09-co-b492b371", "ref-https-techtransfer-research-vub--96b17a97"], "coverage_health": {"score": 75, "band": "strong", "reasons": ["Base support score for a cited claim line.", "At least one reference is attached to the claim.", "The claim has independent source support.", "At least one supporting reference is from a stronger known publisher class."]}}, {"id": "claim-004", "section": "Lead", "line_number": 4, "claim_type": "infobox", "text": "Founders: Felix Van de Maele<br />Stijn Christiaens<br />Pieter De Leenheer<br />Benny Verhaeghe / Damien Trog", "reference_ids": ["ref-https-techtransfer-research-vub--96b17a97"], "coverage_health": {"score": 45, "band": "weak", "reasons": ["Base support score for a cited claim line.", "At least one reference is attached to the claim."]}}, {"id": "claim-005", "section": "Lead", "line_number": 5, "claim_type": "infobox", "text": "Headquarters: New York City, United States<br />Brussels, Belgium", "reference_ids": [], "coverage_health": {"score": 35, "band": "weak", "reasons": ["Base support score for a cited claim line."]}}, {"id": "claim-006", "section": "Lead", "line_number": 6, "claim_type": "infobox", "text": "Key People: Felix Van de Maele<br />Stijn Christiaens<br />Tom Dejonghe<br />Dieter Wachters<br/ >Tony Mary<br/>Patrick Polak", "reference_ids": [], "coverage_health": {"score": 35, "band": "weak", "reasons": ["Base support score for a cited claim line."]}}, {"id": "claim-007", "section": "Lead", "line_number": 7, "claim_type": "infobox", "text": "Website: [https://www.collibra.com collibra.com]", "reference_ids": [], "coverage_health": {"score": 35, "band": "weak", "reasons": ["Base support score for a cited claim line."]}}, {"id": "claim-008", "section": "Lead", "line_number": 8, "claim_type": "article", "text": "'''Collibra''' ({{IPAc-en|k|ə|ˈ|l|iː|b|r|ə}}) is a software company founded in Belgium in 2008 that develops software for data governance, data cataloging, data quality, and related enterprise data-management functions. The company originated as a spin-off from the Vrije Universiteit Brussel's STARLab research group. Coverage of the company has described it variously as a data governance, data management, or data intelligence vendor, reflecting product expansion and changing market vocabulary. By 2021, Collibra had reached a valuation of $5.25 billion and coverage increasingly placed it in the broader enterprise market for trusted data access, compliance, analytics enablement, and AI governance.", "reference_ids": ["ref-https-techcrunch-com-2017-01-18--f9aafb60", "ref-https-techcrunch-com-2019-01-29--d66521fb", "ref-https-techtransfer-research-vub--96b17a97", "ref-https-www-vub-be-en-news-from-st-65a7345d", "ref-https-techcrunch-com-2021-11-09--b651224f", "ref-https-www-cnbc-com-2021-11-09-co-b492b371"], "coverage_health": {"score": 85, "band": "strong", "reasons": ["Base support score for a cited claim line.", "At least one reference is attached to the claim.", "The claim has independent source support.", "The claim has multiple independent supporting references.", "At least one supporting reference is from a stronger known publisher class."]}}, {"id": "claim-009", "section": "History", "line_number": 9, "claim_type": "article", "text": "Collibra was founded in 2008 as a Belgian software company focused on helping organizations govern and use enterprise data more effectively. VUB sources describe it as a spin-off from the university's STARLab, and identify Felix Van de Maele, Stijn Christiaens, Pieter De Leenheer, and Damien Trog as founders. Early coverage framed the company around data-governance problems inside large organizations, particularly the difficulty of finding, understanding, and controlling data spread across multiple systems.", "reference_ids": ["ref-https-techcrunch-com-2018-01-08--e4bf7bad", "ref-https-techcrunch-com-2019-01-29--d66521fb", "ref-https-techtransfer-research-vub--96b17a97", "ref-https-www-vub-be-en-news-from-st-65a7345d"], "coverage_health": {"score": 75, "band": "strong", "reasons": ["Base support score for a cited claim line.", "At least one reference is attached to the claim.", "The claim has independent source support.", "The claim has multiple independent supporting references."]}}, {"id": "claim-010", "section": "History", "line_number": 10, "claim_type": "article", "text": "As regulatory scrutiny and enterprise data volumes grew, Collibra raised a succession of funding rounds that tracked its rise from a venture-backed governance vendor to a company valued above $1 billion in January 2019, $2.3 billion in April 2020, and $5.25 billion in November 2021. Coverage of the 2020 and 2021 rounds connected that growth to governance, cataloging, data protection, and the increasing operational importance of enterprise data.", "reference_ids": ["ref-https-techcrunch-com-2019-01-29--d66521fb", "ref-https-techcrunch-com-2020-04-02--9b72eaaf", "ref-https-techcrunch-com-2021-11-09--b651224f", "ref-https-www-cnbc-com-2021-11-09-co-b492b371"], "coverage_health": {"score": 85, "band": "strong", "reasons": ["Base support score for a cited claim line.", "At least one reference is attached to the claim.", "The claim has independent source support.", "The claim has multiple independent supporting references.", "At least one supporting reference is from a stronger known publisher class."]}}, {"id": "claim-011", "section": "Products", "line_number": 11, "claim_type": "article", "text": "Independent coverage has generally described Collibra's products as a set of enterprise tools for finding, understanding, governing, and controlling data across distributed environments. While the company's early identity was closely tied to governance and catalog functions, later coverage emphasized a broader product set that combined governance with data quality, analytics-adjacent tooling, policy controls, and AI-governance capabilities.", "reference_ids": ["ref-https-siliconangle-com-2021-02-0-e4ee54cf", "ref-https-venturebeat-com-ai-collibr-50c93f06", "ref-https-www-techtarget-com-searchd-68ca764c", "ref-https-www-techtarget-com-searchb-3d40d4a7"], "coverage_health": {"score": 75, "band": "strong", "reasons": ["Base support score for a cited claim line.", "At least one reference is attached to the claim.", "The claim has independent source support.", "The claim has multiple independent supporting references."]}}, {"id": "claim-012", "section": "Products", "line_number": 12, "claim_type": "article", "text": "At a high level, Collibra's product coverage in independent reporting spans data catalog and governance, data quality, analytics-oriented notebook tooling, data lineage and metadata management through acquired capabilities, and AI governance.", "reference_ids": ["ref-https-www-techtarget-com-searchd-68ca764c", "ref-https-siliconangle-com-2021-02-0-e4ee54cf", "ref-https-www-techtarget-com-searchb-3d40d4a7", "ref-https-venturebeat-com-ai-collibr-50c93f06"], "coverage_health": {"score": 75, "band": "strong", "reasons": ["Base support score for a cited claim line.", "At least one reference is attached to the claim.", "The claim has independent source support.", "The claim has multiple independent supporting references."]}}, {"id": "claim-013", "section": "Products", "line_number": 13, "claim_type": "table", "text": "Data catalog and governance: Organizing, governing, and controlling enterprise data assets.", "reference_ids": ["ref-https-siliconangle-com-2021-02-0-e4ee54cf", "ref-https-venturebeat-com-ai-collibr-50c93f06"], "coverage_health": {"score": 75, "band": "strong", "reasons": ["Base support score for a cited claim line.", "At least one reference is attached to the claim.", "The claim has independent source support.", "The claim has multiple independent supporting references."]}}, {"id": "claim-014", "section": "Products", "line_number": 14, "claim_type": "table", "text": "Data quality: Adding predictive or automated quality capabilities to governed data workflows.", "reference_ids": ["ref-https-www-techtarget-com-searchd-68ca764c", "ref-https-siliconangle-com-2021-02-0-e4ee54cf"], "coverage_health": {"score": 75, "band": "strong", "reasons": ["Base support score for a cited claim line.", "At least one reference is attached to the claim.", "The claim has independent source support.", "The claim has multiple independent supporting references."]}}, {"id": "claim-015", "section": "Products", "line_number": 15, "claim_type": "table", "text": "Data lineage and metadata: Extending traceability and metadata-management capabilities through acquisition.", "reference_ids": ["ref-https-siliconangle-com-2021-02-0-e4ee54cf"], "coverage_health": {"score": 65, "band": "moderate", "reasons": ["Base support score for a cited claim line.", "At least one reference is attached to the claim.", "The claim has independent source support."]}}, {"id": "claim-016", "section": "Products", "line_number": 16, "claim_type": "table", "text": "Analytics tooling: Adding notebook-oriented functionality for analytics workflows.", "reference_ids": ["ref-https-siliconangle-com-2021-02-0-e4ee54cf"], "coverage_health": {"score": 65, "band": "moderate", "reasons": ["Base support score for a cited claim line.", "At least one reference is attached to the claim.", "The claim has independent source support."]}}, {"id": "claim-017", "section": "Products", "line_number": 17, "claim_type": "table", "text": "AI governance: Applying governance controls to AI models and applications in relation to enterprise data.", "reference_ids": ["ref-https-www-techtarget-com-searchd-2d386cbd", "ref-https-venturebeat-com-ai-collibr-50c93f06"], "coverage_health": {"score": 75, "band": "strong", "reasons": ["Base support score for a cited claim line.", "At least one reference is attached to the claim.", "The claim has independent source support.", "The claim has multiple independent supporting references."]}}, {"id": "claim-018", "section": "Acquisitions", "line_number": 18, "claim_type": "article", "text": "Collibra has used acquisitions to broaden its platform beyond catalog and governance workflows. Reported acquisitions have centered on data lineage, data quality, analytics workflows, data access, and unstructured data governance.", "reference_ids": ["ref-https-www-techtarget-com-searchd-68ca764c", "ref-https-www-techtarget-com-searchb-3d40d4a7", "ref-https-techcrunch-com-2025-06-05--55f793ee", "ref-https-www-techtarget-com-searchd-30dd15da"], "coverage_health": {"score": 75, "band": "strong", "reasons": ["Base support score for a cited claim line.", "At least one reference is attached to the claim.", "The claim has independent source support.", "The claim has multiple independent supporting references."]}}, {"id": "claim-019", "section": "Acquisitions", "line_number": 19, "claim_type": "table", "text": "2019 | SQLdep | Data lineage and metadata management | A [[Brno]]-based software company, focused on reverse engineering data lineage from BI Tools and SQL code.", "reference_ids": ["ref-https-www-techtarget-com-searchb-3d40d4a7"], "coverage_health": {"score": 65, "band": "moderate", "reasons": ["Base support score for a cited claim line.", "At least one reference is attached to the claim.", "The claim has independent source support."]}}, {"id": "claim-020", "section": "Acquisitions", "line_number": 20, "claim_type": "table", "text": "2021 | OwlDQ | Data quality | A US-based predictive data quality platform focused on automated data anomaly detection.", "reference_ids": ["ref-https-www-techtarget-com-searchd-68ca764c"], "coverage_health": {"score": 65, "band": "moderate", "reasons": ["Base support score for a cited claim line.", "At least one reference is attached to the claim.", "The claim has independent source support."]}}, {"id": "claim-021", "section": "Acquisitions", "line_number": 21, "claim_type": "table", "text": "2023 | Husprey | SQL notebooks and analytics workflows | A French startup focusing on data notebook acquisition for analytics tools and workflows.", "reference_ids": ["ref-https-www-techtarget-com-searchb-3d40d4a7"], "coverage_health": {"score": 65, "band": "moderate", "reasons": ["Base support score for a cited claim line.", "At least one reference is attached to the claim.", "The claim has independent source support."]}}, {"id": "claim-022", "section": "Acquisitions", "line_number": 22, "claim_type": "table", "text": "2025 | Raito | Data access governance | A Belgian startup whose founders had worked at Collibra previously. Dieter Wachters had led Collibra's engineering team for about a decade.", "reference_ids": ["ref-https-techcrunch-com-2025-06-05--55f793ee"], "coverage_health": {"score": 65, "band": "moderate", "reasons": ["Base support score for a cited claim line.", "At least one reference is attached to the claim.", "The claim has independent source support."]}}, {"id": "claim-023", "section": "Acquisitions", "line_number": 23, "claim_type": "table", "text": "2025 | Deasy Labs | Unstructured data governance | Reported as an acquisition aimed at unstructured data.", "reference_ids": ["ref-https-www-techtarget-com-searchd-30dd15da"], "coverage_health": {"score": 65, "band": "moderate", "reasons": ["Base support score for a cited claim line.", "At least one reference is attached to the claim.", "The claim has independent source support."]}}, {"id": "claim-024", "section": "Market position and reception", "line_number": 24, "claim_type": "article", "text": "Coverage of Collibra has often treated the company as part of a wider enterprise shift toward making data more discoverable, reliable, and governable across large organizations. Publications have described the company in varying terms, including data governance, data management, and data intelligence, while consistently placing it in the market for enterprise software used to control and operationalize data. Later coverage connected that position to AI governance and data-access controls as those topics became more prominent in enterprise software.", "reference_ids": ["ref-https-techcrunch-com-2020-04-02--9b72eaaf", "ref-https-techcrunch-com-2021-11-09--b651224f", "ref-https-www-techtarget-com-searchd-cf67b7bb"], "coverage_health": {"score": 75, "band": "strong", "reasons": ["Base support score for a cited claim line.", "At least one reference is attached to the claim.", "The claim has independent source support.", "The claim has multiple independent supporting references."]}}], "references": [{"id": "ref-https-siliconangle-com-2021-02-0-e4ee54cf", "url": "https://siliconangle.com/2021/02/03/collibra-acquires-owldq-make-enterprises-data-reliable-ai/", "title": "Collibra acquires OwlDQ to make enterprises' data more reliable for AI", "website": "SiliconANGLE", "issued": [2021, 2, 3], "accessed": [2026, 3, 27], "credibility": {"domain": "siliconangle.com", "publisher_class": "trade-press", "publisher_label": "SiliconANGLE", "independence": "independent", "score": 67, "band": "medium", "method": {"id": "heuristic-web-credibility-v1", "lineage": ["base score", "transport security", "known publisher class mapping", "institutional domain heuristic", "promotional-path penalty"], "factors": [{"label": "Base score", "delta": 50, "reason": "Neutral starting point for a published web source."}, {"label": "HTTPS", "delta": 5, "reason": "Transport security is present."}, {"label": "Publisher class: trade-press", "delta": 12, "reason": "Domain matched known source profile for SiliconANGLE."}], "note": "This is a local editorial support metric, not a public truth score."}}, "supported_claim_ids": ["claim-009", "claim-010", "claim-011", "claim-012", "claim-013", "claim-014", "claim-011", "claim-012", "claim-013", "claim-014", "claim-015", "claim-016"], "supported_sections": ["Products"], "use_count": 12}, {"id": "ref-https-techtransfer-research-vub--96b17a97", "url": "https://techtransfer.research.vub.be/collibra", "title": "COLLIBRA", "website": "VUB TechTransfer", "issued": [], "accessed": [2026, 3, 27], "credibility": {"domain": "techtransfer.research.vub.be", "publisher_class": "institution", "publisher_label": "VUB TechTransfer", "independence": "contextual", "score": 65, "band": "medium", "method": {"id": "heuristic-web-credibility-v1", "lineage": ["base score", "transport security", "known publisher class mapping", "institutional domain heuristic", "promotional-path penalty"], "factors": [{"label": "Base score", "delta": 50, "reason": "Neutral starting point for a published web source."}, {"label": "HTTPS", "delta": 5, "reason": "Transport security is present."}, {"label": "Publisher class: institution", "delta": 10, "reason": "Domain matched known source profile for VUB TechTransfer."}], "note": "This is a local editorial support metric, not a public truth score."}}, "supported_claim_ids": ["claim-002", "claim-003", "claim-004", "claim-006", "claim-007", "claim-002", "claim-003", "claim-004", "claim-008", "claim-009"], "supported_sections": ["History", "Lead"], "use_count": 10}, {"id": "ref-https-www-techtarget-com-searchb-3d40d4a7", "url": "https://www.techtarget.com/searchbusinessanalytics/news/366551315/Collibra-acquires-data-notebook-vendor-for-analytics-tools", "title": "Collibra acquires data notebook vendor for analytics tools", "website": "TechTarget", "issued": [2023, 9, 7], "accessed": [2026, 3, 27], "credibility": {"domain": "techtarget.com", "publisher_class": "trade-press", "publisher_label": "TechTarget", "independence": "independent", "score": 73, "band": "medium", "method": {"id": "heuristic-web-credibility-v1", "lineage": ["base score", "transport security", "known publisher class mapping", "institutional domain heuristic", "promotional-path penalty"], "factors": [{"label": "Base score", "delta": 50, "reason": "Neutral starting point for a published web source."}, {"label": "HTTPS", "delta": 5, "reason": "Transport security is present."}, {"label": "Publisher class: trade-press", "delta": 18, "reason": "Domain matched known source profile for TechTarget."}], "note": "This is a local editorial support metric, not a public truth score."}}, "supported_claim_ids": ["claim-009", "claim-010", "claim-016", "claim-017", "claim-019", "claim-011", "claim-012", "claim-018", "claim-019", "claim-021"], "supported_sections": ["Acquisitions", "Products"], "use_count": 10}, {"id": "ref-https-www-techtarget-com-searchd-68ca764c", "url": "https://www.techtarget.com/searchdatamanagement/news/252495815/Collibra-acquires-predictive-data-quality-vendor-OwlDQ", "title": "Collibra acquires predictive data quality vendor OwlDQ", "website": "TechTarget", "issued": [2021, 2, 3], "accessed": [2026, 3, 27], "credibility": {"domain": "techtarget.com", "publisher_class": "trade-press", "publisher_label": "TechTarget", "independence": "independent", "score": 73, "band": "medium", "method": {"id": "heuristic-web-credibility-v1", "lineage": ["base score", "transport security", "known publisher class mapping", "institutional domain heuristic", "promotional-path penalty"], "factors": [{"label": "Base score", "delta": 50, "reason": "Neutral starting point for a published web source."}, {"label": "HTTPS", "delta": 5, "reason": "Transport security is present."}, {"label": "Publisher class: trade-press", "delta": 18, "reason": "Domain matched known source profile for TechTarget."}], "note": "This is a local editorial support metric, not a public truth score."}}, "supported_claim_ids": ["claim-009", "claim-010", "claim-012", "claim-016", "claim-018", "claim-011", "claim-012", "claim-014", "claim-018", "claim-020"], "supported_sections": ["Acquisitions", "Products"], "use_count": 10}, {"id": "ref-https-www-cnbc-com-2021-11-09-co-b492b371", "url": "https://www.cnbc.com/2021/11/09/collibra-doubles-valuation-as-investors-chase-next-cloud-winner.html", "title": "Collibra doubles valuation as investors chase next cloud winner", "website": "CNBC", "issued": [2021, 11, 9], "accessed": [2026, 3, 27], "credibility": {"domain": "cnbc.com", "publisher_class": "news", "publisher_label": "CNBC", "independence": "independent", "score": 77, "band": "high", "method": {"id": "heuristic-web-credibility-v1", "lineage": ["base score", "transport security", "known publisher class mapping", "institutional domain heuristic", "promotional-path penalty"], "factors": [{"label": "Base score", "delta": 50, "reason": "Neutral starting point for a published web source."}, {"label": "HTTPS", "delta": 5, "reason": "Transport security is present."}, {"label": "Publisher class: news", "delta": 22, "reason": "Domain matched known source profile for CNBC."}], "note": "This is a local editorial support metric, not a public truth score."}}, "supported_claim_ids": ["claim-001", "claim-003", "claim-006", "claim-008", "claim-001", "claim-003", "claim-008", "claim-010"], "supported_sections": ["History", "Lead"], "use_count": 8}, {"id": "ref-https-venturebeat-com-ai-collibr-50c93f06", "url": "https://venturebeat.com/ai/collibra-tackles-the-shadow-ai-problem-with-new-governance-application/", "title": "Collibra tackles the shadow AI problem with new governance application", "website": "VentureBeat", "issued": [2024, 4, 10], "accessed": [2026, 3, 27], "credibility": {"domain": "venturebeat.com", "publisher_class": "trade-press", "publisher_label": "VentureBeat", "independence": "independent", "score": 71, "band": "medium", "method": {"id": "heuristic-web-credibility-v1", "lineage": ["base score", "transport security", "known publisher class mapping", "institutional domain heuristic", "promotional-path penalty"], "factors": [{"label": "Base score", "delta": 50, "reason": "Neutral starting point for a published web source."}, {"label": "HTTPS", "delta": 5, "reason": "Transport security is present."}, {"label": "Publisher class: trade-press", "delta": 16, "reason": "Domain matched known source profile for VentureBeat."}], "note": "This is a local editorial support metric, not a public truth score."}}, "supported_claim_ids": ["claim-009", "claim-010", "claim-011", "claim-015", "claim-011", "claim-012", "claim-013", "claim-017"], "supported_sections": ["Products"], "use_count": 8}, {"id": "ref-https-techcrunch-com-2021-11-09--b651224f", "url": "https://techcrunch.com/2021/11/09/data-intelligence-company-collibra-brings-in-another-250m-to-more-than-double-its-valuation/", "title": "Data intelligence company Collibra brings in another $250M to more than double its valuation", "website": "TechCrunch", "issued": [2021, 11, 9], "accessed": [2026, 3, 27], "credibility": {"domain": "techcrunch.com", "publisher_class": "trade-press", "publisher_label": "TechCrunch", "independence": "independent", "score": 73, "band": "medium", "method": {"id": "heuristic-web-credibility-v1", "lineage": ["base score", "transport security", "known publisher class mapping", "institutional domain heuristic", "promotional-path penalty"], "factors": [{"label": "Base score", "delta": 50, "reason": "Neutral starting point for a published web source."}, {"label": "HTTPS", "delta": 5, "reason": "Transport security is present."}, {"label": "Publisher class: trade-press", "delta": 18, "reason": "Domain matched known source profile for TechCrunch."}], "note": "This is a local editorial support metric, not a public truth score."}}, "supported_claim_ids": ["claim-006", "claim-008", "claim-022", "claim-008", "claim-010", "claim-024"], "supported_sections": ["History", "Lead", "Market position and reception"], "use_count": 6}, {"id": "ref-https-techcrunch-com-2019-01-29--d66521fb", "url": "https://techcrunch.com/2019/01/29/regulatory-demands-for-better-data-governance-push-collibras-valuation-above-1-billion/", "title": "Regulatory demands for better data governance push Collibra's valuation above $1 billion", "website": "TechCrunch", "issued": [2019, 1, 29], "accessed": [2026, 3, 27], "credibility": {"domain": "techcrunch.com", "publisher_class": "trade-press", "publisher_label": "TechCrunch", "independence": "independent", "score": 73, "band": "medium", "method": {"id": "heuristic-web-credibility-v1", "lineage": ["base score", "transport security", "known publisher class mapping", "institutional domain heuristic", "promotional-path penalty"], "factors": [{"label": "Base score", "delta": 50, "reason": "Neutral starting point for a published web source."}, {"label": "HTTPS", "delta": 5, "reason": "Transport security is present."}, {"label": "Publisher class: trade-press", "delta": 18, "reason": "Domain matched known source profile for TechCrunch."}], "note": "This is a local editorial support metric, not a public truth score."}}, "supported_claim_ids": ["claim-006", "claim-007", "claim-008", "claim-008", "claim-009", "claim-010"], "supported_sections": ["History", "Lead"], "use_count": 6}, {"id": "ref-https-techcrunch-com-2025-06-05--55f793ee", "url": "https://techcrunch.com/2025/06/05/collibra-acquires-data-access-startup-raito/", "title": "Collibra acquires data access startup Raito", "website": "TechCrunch", "issued": [2025, 6, 5], "accessed": [2026, 3, 27], "credibility": {"domain": "techcrunch.com", "publisher_class": "trade-press", "publisher_label": "TechCrunch", "independence": "independent", "score": 73, "band": "medium", "method": {"id": "heuristic-web-credibility-v1", "lineage": ["base score", "transport security", "known publisher class mapping", "institutional domain heuristic", "promotional-path penalty"], "factors": [{"label": "Base score", "delta": 50, "reason": "Neutral starting point for a published web source."}, {"label": "HTTPS", "delta": 5, "reason": "Transport security is present."}, {"label": "Publisher class: trade-press", "delta": 18, "reason": "Domain matched known source profile for TechCrunch."}], "note": "This is a local editorial support metric, not a public truth score."}}, "supported_claim_ids": ["claim-016", "claim-020", "claim-018", "claim-022"], "supported_sections": ["Acquisitions"], "use_count": 4}, {"id": "ref-https-techcrunch-com-2020-04-02--9b72eaaf", "url": "https://techcrunch.com/2020/04/02/collibra-nabs-another-112-5m-at-a-2-3b-valuation-for-its-big-data-management-platform/", "title": "Collibra nabs another $112.5M at a $2.3B valuation for its big data management platform", "website": "TechCrunch", "issued": [2020, 4, 2], "accessed": [2026, 3, 27], "credibility": {"domain": "techcrunch.com", "publisher_class": "trade-press", "publisher_label": "TechCrunch", "independence": "independent", "score": 73, "band": "medium", "method": {"id": "heuristic-web-credibility-v1", "lineage": ["base score", "transport security", "known publisher class mapping", "institutional domain heuristic", "promotional-path penalty"], "factors": [{"label": "Base score", "delta": 50, "reason": "Neutral starting point for a published web source."}, {"label": "HTTPS", "delta": 5, "reason": "Transport security is present."}, {"label": "Publisher class: trade-press", "delta": 18, "reason": "Domain matched known source profile for TechCrunch."}], "note": "This is a local editorial support metric, not a public truth score."}}, "supported_claim_ids": ["claim-008", "claim-022", "claim-010", "claim-024"], "supported_sections": ["History", "Market position and reception"], "use_count": 4}, {"id": "ref-https-www-techtarget-com-searchd-30dd15da", "url": "https://www.techtarget.com/searchdatamanagement/news/366627998/Collibras-acquisition-of-Deasy-targets-unstructured-data", "title": "Collibra's acquisition of Deasy targets unstructured data", "website": "TechTarget", "issued": [2025, 7, 24], "accessed": [2026, 3, 27], "credibility": {"domain": "techtarget.com", "publisher_class": "trade-press", "publisher_label": "TechTarget", "independence": "independent", "score": 73, "band": "medium", "method": {"id": "heuristic-web-credibility-v1", "lineage": ["base score", "transport security", "known publisher class mapping", "institutional domain heuristic", "promotional-path penalty"], "factors": [{"label": "Base score", "delta": 50, "reason": "Neutral starting point for a published web source."}, {"label": "HTTPS", "delta": 5, "reason": "Transport security is present."}, {"label": "Publisher class: trade-press", "delta": 18, "reason": "Domain matched known source profile for TechTarget."}], "note": "This is a local editorial support metric, not a public truth score."}}, "supported_claim_ids": ["claim-016", "claim-021", "claim-018", "claim-023"], "supported_sections": ["Acquisitions"], "use_count": 4}, {"id": "ref-https-www-vub-be-en-news-from-st-65a7345d", "url": "https://www.vub.be/en/news/from-student-spin-how-does-that-happen", "title": "From student to spin-off: how does that happen", "website": "Vrije Universiteit Brussel", "issued": [], "accessed": [2026, 3, 27], "credibility": {"domain": "vub.be", "publisher_class": "institution", "publisher_label": "Vrije Universiteit Brussel", "independence": "contextual", "score": 65, "band": "medium", "method": {"id": "heuristic-web-credibility-v1", "lineage": ["base score", "transport security", "known publisher class mapping", "institutional domain heuristic", "promotional-path penalty"], "factors": [{"label": "Base score", "delta": 50, "reason": "Neutral starting point for a published web source."}, {"label": "HTTPS", "delta": 5, "reason": "Transport security is present."}, {"label": "Publisher class: institution", "delta": 10, "reason": "Domain matched known source profile for Vrije Universiteit Brussel."}], "note": "This is a local editorial support metric, not a public truth score."}}, "supported_claim_ids": ["claim-006", "claim-007", "claim-008", "claim-009"], "supported_sections": ["History", "Lead"], "use_count": 4}, {"id": "ref-https-www-techtarget-com-searchd-2d386cbd", "url": "https://www.techtarget.com/searchDataManagement/news/366571614/Collibra-adds-AI-governance-to-data-management-platform", "title": "Collibra adds AI governance to data management platform", "website": "TechTarget", "issued": [2024, 2, 29], "accessed": [2026, 3, 27], "credibility": {"domain": "techtarget.com", "publisher_class": "trade-press", "publisher_label": "TechTarget", "independence": "independent", "score": 73, "band": "medium", "method": {"id": "heuristic-web-credibility-v1", "lineage": ["base score", "transport security", "known publisher class mapping", "institutional domain heuristic", "promotional-path penalty"], "factors": [{"label": "Base score", "delta": 50, "reason": "Neutral starting point for a published web source."}, {"label": "HTTPS", "delta": 5, "reason": "Transport security is present."}, {"label": "Publisher class: trade-press", "delta": 18, "reason": "Domain matched known source profile for TechTarget."}], "note": "This is a local editorial support metric, not a public truth score."}}, "supported_claim_ids": ["claim-015", "claim-017"], "supported_sections": ["Products"], "use_count": 2}, {"id": "ref-https-www-techtarget-com-searchd-cf67b7bb", "url": "https://www.techtarget.com/searchdatamanagement/news/366580432/Collibra-launches-AI-Governance-unveils-GenAI-capabilities", "title": "Collibra launches AI Governance, unveils GenAI capabilities", "website": "TechTarget", "issued": [2024, 4, 10], "accessed": [2026, 3, 27], "credibility": {"domain": "techtarget.com", "publisher_class": "trade-press", "publisher_label": "TechTarget", "independence": "independent", "score": 73, "band": "medium", "method": {"id": "heuristic-web-credibility-v1", "lineage": ["base score", "transport security", "known publisher class mapping", "institutional domain heuristic", "promotional-path penalty"], "factors": [{"label": "Base score", "delta": 50, "reason": "Neutral starting point for a published web source."}, {"label": "HTTPS", "delta": 5, "reason": "Transport security is present."}, {"label": "Publisher class: trade-press", "delta": 18, "reason": "Domain matched known source profile for TechTarget."}], "note": "This is a local editorial support metric, not a public truth score."}}, "supported_claim_ids": ["claim-022", "claim-024"], "supported_sections": ["Market position and reception"], "use_count": 2}, {"id": "ref-https-techcrunch-com-2017-01-18--f9aafb60", "url": "https://techcrunch.com/2017/01/18/collibra/", "title": "Collibra nabs $50M led by ICONIQ to fix companies' data governance", "website": "TechCrunch", "issued": [2017, 1, 18], "accessed": [2026, 3, 27], "credibility": {"domain": "techcrunch.com", "publisher_class": "trade-press", "publisher_label": "TechCrunch", "independence": "independent", "score": 73, "band": "medium", "method": {"id": "heuristic-web-credibility-v1", "lineage": ["base score", "transport security", "known publisher class mapping", "institutional domain heuristic", "promotional-path penalty"], "factors": [{"label": "Base score", "delta": 50, "reason": "Neutral starting point for a published web source."}, {"label": "HTTPS", "delta": 5, "reason": "Transport security is present."}, {"label": "Publisher class: trade-press", "delta": 18, "reason": "Domain matched known source profile for TechCrunch."}], "note": "This is a local editorial support metric, not a public truth score."}}, "supported_claim_ids": ["claim-006", "claim-008"], "supported_sections": ["Lead"], "use_count": 2}, {"id": "ref-https-techcrunch-com-2018-01-08--e4bf7bad", "url": "https://techcrunch.com/2018/01/08/collibra-snags-58-m-series-d-led-by-iconiq-and-battery-ventures-to-simplify-data-governance/", "title": "Collibra snags $58M Series D led by Iconiq and Battery Ventures to simplify data governance", "website": "TechCrunch", "issued": [2018, 1, 8], "accessed": [2026, 3, 27], "credibility": {"domain": "techcrunch.com", "publisher_class": "trade-press", "publisher_label": "TechCrunch", "independence": "independent", "score": 73, "band": "medium", "method": {"id": "heuristic-web-credibility-v1", "lineage": ["base score", "transport security", "known publisher class mapping", "institutional domain heuristic", "promotional-path penalty"], "factors": [{"label": "Base score", "delta": 50, "reason": "Neutral starting point for a published web source."}, {"label": "HTTPS", "delta": 5, "reason": "Transport security is present."}, {"label": "Publisher class: trade-press", "delta": 18, "reason": "Domain matched known source profile for TechCrunch."}], "note": "This is a local editorial support metric, not a public truth score."}}, "supported_claim_ids": ["claim-007", "claim-009"], "supported_sections": ["History"], "use_count": 2}, {"id": "ref-https-www-collibra-com-company-w-eebd72f6", "url": "https://www.collibra.com/company/who-we-are", "title": "Discover unified governance for data and AI", "website": "Collibra", "issued": [], "accessed": [2026, 3, 27], "credibility": {"domain": "collibra.com", "publisher_class": "company", "publisher_label": "Collibra", "independence": "primary", "score": 21, "band": "low", "method": {"id": "heuristic-web-credibility-v1", "lineage": ["base score", "transport security", "known publisher class mapping", "institutional domain heuristic", "promotional-path penalty"], "factors": [{"label": "Base score", "delta": 50, "reason": "Neutral starting point for a published web source."}, {"label": "HTTPS", "delta": 5, "reason": "Transport security is present."}, {"label": "Publisher class: company", "delta": -28, "reason": "Domain matched known source profile for Collibra."}, {"label": "Promotional path heuristic", "delta": -6, "reason": "URL path suggests a publisher-owned or promotional context."}], "note": "This is a local editorial support metric, not a public truth score."}}, "supported_claim_ids": ["claim-005"], "supported_sections": ["Lead"], "use_count": 1}, {"id": "ref-https-www-collibra-com-company-l-abfd942e", "url": "https://www.collibra.com/company/leadership", "title": "Meet the Collibra leadership team", "website": "Collibra", "issued": [], "accessed": [2026, 3, 27], "credibility": {"domain": "collibra.com", "publisher_class": "company", "publisher_label": "Collibra", "independence": "primary", "score": 21, "band": "low", "method": {"id": "heuristic-web-credibility-v1", "lineage": ["base score", "transport security", "known publisher class mapping", "institutional domain heuristic", "promotional-path penalty"], "factors": [{"label": "Base score", "delta": 50, "reason": "Neutral starting point for a published web source."}, {"label": "HTTPS", "delta": 5, "reason": "Transport security is present."}, {"label": "Publisher class: company", "delta": -28, "reason": "Domain matched known source profile for Collibra."}, {"label": "Promotional path heuristic", "delta": -6, "reason": "URL path suggests a publisher-owned or promotional context."}], "note": "This is a local editorial support metric, not a public truth score."}}, "supported_claim_ids": [], "supported_sections": [], "use_count": 0}]};
+
+    function esc(value) {
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;");
+    }
+
+    function scoreClass(score) {
+      if (score >= 75) return "score-high";
+      if (score >= 55) return "score-medium";
+      return "score-low";
+    }
+
+    {
+      const claimsEl = document.getElementById("claims");
+      const refsEl = document.getElementById("refs");
+      const inspectorEl = document.getElementById("inspector");
+      const statsEl = document.getElementById("stats");
+      const claimSearch = document.getElementById("claim-search");
+      const refSearch = document.getElementById("ref-search");
+      const refsById = Object.fromEntries(payload.references.map((ref) => [ref.id, ref]));
+      const claimsById = Object.fromEntries(payload.claims.map((claim) => [claim.id, claim]));
+
+      statsEl.innerHTML = `
+        <div class="stat">${payload.summary.claim_count} claim lines</div>
+        <div class="stat">${payload.summary.reference_count} references</div>
+        <div class="stat">${payload.summary.multi_use_reference_count} reused references</div>
+        <div class="stat">Method: ${payload.credibility_method.id}</div>
+      `;
+
+      function renderClaims(filter = "") {
+        const q = filter.toLowerCase();
+        claimsEl.innerHTML = payload.claims
+          .filter((claim) => !q || claim.text.toLowerCase().includes(q) || claim.section.toLowerCase().includes(q))
+          .map((claim) => `
+            <article class="claim" data-claim-id="${claim.id}">
+              <div class="meta">${esc(claim.section)} · line ${claim.line_number} · ${esc(claim.claim_type)} · coverage ${claim.coverage_health.score} (${esc(claim.coverage_health.band)})</div>
+              <div class="claim-text">${esc(claim.text)}</div>
+              <div class="chips">
+                ${claim.reference_ids.map((id) => `<span class="chip">${esc(refsById[id]?.website || id)}</span>`).join("")}
+              </div>
+            </article>
+          `)
+          .join("");
+        document.querySelectorAll(".claim").forEach((node) => {
+          node.addEventListener("click", () => selectClaim(node.dataset.claimId));
+        });
+      }
+
+      function renderRefs(filter = "") {
+        const q = filter.toLowerCase();
+        refsEl.innerHTML = payload.references
+          .filter((ref) => {
+            const hay = [ref.title, ref.url, ref.website, ref.supported_sections.join(" ")].join(" ").toLowerCase();
+            return !q || hay.includes(q);
+          })
+          .map((ref) => `
+            <article class="ref" data-ref-id="${ref.id}">
+              <div class="meta">${esc(ref.website || ref.credibility.domain)} · <span class="${scoreClass(ref.credibility.score)}">credibility ${ref.credibility.score}</span></div>
+              <div class="claim-text">${esc(ref.title)}</div>
+              <div class="chips">
+                <span class="chip">${esc(ref.credibility.publisher_class)}</span>
+                <span class="chip">${esc(ref.credibility.independence)}</span>
+                <span class="chip">${ref.use_count} supporting claims</span>
+              </div>
+              <div class="support-list">Used in: ${esc(ref.supported_sections.join(", "))}</div>
+            </article>
+          `)
+          .join("");
+        document.querySelectorAll(".ref").forEach((node) => {
+          node.addEventListener("click", () => selectRef(node.dataset.refId));
+        });
+      }
+
+      function setActive(selector, id, dataKey) {
+        document.querySelectorAll(selector).forEach((node) => {
+          node.classList.toggle("active", node.dataset[dataKey] === id);
+        });
+      }
+
+      function clearActive(selector) {
+        document.querySelectorAll(selector).forEach((node) => node.classList.remove("active"));
+      }
+
+      function selectClaim(id) {
+        const claim = claimsById[id];
+        if (!claim) return;
+        setActive(".claim", id, "claimId");
+        clearActive(".ref");
+        claim.reference_ids.forEach((refId) => {
+          const node = document.querySelector(`.ref[data-ref-id="${refId}"]`);
+          if (node) node.classList.add("active");
+        });
+        const supportedRefs = claim.reference_ids.map((refId) => refsById[refId]).filter(Boolean);
+        inspectorEl.innerHTML = `
+          <section class="detail-block">
+            <h3>Selected claim</h3>
+            <p><strong>${esc(claim.section)}</strong> · line ${claim.line_number} · ${esc(claim.claim_type)} · coverage ${claim.coverage_health.score} (${esc(claim.coverage_health.band)})</p>
+            <p>${esc(claim.text)}</p>
+          </section>
+          <section class="detail-block">
+            <h3>Coverage health</h3>
+            <ul>
+              ${claim.coverage_health.reasons.map((reason) => `<li>${esc(reason)}</li>`).join("")}
+            </ul>
+          </section>
+          <section class="detail-block">
+            <h3>Supporting references</h3>
+            <ul>
+              ${supportedRefs.map((ref) => `<li><a href="${esc(ref.url)}" target="_blank" rel="noreferrer">${esc(ref.title)}</a> (${esc(ref.website || ref.credibility.domain)}, credibility ${ref.credibility.score}, used by ${ref.use_count} claim${ref.use_count === 1 ? "" : "s"})</li>`).join("")}
+            </ul>
+          </section>
+        `;
+      }
+
+      function selectRef(id) {
+        const ref = refsById[id];
+        if (!ref) return;
+        setActive(".ref", id, "refId");
+        clearActive(".claim");
+        ref.supported_claim_ids.forEach((claimId) => {
+          const node = document.querySelector(`.claim[data-claim-id="${claimId}"]`);
+          if (node) node.classList.add("active");
+        });
+        inspectorEl.innerHTML = `
+          <section class="detail-block">
+            <h3>Selected reference</h3>
+            <p><a href="${esc(ref.url)}" target="_blank" rel="noreferrer">${esc(ref.title)}</a></p>
+            <p>${esc(ref.website || ref.credibility.domain)} · <span class="${scoreClass(ref.credibility.score)}">credibility ${ref.credibility.score}</span> · ${esc(ref.credibility.independence)}</p>
+            <div class="chips">
+              <span class="chip">${ref.use_count} supporting claims</span>
+              <span class="chip">${esc(ref.credibility.publisher_class)}</span>
+            </div>
+          </section>
+          <section class="detail-block">
+            <h3>Claims covered by this reference</h3>
+            <ul>
+              ${ref.supported_claim_ids.map((claimId) => {
+                const claim = claimsById[claimId];
+                return `<li><strong>${esc(claim.section)}</strong>: ${esc(claim.text)}</li>`;
+              }).join("")}
+            </ul>
+          </section>
+          <section class="detail-block">
+            <h3>Credibility metric lineage</h3>
+            <p>${esc(payload.credibility_method.description)}</p>
+            <ul>
+              ${ref.credibility.method.factors.map((factor) => `<li><strong>${esc(factor.label)}</strong> (${factor.delta >= 0 ? "+" : ""}${factor.delta}): ${esc(factor.reason)}</li>`).join("")}
+            </ul>
+            <p><strong>Method note:</strong> ${esc(ref.credibility.method.note)}</p>
+          </section>
+          <section class="detail-block">
+            <h3>Source preview</h3>
+            <p>Some external sites block iframe embedding. If this panel stays blank, open the source in a new tab.</p>
+            <iframe src="${esc(ref.url)}" loading="lazy"></iframe>
+          </section>
+        `;
+      }
+
+      claimSearch.addEventListener("input", (event) => renderClaims(event.target.value));
+      refSearch.addEventListener("input", (event) => renderRefs(event.target.value));
+
+      renderClaims();
+      renderRefs();
+      if (payload.references[0]) selectRef(payload.references[0].id);
+    }
+  </script>
+</body>
+</html>

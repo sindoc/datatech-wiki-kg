@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-03-30T12:33:04Z",
+  "site": "en.wikipedia.org",
+  "project_archetype": "wikipedia-content",
+  "since": "2026-03-28T00:00:00Z",
+  "since_source": "singine time date --offset-days -2",
+  "targets": [
+    {
+      "title": "Collibra",
+      "slug": "collibra",
+      "site": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Collibra",
+      "pageid": 82801076,
+      "since": "2026-03-28T00:00:00Z",
+      "latest_revid": 1346185994,
+      "latest_timestamp": "2026-03-30T12:03:16Z",
+      "revision_count_since": 4,
+      "recentchange_count": 6,
+      "baseline_revid": 1345751974,
+      "compare_generated": true,
+      "local_compare_path": "data/wikipedia-ingest/collibra/local-versus-live.diff",
+      "artifact_dir": "data/wikipedia-ingest/collibra"
+    },
+    {
+      "title": "Talk:Collibra",
+      "slug": "talk-collibra",
+      "site": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Talk:Collibra",
+      "pageid": 82801274,
+      "since": "2026-03-28T00:00:00Z",
+      "latest_revid": 1345898747,
+      "latest_timestamp": "2026-03-28T21:22:20Z",
+      "revision_count_since": 1,
+      "recentchange_count": 1,
+      "baseline_revid": 1345742679,
+      "compare_generated": true,
+      "local_compare_path": null,
+      "artifact_dir": "data/wikipedia-ingest/talk-collibra"
+    },
+    {
+      "title": "Template:Data",
+      "slug": "template-data",
+      "site": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Template:Data",
+      "pageid": 51277126,
+      "since": "2026-03-28T00:00:00Z",
+      "latest_revid": 1345923794,
+      "latest_timestamp": "2026-03-29T00:40:44Z",
+      "revision_count_since": 2,
+      "recentchange_count": 2,
+      "baseline_revid": 1345749466,
+      "compare_generated": true,
+      "local_compare_path": "data/wikipedia-ingest/template-data/local-versus-live.diff",
+      "artifact_dir": "data/wikipedia-ingest/template-data"
+    }
+  ]
+}

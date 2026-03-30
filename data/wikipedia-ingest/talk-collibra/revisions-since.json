@@ -1,0 +1,22 @@
+[
+  {
+    "revid": 1345898747,
+    "parentid": 1345742679,
+    "user": "~2026-19334-47",
+    "temp": true,
+    "timestamp": "2026-03-28T21:22:20Z",
+    "size": 1695,
+    "slots": {
+      "main": {
+        "contentmodel": "wikitext",
+        "contentformat": "text/x-wiki",
+        "content": "{{old AfD multi\n |date1 = October 8, 2024 |result1 = '''delete''' |page1 = Collibra\n}}\n\n== Contested deletion ==\n\n This page should not be speedily deleted because the current version is not a recreation of previously deleted\n  material without changes. It has been substantially rewritten and is based on independent reliable sources, including\n  multi-year coverage in TechCrunch, CNBC, and TechTarget, as well as Belgian coverage of the company\u2019s development and\n  unicorn valuation milestone. If there are still concerns about whether those sources establish notability, that is a\n  matter for deletion discussion, not speedy deletion under G4. I also have a conflict of interest as a former employee\n  of Collibra and have disclosed that on this talk page. --[[Special:Contributions/&#126;2026-19334-47|&#126;2026-19334-47]] ([[User talk:&#126;2026-19334-47|talk]]) 21:22, 28 March 2026 (UTC)\n\n  Then add a separate new Talk section for COI disclosure:\n\n  I have a significant conflict of interest as a former employee of Collibra (approximately 2013\u20132024). I have\n  attempted to base the article solely on independent, reliable sources. I welcome scrutiny of sourcing and am happy to\n  discuss content on this talk page. --[[Special:Contributions/&#126;2026-19334-47|&#126;2026-19334-47]] ([[User talk:&#126;2026-19334-47|talk]]) 21:22, 28 March 2026 (UTC)\n\n  One correction: do not argue that the article should stay because the facts are true. The strongest point here is\n  that G4 is for substantially identical recreation after deletion, and your position is that this draft is materially\n  revised and source-reworked, so any remaining dispute belongs at AfD, not speedy deletion."
+      }
+    },
+    "comment": "/* Contested deletion */ new section",
+    "tags": [
+      "discussiontools-added-comment",
+      "wikieditor"
+    ]
+  }
+]
